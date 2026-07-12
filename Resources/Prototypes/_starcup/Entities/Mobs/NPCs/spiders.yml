@@ -1,0 +1,348 @@
+- type: entity
+  name: guard spider
+  parent: MobSpiderAngryBase
+  id: MobGiantSpiderGuard
+  description: Highly territorial ambush predators that can dig holes in the ground and hide under floor tiles.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: guard
+      sprite: Mobs/Animals/spider.rsi
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: guard-moving
+    noMovementLayers:
+      movement:
+        state: guard
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: guard
+      Critical:
+        Base: guard_dead
+      Dead:
+        Base: guard_dead
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Piercing: 6
+  - type: BurrowAbility
+    action: ActionBurrowLarge
+  - type: Spider
+    spawnsWebsAsNonPlayer: false
+
+- type: entity
+  name: hunter spider
+  parent: MobSpiderAngryBase
+  id: MobGiantSpiderHunter
+  description: Nimble arachnid whose venom can disorient prey.
+  components:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      80: Dead
+  - type: SolutionRegeneration
+    solution: melee
+    generated:
+      reagents:
+      - ReagentId: Ebriotoxin
+        Quantity: 1
+  - type: MeleeChemicalInjector
+    transferAmount: 3
+    solution: melee
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: hunter
+      sprite: Mobs/Animals/spider.rsi
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: hunter-moving
+    noMovementLayers:
+      movement:
+        state: hunter
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: hunter
+      Critical:
+        Base: hunter_dead
+      Dead:
+        Base: hunter_dead
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Piercing: 6
+  - type: JumpAbility
+  - type: Spider
+    spawnsWebsAsNonPlayer: false
+
+- type: entity
+  name: midwife spider
+  parent: MobSpiderAngryBase
+  id: MobGiantSpiderMidwife
+  description: A dubiously nicknamed spider that delivers her young to the hunt.
+  components:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      80: Dead
+  - type: SolutionRegeneration
+    solution: melee
+    generated:
+      reagents:
+      - ReagentId: Toxin
+        Quantity: 1
+  - type: MeleeChemicalInjector
+    transferAmount: 1
+    solution: melee
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: midwife
+      sprite: Mobs/Animals/spider.rsi
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: midwife-moving
+    noMovementLayers:
+      movement:
+        state: midwife
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: midwife
+      Critical:
+        Base: midwife_dead
+      Dead:
+        Base: midwife_dead
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Piercing: 3
+  - type: Gun
+    projectileSpeed: 0
+    fireRate: 0.5
+    selectedMode: SemiAuto
+    showExamineText: false
+    availableModes:
+    - SemiAuto
+    soundGunshot: null
+  - type: RechargeBasicEntityAmmo
+    showExamineText: false
+    rechargeCooldown: 0
+    rechargeSound: null
+  - type: BasicEntityAmmoProvider
+    proto: MobSpiderling
+    capacity: 1
+    count: 1
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
+
+- type: entity
+  id: MobSpiderling
+  parent:
+  - SimpleMobBase
+  - BaseMobAnimal
+  name: spiderling
+  description: The midwife's brood.
+  components:
+  - type: Sprite
+    drawdepth: SmallMobs
+    sprite: _starcup/Mobs/Animals/Arachnids/Spiderling.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: spider
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: spider
+      Critical:
+        Base: spider_dead
+      Dead:
+        Base: spider_dead
+  - type: Item
+    size: Tiny
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.2
+        density: 100
+        mask:
+        - SmallMobMask
+        layer:
+        - SmallMobLayer
+  - type: MobState
+  - type: Extractable
+    grindableSolutionName: food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Slime
+          Quantity: 5
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Cockroach
+  - type: Tag
+    tags:
+    - Trash
+    - VimPilot
+    - CreatureEmotes
+    - IgnoreTallGrass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 10
+      behaviors:
+      - !type:GibBehavior
+        recursive: false
+  - type: StepTrigger
+    requiredTriggeredSpeed: 1
+  - type: TriggerOnStepTrigger
+  - type: RandomChanceTriggerCondition
+    successChance: 0.2
+  - type: GibOnTrigger
+  - type: ProtectedFromStepTriggers
+  - type: Speech
+    speechVerb: SmallMob
+    speechSounds: BeetleSpeechSounds
+  - type: Vocal
+    sounds:
+      Unsexed: BeetleSpeechEmotes
+    screamId: CreatureClick
+    screamAction: ActionEmitSound
+  - type: ReplacementAccent
+    accent: crab
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: CopperBlood
+        Quantity: 20
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.5
+    baseSprintSpeed: 4.0
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      3: Dead
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    angle: 0
+    animation: WeaponArcBite
+    damage:
+      types:
+        Piercing: 1
+  - type: Ammo
+    muzzleFlash: null
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+    - BugHunter
+    - GiantBugHunter
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: TimedDespawn
+    lifetime: 100
+  - type: NoSlip
+  - type: IgnoreSpiderWeb
+
+- type: entity
+  name: nurse spider
+  parent: MobSpiderAngryBase
+  id: MobGiantSpiderNurse
+  description: Less physically imposing than other spiders. Spits gobs of web.
+  components:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      70: Dead
+  - type: SolutionRegeneration
+    solution: melee
+    generated:
+      reagents:
+      - ReagentId: Toxin
+        Quantity: 1
+  - type: MeleeChemicalInjector
+    transferAmount: 1
+    solution: melee
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: nurse
+      sprite: Mobs/Animals/spider.rsi
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: nurse-moving
+    noMovementLayers:
+      movement:
+        state: nurse
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: nurse
+      Critical:
+        Base: nurse_dead
+      Dead:
+        Base: nursee_dead
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Piercing: 6
+  - type: Gun
+    fireRate: 0.5
+    selectedMode: SemiAuto
+    showExamineText: false
+    availableModes:
+    - SemiAuto
+    soundGunshot: null
+  - type: RechargeBasicEntityAmmo
+    showExamineText: false
+    rechargeCooldown: 0
+    rechargeSound: null
+  - type: BasicEntityAmmoProvider
+    proto: MobSpiderling
+    capacity: 1
+    count: 1
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
