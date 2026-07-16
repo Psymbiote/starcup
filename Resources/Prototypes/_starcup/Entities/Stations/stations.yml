@@ -1,25 +1,34 @@
-# like a space station, but on a terrestrial surface
-# lacks salvage jobs, magnet, debris spawning, evacuation etc.
+# Epilogue Stations (for EOR+)
 - type: entity
-  id: StandardTerrestrialStationNoEvac
+  id: StandardEpilogueStation
+  parent:
+  - StandardEpilogueStationNoEvacNoEvents
+  - BaseStationEvacuation
+  - BaseStationAllEventsEligible
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: StandardEpilogueStationNoEvacNoEvents
   parent:
   - BaseStation
-  - BaseStationNews
-  - BaseStationCargo
   - BaseStationJobsSpawning
   - BaseStationRecords
-#  - BaseStationArrivals
-  - BaseStationGateway
   - BaseStationCentcomm
   - BaseStationAlertLevels
   - BaseStationSiliconLawCrewsimov
-  - BaseStationAllEventsEligible
   - BaseStationNanotrasen
-  - BaseStationDeliveries
+#  - BaseStationGateway
+#  - BaseStationExpeditions
+#  - BaseStationSalvageJobs
+#  - BaseStationAllEventsEligible
+#  - BaseStationNews
+#  - BaseStationCargo
+#  - BaseStationDeliveries
   categories: [ HideSpawnMenu ]
   components:
   - type: Transform
 
+# Terrestrial Stations
 - type: entity
   id: StandardTerrestrialStation
   parent:
@@ -27,30 +36,43 @@
   - BaseStationEvacuation
   categories: [ HideSpawnMenu ]
 
-# like a basic station, but no evac, no salvage stuff, no trash, etc. epilogue station is meant for syndcomm, generally.
 - type: entity
-  id: StandardEpilogueStationNoEvacNoEvents
+  id: StandardTerrestrialStationNoEvac
   parent:
   - BaseStation
-#  - BaseStationNews
-#  - BaseStationCargo
-  - BaseStationJobsSpawning
-  - BaseStationRecords
-  #  - BaseStationArrivals
-  - BaseStationGateway
-  - BaseStationCentcomm
   - BaseStationAlertLevels
+  - BaseStationCargo
+  - BaseStationCentcomm
+  - BaseStationDeliveries
   - BaseStationSiliconLawCrewsimov
-#  - BaseStationAllEventsEligible # we don't want any interruptions
+  - BaseStationExpeditions
+  - BaseStationGateway
+  - BaseStationJobsSpawning
   - BaseStationNanotrasen
+  - BaseStationNews
+  - BaseStationRecords
+  - BaseStationSalvageJobs
+#  - BaseStationAllEventsEligible
+#  - BaseStationArrivals
+#  - BaseStationShuttles - unwanted ATS/space wrecks
+#  - BaseStationEvacuation
+#  - BaseStationMagnet - makes no sense for planetside
+#  - BaseStationLavaland
   categories: [ HideSpawnMenu ]
   components:
   - type: Transform
 
+## Terrestrial Stations with Trading Outposts
 - type: entity
-  id: StandardEpilogueStation
+  id: StandardTerrestrialStationTradingCharonic
   parent:
-  - StandardEpilogueStationNoEvacNoEvents
-  - BaseStationEvacuation
-  - BaseStationAllEventsEligible
+  - StandardTerrestrialStation
+  - BaseTerrestrialStationTradingCharonic
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: StandardTerrestrialStationTradingSnowy
+  parent:
+  - StandardTerrestrialStation
+  - BaseTerrestrialStationTradingSnowy
   categories: [ HideSpawnMenu ]

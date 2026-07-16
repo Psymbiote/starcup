@@ -34,8 +34,10 @@
   - Glasses
   - SurvivalMedical
   - Accessibility # starcup
+  - Cosmetics # starcup
   - Trinkets
-#  - ChiefMedicalOfficerJobTrinkets
+  - ChiefMedicalOfficerJobTrinkets # starcup
+  - Plushies # starcup
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -53,8 +55,10 @@
   - MedicalDoctorPDA
   - SurvivalMedical
   - Accessibility # starcup
+  - Cosmetics # starcup
   - Trinkets
-#  - MedicalDoctorJobTrinkets
+  - MedicalDoctorJobTrinkets # starcup
+  - Plushies # starcup
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -62,6 +66,7 @@
   groups:
   - GroupTankHarness
   - MedicalInternHead # starcup
+  - MedicalMask # starcup
   - Scarfs # starcup
   - MedicalInternJumpsuit
   - MedicalBackpack
@@ -70,9 +75,12 @@
   - Glasses
   - MedicalInternID # starcup
   - Accessibility # starcup
+  - Cosmetics # starcup
   - SurvivalMedical
+  - Cosmetics # starcup
   - Trinkets
-#  - MedicalInternJobTrinkets
+  - MedicalInternJobTrinkets # starcup
+  - Plushies # starcup
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -89,8 +97,10 @@
   - ChemistPDA # starcup
   - SurvivalMedical
   - Accessibility # starcup
+  - Cosmetics # starcup
   - Trinkets
-#  - ChemistJobTrinkets
+  - ChemistJobTrinkets # starcup
+  - Plushies # starcup
   - GroupSpeciesBreathToolMedical
 
 - type: roleLoadout
@@ -107,6 +117,8 @@
   - Glasses
   - SurvivalMedical
   - Accessibility # starcup
+  - Cosmetics # starcup
   - Trinkets
-#  - ParamedicJobTrinkets
+  - Plushies # starcup
+  - ParamedicJobTrinkets # starcup
   - GroupSpeciesBreathToolMedical

@@ -34,6 +34,8 @@
     proto: regal
   - type: Physics
     bodyType: KinematicController
+  - type: Puller
+    needsHands: false
   - type: Fixtures
     fixtures:
       fix1:
@@ -120,9 +122,12 @@
     screamAction: ActionEmitSound
   # end starcup
   - type: Butcherable
+    butcheringType: Spike # starcup
     spawned:
     - id: ClothingHeadHatFancyCrown #how did that get there?
       amount: 1
+    - id: FoodMeatRat
+      amount: 5
   - type: MobPrice
     price: 2500 # rat wealth
   - type: RandomMetadata

@@ -26,7 +26,7 @@ public sealed partial class KitchenSpikeComponent : Component
     /// <summary>
     /// Default sound to play when the victim is butchered.
     /// </summary>
-    private static readonly ProtoId<SoundCollectionPrototype> DefaultSpikeButcher = new("SpikeButcher");
+    private static readonly SoundSpecifier DefaultSpikeButcher = new SoundPathSpecifier("/Audio/Items/Culinary/chop.ogg"); /// starcup
 
     /// <summary>
     /// ID of the container where the victim will be stored.
@@ -50,7 +50,7 @@ public sealed partial class KitchenSpikeComponent : Component
     /// Sound to play when the victim is butchered.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public SoundSpecifier ButcherSound = new SoundCollectionSpecifier(DefaultSpikeButcher);
+    public SoundSpecifier ButcherSound = new SoundPathSpecifier("/Audio/Items/Culinary/chop.ogg"); /// starcup
 
     /// <summary>
     /// Damage that will be applied to the victim when they are hooked or unhooked.
@@ -58,9 +58,9 @@ public sealed partial class KitchenSpikeComponent : Component
     [DataField, AutoNetworkedField]
     public DamageSpecifier SpikeDamage = new()
     {
-        DamageDict = new Dictionary<string, FixedPoint2>
+        DamageDict = new()
         {
-            { "Piercing", 10 },
+            { "Piercing", 250 }, /// starcup
         },
     };
 
@@ -70,7 +70,7 @@ public sealed partial class KitchenSpikeComponent : Component
     [DataField, AutoNetworkedField]
     public DamageSpecifier ButcherDamage = new()
     {
-        DamageDict = new Dictionary<string, FixedPoint2>
+        DamageDict = new()
         {
             { "Slash", 20 },
         },
@@ -82,7 +82,7 @@ public sealed partial class KitchenSpikeComponent : Component
     [DataField, AutoNetworkedField]
     public DamageSpecifier TimeDamage = new()
     {
-        DamageDict = new Dictionary<string, FixedPoint2>
+        DamageDict = new()
         {
             { "Blunt", 1 }, // Mobs are only gibbed from blunt (at least for now).
         },

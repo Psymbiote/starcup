@@ -11,8 +11,10 @@
 # - PDA
 # - Survival
 # - Accessibility
+# - Cosmetics
 # - Trinkets
 # - Job Trinkets
+# - Plushies
 # - Other Job Items (golden plunger, instruments, janitor flashlight, etc)
 # - GroupSpeciesBreathTool
 # - GroupTankHarness
@@ -27,11 +29,14 @@
   - CourierBelt # starcup
   - CourierBackpack # starcup
   - CourierOuterClothing
+  - LogisticsGloves # starcup
   - CourierShoes
   - Glasses # starcup
   - CourierPDA
   - Accessibility # starcup
+  - Cosmetics # starcup
   - Trinkets
+  - Plushies # starcup
   - Survival
   - GroupSpeciesBreathTool
   - GroupTankHarness
@@ -44,11 +49,14 @@
   - CargoAssistantJumpsuit
   - CargoTechnicianBackpack # starcup
   - CargoAssistantOuterClothing
+  - LogisticsGloves # starcup
   - CargoAssistantShoes
   - Glasses
   - Survival
   - Accessibility # starcup
+  - Cosmetics # starcup
   - Trinkets
+  - Plushies # starcup
   - GroupSpeciesBreathTool
   - GroupTankHarness
 
@@ -66,8 +74,10 @@
   - RoboticsEyewear # starcup
   - RoboticistPDA # starcup
   - Accessibility # starcup
+  - Cosmetics # starcup
   - Trinkets
   - RoboticsJobTrinkets # starcup
+  - Plushies # starcup
   - Survival
   - GroupSpeciesBreathTool
   - GroupTankHarness

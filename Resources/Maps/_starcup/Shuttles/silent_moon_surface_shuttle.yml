@@ -75,6 +75,11 @@ entities:
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg
+    - type: DeviceNetwork
+      deviceNetId: Wireless
+      configurators: []
+      deviceLists: []
+      transmitFrequencyId: ShuttleTimer
     - type: GridPathfinding
     - type: DecalGrid
       chunkCollection:
@@ -401,7 +406,7 @@ entities:
     - type: Transform
       pos: -2.5,2.5
       parent: 1
-- proto: ComputerShuttleMiningGlacier
+- proto: ComputerEmergencyShuttle
   entities:
   - uid: 48
     components:

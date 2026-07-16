@@ -35,6 +35,7 @@
   loadouts:
   - AACTablet
   - HandheldStationMap
+  - NoviceMark
   - OffsetCane
   - OffsetCaneWood
   - OffsetCaneClown
@@ -42,40 +43,44 @@
   - OffsetCaneSyndie
   - Cane
   - WhiteCane
-  - PillCanisterNeurozeniumLoadout
-  - PillCanisterSoretizoneLoadout
-  - PillCanisterCalmafluxineLoadout
-  - PillCanisterEthyloxyephedrineLoadout
-  - PillCanisterAgonolexyneLoadout
-
-# Abstract Groups (for parenting purposes)
-## Trinkets
+  - PillCanisterNeurozenium
+  - PillCanisterSoretizone
+  - PillCanisterCalmafluxine
+  - PillCanisterEthyloxyephedrine
+  - PillCanisterAgonolexyne
+  - SmokingPipe
+  - Joint
+  - CigPackCandy
+  - CigPackGreen
+  - CigPackRed
+  - CigPackBlue
+  - CigPackBlack
+  - CigPackPurple
+  - CigarCase
+  - CigarGold
 
 - type: loadoutGroup
-  abstract: true
-  id: Plushies
+  parent:
+  - CosmeticsPridePin
+  - CosmeticsJewelry
+  - CosmeticsTowel
+  id: Cosmetics
+  name: loadout-group-cosmetics
+  minLimit: 0
+  maxLimit: 3
   loadouts:
-  - PlushieLizardInversed
-  - PlushieBee
-  - PlushieSnake
-  - PlushieCarp
-  - PlushieHolocarp
-  - PlushieExperiment
-  - PlushieSharkBlue
-  - PlushieSharkPink
-  - PlushieSharkGrey
-  - PlushieHampter
-  - PlushiePenguin
-  - PlushieArachnid
-  - PlushieDiona
-  - PlushieMoth
-  - PlushieSlime
-  - PlushieVox
-  - PlushieVulp
-  - PlushieRouny
-  - PlushieXeno
-  - PlushieZetan
+  - FlowerWreath
+  - Hairflower
+  - RoseSeedless
+  - RoseBlackSeedless
+  - FoodLilySeedless
+  - Headphones
+  - MimeMaskTrinket
+  - MimeMaskSadTrinket
+  - MimeMaskScaredTrinket
 
+# Abstract Groups (for parenting purposes)
+## Plushies
 - type: loadoutGroup
   abstract: true
   id: PlushiesWorn
@@ -97,6 +102,36 @@
   - PlushieXenoWorn
   - PlushieZetan
 
+- type: loadoutGroup
+  id: Plushies
+  name: loadout-group-plushies
+  minLimit: 0
+  maxLimit: 3
+  loadouts:
+  - PlushieLizard
+  - PlushieSpaceLizard
+  - PlushieLizardInversed
+  - PlushieBee
+  - PlushieSnake
+  - PlushieCarp
+  - PlushieHolocarp
+  - PlushieExperiment
+  - PlushieSharkBlue
+  - PlushieSharkPink
+  - PlushieSharkGrey
+  - PlushieHampter
+  - PlushiePenguin
+  - PlushieArachnid
+  - PlushieDiona
+  - PlushieMoth
+  - PlushieSlime
+  - PlushieVox
+  - PlushieVulp
+  - PlushieRouny
+  - PlushieXeno
+  - PlushieZetan
+
+## Trinkets
 - type: loadoutGroup
   abstract: true
   id: TrinketsBureaucracy
@@ -131,32 +166,78 @@
   id: TrinketsUtility
   loadouts:
   - TapeRecorder
-  - NoviceMark
+  - BarFlask
+  - Pillow
 
 - type: loadoutGroup
   abstract: true
   id: TrinketsTreat
   loadouts:
   - LollipopBubblegum
+  - LollipopBlueRaspberry
+  - LollipopButterscotch
+  - LollipopSourApple
+  - LollipopStrawberry
 
 - type: loadoutGroup
   abstract: true
   id: TrinketsToy
   loadouts:
   - CardBoxSparot
+  - CardBoxSyndicate
+  - CardBoxBlack
+  - BookRandomStory
 
 - type: loadoutGroup
   abstract: true
-  id: TrinketsCosmetic
+  id: TrinketsInstrument
+  loadouts:
+  - AcousticGuitar
+  - Flute
+  - PanFlute
+  - Ocarina
+  - Harmonica
+  - MusicBox
+  - Kalimba
+  - Woodblock
+
+## Cosmetics (primarily worn trinkets)
+- type: loadoutGroup
+  abstract: true
+  id: CosmeticsJewelry
   loadouts:
   - CDDogtags
   - HeartLocket
   - GoldRing
   - SilverRing
+  - Wristwatch
 
 - type: loadoutGroup
   abstract: true
-  id: TrinketsTowel
+  id: CosmeticsPridePin
+  loadouts:
+  - ClothingNeckLGBTPin
+  - ClothingNeckAllyPin
+  - ClothingNeckAromanticPin
+  - ClothingNeckAsexualPin
+  - ClothingNeckAroacePin
+  - ClothingNeckBisexualPin
+  - ClothingNeckGayPin
+  - ClothingNeckIntersexPin
+  - ClothingNeckLesbianPin
+  - ClothingNeckNonBinaryPin
+  - ClothingNeckPansexualPin
+  - ClothingNeckPluralPin
+  - ClothingNeckOmnisexualPin
+  - ClothingNeckGenderqueerPin
+  - ClothingNeckGenderfluidPin
+  - ClothingNeckTransPin
+  - ClothingNeckAutismPin
+  - ClothingNeckGoldAutismPin
+
+- type: loadoutGroup
+  abstract: true
+  id: CosmeticsTowel
   loadouts:
   - TowelColorGray
   - TowelColorBlack
@@ -173,19 +254,7 @@
   - TowelColorMime
   - TowelColorSilver
   - TowelColorGold
-
-- type: loadoutGroup
-  abstract: true
-  id: TrinketsInstrument
-  loadouts:
-  - AcousticGuitar
-  - Flute
-  - PanFlute
-  - Ocarina
-  - Harmonica
-  - MusicBox
-  - Kalimba
-  - Woodblock
+  - TowelColorWhite
 
 ## Clothes
 - type: loadoutGroup
@@ -257,3 +326,12 @@
   - BrownTurtleneckSkirt
   - MaroonTurtleneckSuit
   - MaroonTurtleneckSkirt
+
+## Goggles
+- type: loadoutGroup
+  abstract: true
+  id: SurplusGoggles
+  loadouts:
+  - SurpBallisticsB
+  - SurpBallisticsG
+  - SurpBallisticsY

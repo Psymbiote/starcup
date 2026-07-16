@@ -24,6 +24,7 @@
   - BeerEyePatchHud
   - Sunglasses
   - Mirrorshades
+  - HallmasterSurplusBallisticGoggles
 
 - type: loadoutGroup
   id: BartenderID
@@ -143,10 +144,10 @@
   - JanitorLantern
   - PumpkinLantern
   - BikeHorn
-  - Wristwatch
   - AnomalyCoreShadowInert
   - AnomalyCoreFleshInert
   - AnomalyCoreTechInert
+  - CrystalCyan
 
 # Chef
 - type: loadoutGroup
@@ -242,6 +243,8 @@
   loadouts:
   - WinterCoatBlack
   - WinterCoatBlue
+  - WinterCoatBlack
+  - CorpoJacketCybersun
 
 - type: loadoutGroup
   id: LawyerShoes
@@ -300,6 +303,7 @@
   - BlackHeels
   - HighHeels
   - WinterBoots
+  - PerformerBoots
 
 - type: loadoutGroup
   parent: [ Glasses ]
@@ -310,14 +314,15 @@
   - Sunglasses
   - Mirrorshades
 
-# Reporter
 - type: loadoutGroup
-  id: ReporterOuterClothing
-  name: loadout-group-reporter-outer-clothing
+  id: MusicianHead
+  name: loadout-group-musician-head
   minLimit: 0
+  maxLimit: 1
   loadouts:
-  - TrenchCoat
+  - PerformerWig
 
+# Reporter
 - type: loadoutGroup
   id: ReporterShoes
   name: loadout-group-reporter-shoes
@@ -446,6 +451,7 @@
   - WitchHat
   - PirateHat
   - WarningCone
+  - SyndieCap
 
 - type: loadoutGroup
   parent: [ Glasses ]

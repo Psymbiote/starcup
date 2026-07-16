@@ -1,3 +1,9 @@
+# OuterClothing
+- type: loadout
+  id: ChiefEngineerLongcoat
+  equipment:
+    outerClothing: ClothingLongcoatCE
+
 # Shoes
 - type: loadout
   id: ChiefEngineerWinterBoots
