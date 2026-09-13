@@ -4356,3 +4356,13 @@
   id: 8539
   time: '2026-09-06T15:29:34.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/993
+- author: KoboldCatgirl
+  changes:
+  - message: New proper female rodentia torsos!
+    type: Fix
+  - message: Fixed various errorspam and localizations related to rodentia and harpy
+      markings.
+    type: Fix
+  id: 8540
+  time: '2026-09-13T22:51:11.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/995
