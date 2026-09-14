@@ -4366,3 +4366,24 @@
   id: 8540
   time: '2026-09-13T22:51:11.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/995
+- author: KoboldCatgirl
+  changes:
+  - message: Ported Den's thirteen colorful lounge chairs, which can be constructed
+      out of steel and cloth.
+    type: Add
+  - message: Ported Den's eight colors of beach umbrellas, which can be constructed
+      out of rods and cloth.
+    type: Add
+  - message: Ported Den's two new pool tiles, which can be produced at the cutter
+      machine!
+    type: Add
+  - message: Ported Den's wearable swim rings, orderable by Cargo in bulk!
+    type: Add
+  - message: (MAPPING) New pool water tiles from Den! Maybe don't drink the pool water.
+    type: Add
+  - message: (MAPPING) There are now random spawners for beach umbrellas, lounge chairs,
+      and swim tubes.
+    type: Add
+  id: 8541
+  time: '2026-09-14T13:31:20.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/998
