@@ -4387,3 +4387,11 @@
   id: 8541
   time: '2026-09-14T13:31:20.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/998
+- author: KoboldCatgirl
+  changes:
+  - message: Expanded most species's height ranges! Also bumped up humans' minimum
+      height.
+    type: Tweak
+  id: 8542
+  time: '2026-09-16T07:44:38.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/988
