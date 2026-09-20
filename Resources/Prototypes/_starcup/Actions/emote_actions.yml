@@ -3,7 +3,7 @@
 - type: entity
   parent: BaseAction
   id: ActionEmitSound
-  name: Vocalize
+  name: Emit Sound
   description: Emit a characteristic sound.
   components:
   - type: Action
