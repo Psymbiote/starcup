@@ -150,6 +150,24 @@
     entity: WallpaperRedCorner
   - node: WallpaperSkaCorner
     entity: WallpaperSkaCorner
+  # begin starcup: add outer corners
+  - node: WallpaperFishCornerOuter
+    entity: WallpaperFishCornerOuter
+  - node: WallpaperBeachCornerOuter
+    entity: WallpaperBeachCornerOuter
+  - node: WallpaperBlackCornerOuter
+    entity: WallpaperBlackCornerOuter
+  - node: WallpaperGreenCornerOuter
+    entity: WallpaperGreenCornerOuter
+  - node: WallpaperPurpleCornerOuter
+    entity: WallpaperPurpleCornerOuter
+  - node: WallpaperRainbowCornerOuter
+    entity: WallpaperRainbowCornerOuter
+  - node: WallpaperRedCornerOuter
+    entity: WallpaperRedCornerOuter
+  - node: WallpaperSkaCornerOuter
+    entity: WallpaperSkaCornerOuter
+  # end starcup
 
 - type: constructionGraph
   id: WallDeco

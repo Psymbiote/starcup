@@ -4,103 +4,39 @@
         "x": 32,
         "y": 32
     },
-    "copyright": "made by carousel for impstation",
+    "copyright": "made by carousel for impstation and modified by Psymbiote",
     "license": "CC-BY-SA-3.0",
     "states": [
         {
-            "name": "fish",
+            "name": "fishcorner",
             "directions": 4
         },
         {
-            "name": "fishedge",
+            "name": "beachcorner",
             "directions": 4
         },
         {
-            "name": "bannerblackred",
+            "name": "blackcorner",
             "directions": 4
         },
         {
-            "name": "bannerbluewhite",
+            "name": "greencorner",
             "directions": 4
         },
         {
-            "name": "bannercolorful",
+            "name": "purplecorner",
             "directions": 4
         },
         {
-            "name": "bannerrainbow",
+            "name": "rainbowcorner",
             "directions": 4
         },
         {
-            "name": "bannerska",
+            "name": "redcorner",
             "directions": 4
         },
         {
-            "name": "beach",
-            "directions": 4
-        },
-        {
-            "name": "beachedge",
-            "directions": 4
-        },
-        {
-            "name": "black",
-            "directions": 4
-        },
-        {
-            "name": "blackedge",
-            "directions": 4
-        },
-        {
-            "name": "green",
-            "directions": 4
-        },
-        {
-            "name": "greenedge",
-            "directions": 4
-        },
-        {
-            "name": "purple",
-            "directions": 4
-        },
-        {
-            "name": "purpleedge",
-            "directions": 4
-        },
-        {
-            "name": "rainbow",
-            "directions": 4
-        },
-        {
-            "name": "rainbowedge",
-            "directions": 4
-        },
-        {
-            "name": "red",
-            "directions": 4
-        },
-        {
-            "name": "rededge",
-            "directions": 4
-        },
-        {
-            "name": "ska",
-            "directions": 4
-        },
-        {
-            "name": "skaedge",
-            "directions": 4
-        },
-        {
-            "name": "starssmall",
-            "directions": 4
-        },
-        {
-            "name": "starsbig",
-            "directions": 4
-        },
-        {
-            "name": "starsmoon",
+            "name": "skacorner",
             "directions": 4
         }
     ]
