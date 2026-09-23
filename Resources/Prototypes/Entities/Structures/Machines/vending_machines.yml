@@ -1,8 +1,8 @@
-﻿# base
+# base
 
 - type: entity
-  id: VendingMachine
-  parent: BaseMachinePowered
+  id: BaseVendingMachine
+  parent: [ BaseMachinePowered, BaseMachineDestructible ]
   name: vending machine
   description: For when you want to hear a nice KER-CHUNK when retrieving something. Don't worry; all expenses are transferred directly to your employee account. # starcup: rewritten for tone
   abstract: true
@@ -38,21 +38,17 @@
         density: 200
   - type: Destructible
     thresholds:
-    - trigger: # Excess damage, don't do anything
-        !type:DamageTrigger
-        damage: 200
+    - trigger: !type:DamageTrigger
+        damage: 175
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalGlassBreak
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
+    - trigger: !type:DamageTrigger
+        damage: 75
       behaviors:
       - !type:DoActsBehavior
-        acts: ["Breakage"]
+        acts: [ "Breakage" ]
       - !type:EjectVendorItems
   - type: Repairable
     doAfterDelay: 8
@@ -106,6 +102,20 @@
     price: 100
   - type: Appearance
   - type: WiresVisuals
+  - type: VendingMachineEject
+  - type: VendingMachineDispenseOnHit
+    chance: 0.25
+    threshold: 2
+
+- type: entity
+  id: VendingMachine
+  parent: BaseVendingMachine
+  abstract: true
+  components:
+  - type: VendingMachineVisuals
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
 
 - type: entity
   id: VendingMachineWallmount
@@ -166,6 +176,15 @@
   - type: LitOnPowered
   - type: Appearance
   - type: WiresVisuals
+  - type: VendingMachineEject
+  - type: VendingMachineDispenseOnHit
+    chance: 0.25
+    threshold: 2
+  - type: VendingMachineVisuals
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    denyState: deny-unshaded
   - type: Electrified
     enabled: false
     usesApcPower: true
@@ -174,13 +193,15 @@
 # Vending machines
 
 - type: entity
-  parent: VendingMachine
+  parent: BaseVendingMachine
   id: VendingMachineCondiments
   name: condiment station
   description: Slather these thick gooey substances on your food for a full flavor effect.
+  suffix: Kitchen Vendor # starcup
   components:
   - type: VendingMachine
     pack: CondimentInventory
+  - type: VendingMachineVisuals
     offState: off
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/condiments.rsi
@@ -218,12 +239,10 @@
   id: VendingMachineAmmo
   name: liberation station
   description: An overwhelming amount of ancient patriotism washes over you just by looking at the machine.
+  suffix: Security Vendor # starcup
   components:
   - type: VendingMachine
     pack: AmmoVendInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: CondimentVendAds
   - type: SpeakOnUIClosed
@@ -244,14 +263,13 @@
   id: VendingMachineBooze
   name: Booze-O-Mat
   description: A technological marvel, supposedly able to mix just the mixture you'd like to drink the moment you ask for one.
+  suffix: Bar Vendor # starcup
   components:
   - type: VendingMachine
     pack: BoozeOMatInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     denyState: deny-unshaded
-    loopDeny: false
+    loopDenyAnimation: false
   - type: DatasetVocalizer
     dataset: BoozeOMatAds
   - type: SpeakOnUIClosed
@@ -278,14 +296,13 @@
   id: VendingMachineBoozeSyndicate # syndie booze-o-mat for nukie outpost
   name: Bruise-O-Mat
   description: A refurbished Booze-O-Mat for boosting operative morale. An imprint of a blood-red hardsuit is visible on one side, and the paint seems ashed off on the other side.
+  suffix: Misc Vendor # starcup
   components:
   - type: VendingMachine
     pack: BoozeOMatInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     denyState: deny-unshaded
-    loopDeny: false
+    loopDenyAnimation: false
   - type: DatasetVocalizer
     dataset: BruiseOMatAds
   - type: SpeakOnUIClosed
@@ -312,12 +329,11 @@
   id: VendingMachineCart
   name: PTech
   description: PTech vending! Providing a ROBUST selection of PDAs, cartridges, and anything else a dull paper pusher needs!
+  suffix: HoP Vendor # starcup
   components:
   - type: VendingMachine
     pack: PTechInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
   - type: Sprite
@@ -342,12 +358,11 @@
   id: VendingMachineChefvend
   name: ChefVend
   description: An ingredient vendor for all your cheffin needs.
+  suffix: Kitchen Vendor # starcup
   components:
   - type: VendingMachine
     pack: ChefvendInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
   - type: DatasetVocalizer
     dataset: ChefvendAds
@@ -375,14 +390,11 @@
   id: VendingMachineCigs
   name: ShadyCigs Deluxe
   description: Proliferation of these across Syndicate stations is the result of heavy and controversial neocorporate lobbying. # starcup: rewritten for tone
+  suffix: Misc Vendor # starcup
   components:
   - type: VendingMachine
     pack: CigaretteMachineInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
   - type: DatasetVocalizer
@@ -410,12 +422,11 @@
   id: VendingMachineClothing
   name: ClothesMate
   description: A vending machine for clothing.
+  suffix: Fashion Vendor # starcup
   components:
   - type: VendingMachine
     pack: ClothesMateInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     denyState: deny-unshaded
   - type: DatasetVocalizer
     dataset: ClothesMateAds
@@ -441,12 +452,11 @@
   id: VendingMachineWinter
   name: WinterDrobe
   description: The best place to enjoy the cold!
+  suffix: Fashion Vendor # starcup
   components:
   - type: VendingMachine
     pack: WinterDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     denyState: deny-unshaded
   - type: DatasetVocalizer
     dataset: ClothesMateAds
@@ -472,20 +482,18 @@
   id: VendingMachineCoffee
   name: Solar's Best Hot Drinks
   description: Served boiling so it stays hot all shift!
+  suffix: Drinks Vendor # starcup
   components:
   - type: VendingMachine
     pack: HotDrinksMachineInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+    initialStockQuality: 0.33
+  - type: VendingMachineEject
+    ejectDelay: 5
+    soundVend: /Audio/Machines/machine_vend_hot_drink.ogg
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
     screenState: screen
-    ejectDelay: 5
-    soundVend: /Audio/Machines/machine_vend_hot_drink.ogg
-    initialStockQuality: 0.33
   - type: DatasetVocalizer
     dataset: HotDrinksMachineAds
   - type: SpeakOnUIClosed
@@ -513,18 +521,16 @@
   id: VendingMachineCola
   name: Robust Softdrinks
   description: A softdrink vendor provided by Robust Industries, LLC.
+  suffix: Drinks Vendor # starcup
   components:
   - type: VendingMachine
     pack: RobustSoftdrinksInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+    initialStockQuality: 0.33
+  - type: VendingMachineEject
+    ejectDelay: 1.9
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    ejectDelay: 1.9
-    initialStockQuality: 0.33
   - type: DatasetVocalizer
     dataset: RobustSoftdrinksAds
   - type: SpeakOnUIClosed
@@ -547,7 +553,7 @@
 - type: entity
   parent: VendingMachineCola
   id: VendingMachineColaBlack
-  suffix: Black
+  suffix: Black, Drinks Vendor # starcup - added Drinks Vendor
   components:
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/cola-black.rsi
@@ -569,6 +575,7 @@
   id: VendingMachineColaRed
   name: Space Cola Vendor
   description: It vends cola, in space.
+  suffix: Drinks Vendor # starcup
   components:
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/cola-red.rsi
@@ -590,6 +597,7 @@
   id: VendingMachineSpaceUp
   name: Space-Up! Vendor
   description: Indulge in an explosion of flavor.
+  suffix: Drinks Vendor # starcup
   components:
   - type: VendingMachine
     pack: SpaceUpInventory
@@ -611,7 +619,7 @@
 - type: entity
   parent: VendingMachineCola
   id: VendingMachineSoda
-  suffix: Soda
+  suffix: Soda, Drinks Vendor # starcup - added drinks vendor
   components:
   - type: VendingMachine
     pack: SodaInventory
@@ -635,6 +643,7 @@
   id: VendingMachineStarkist
   name: Star-kist Vendor
   description: The taste of a star in liquid form.
+  suffix: Drinks Vendor # starcup
   components:
   - type: VendingMachine
     pack: StarkistInventory
@@ -658,18 +667,16 @@
   id: VendingMachineShamblersJuice
   name: Shambler's Juice Vendor
   description: ~Shake me up some of that Shambler's Juice!~
+  suffix: Drinks Vendor # starcup
   components:
   - type: VendingMachine
     pack: ShamblersJuiceInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+    initialStockQuality: 0.33
+  - type: VendingMachineEject
+    ejectDelay: 1.9
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    ejectDelay: 1.9
-    initialStockQuality: 0.33
   - type: DatasetVocalizer
     dataset: RobustSoftdrinksAds
   - type: Sprite
@@ -692,18 +699,16 @@
   id: VendingMachinePwrGame
   name: Pwr Game Vendor
   description: You want it, we got it. Brought to you in partnership with Vlad's Salads.
+  suffix: Drinks Vendor # starcup
   components:
   - type: VendingMachine
     pack: PwrGameInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+    initialStockQuality: 0.33
+  - type: VendingMachineEject
+    ejectDelay: 1.9
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    ejectDelay: 1.9
-    initialStockQuality: 0.33
   - type: DatasetVocalizer
     dataset: RobustSoftdrinksAds
   - type: SpeakOnUIClosed
@@ -728,18 +733,16 @@
   id: VendingMachineDrGibb
   name: Dr. Gibb Vendor
   description: Canned explosion of different flavors in this very vendor!
+  suffix: Drinks Vendor # starcup
   components:
   - type: VendingMachine
     pack: DrGibbInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+    initialStockQuality: 0.33
+  - type: VendingMachineEject
+    ejectDelay: 1.9
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    ejectDelay: 1.9
-    initialStockQuality: 0.33
   - type: DatasetVocalizer
     dataset: DrGibbAds
   - type: SpeakOnUIClosed
@@ -764,6 +767,7 @@
   id: VendingMachineSmite
   name: Smite Vendor
   description: Popular with the administration.
+  suffix: Drinks Vendor # starcup
   components:
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/smite.rsi
@@ -777,15 +781,12 @@
       map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
   - type: VendingMachine
     pack: SmiteInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+    initialStockQuality: 0.33
+  - type: VendingMachineEject
+    ejectDelay: 1.9
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    ejectDelay: 1.9
-    initialStockQuality: 0.33
   - type: DatasetVocalizer
     dataset: SmiteAds
   - type: SpeakOnUIClosed
@@ -800,12 +801,11 @@
   id: VendingMachineDinnerware
   name: Plasteel Chef's Dinnerware Vendor
   description: A kitchen and restaurant equipment vendor.
+  suffix: Kitchen Vendor # starcup
   components:
   - type: VendingMachine
     pack: DinnerwareInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
   - type: DatasetVocalizer
     dataset: DinnerwareAds
@@ -833,12 +833,10 @@
   id: VendingMachineMagivend
   name: MagiVend
   description: A magic vending machine.
+  suffix: Misc Vendor # starcup
   components:
   - type: VendingMachine
     pack: MagiVendInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: MagiVendAds
   - type: SpeakOnUIClosed
@@ -863,14 +861,10 @@
   id: VendingMachineDiscount
   name: Discount Dan's
   description: A vending machine containing discount snacks from the infamous 'Discount Dan' franchise.
+  suffix: Snacks Vendor # starcup
   components:
   - type: VendingMachine
     pack: DiscountDansInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
     initialStockQuality: 0.33
   - type: DatasetVocalizer
     dataset: DiscountDansAds
@@ -896,12 +890,11 @@
   id: VendingMachineEngivend
   name: Engi-Vend
   description: Spare tool vending. What? Did you expect some witty description?
+  suffix: Engineering Vendor # starcup
   components:
   - type: VendingMachine
     pack: EngiVendInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
   - type: Sprite
@@ -920,21 +913,23 @@
     radius: 1.5
     energy: 3.0
     color: "#b89e2a"
+  - type: AmbientMusicMarkerEngineering
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineMedicalBase
   name: Interdyne PharmAssist Civilian # starcup: NanoMed to Interdyne PharmAssist
   description: It's a medical drug dispenser. Natural chemicals only!
+  suffix: Medical Vendor # starcup
   components:
   - type: VendingMachine
     pack: NanoMedCivilianInventory
+  - type: VendingMachineEject
+    ejectDelay: 0.6
+  - type: VendingMachineVisuals
     offState: off-civilian
-    brokenState: broken
-    normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    ejectDelay: 0.6
   - type: DatasetVocalizer
     dataset: NanoMedAds
   - type: SpeakOnUIClosed
@@ -956,14 +951,17 @@
   - type: GuideHelp
     guides:
     - MedicalDoctor
+  - type: AmbientMusicMarkerMedical
 
 - type: entity
   parent: VendingMachineMedicalBase
   id: VendingMachineMedical
   name: Interdyne PharmAssist Plus # starcup: NanoMed to Interdyne PharmAssist
+  suffix: Medical Vendor # starcup
   components:
   - type: VendingMachine
     pack: NanoMedPlusInventory
+  - type: VendingMachineVisuals
     offState: off
   - type: Sprite
     layers:
@@ -982,12 +980,11 @@
   id: VendingMachineNutri
   name: NutriMax
   description: A vending machine containing nutritional substances for plants and botanical tools.
+  suffix: Botany Vendor # starcup
   components:
   - type: VendingMachine
     pack: NutriMaxInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
   - type: DatasetVocalizer
@@ -1016,12 +1013,11 @@
   id: VendingMachineSec
   name: SecTech
   description: A vending machine containing Security equipment. A label reads SECURITY PERSONNEL ONLY.
+  suffix: Security Vendor # starcup
   components:
   - type: VendingMachine
     pack: SecTechInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
   - type: DatasetVocalizer
@@ -1054,13 +1050,11 @@
   id: VendingMachineSeedsUnlocked
   name: MegaSeed Servitor
   description: For when you need seeds fast. Hands down the best seed selection on the station!
-  suffix: Unlocked
+  suffix: Unlocked, Brig Vendor # starcup - added Brig Vendor (maybe Botany would be more intuitive, but)
   components:
   - type: VendingMachine
     pack: MegaSeedServitorInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
   - type: DatasetVocalizer
@@ -1085,7 +1079,7 @@
 - type: entity
   parent: VendingMachineSeedsUnlocked
   id: VendingMachineSeeds
-  suffix: Hydroponics
+  suffix: Hydroponics, Botany Vendor # starcup - added Botany Vendor
   components:
   - type: AccessReader
     access: [["Hydroponics"]]
@@ -1095,17 +1089,14 @@
   id: VendingMachineSnack
   name: Getmore Chocolate Corp
   description: A snack machine courtesy of the Getmore Chocolate Corporation, based out of Mars.
+  suffix: Snacks Vendor # starcup
   components:
   - type: VendingMachine
     pack: GetmoreChocolateCorpInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+    initialStockQuality: 0.33
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    initialStockQuality: 0.33
   - type: DatasetVocalizer
     dataset: GetmoreChocolateCorpAds
   - type: SpeakOnUIClosed
@@ -1130,17 +1121,14 @@
   id: VendingMachineSustenance
   name: Sustenance Vendor
   description: A vending machine which vends food, as required by section 47-C of the Cybersun-Electra Ethical Treatment of Prisoners Treaty following the 37th Neocorporate War. # starcup - NT-SC swap
+  suffix: Brig Vendor # starcup
   components:
   - type: VendingMachine
     pack: SustenanceInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+    initialStockQuality: 0.8
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    initialStockQuality: 0.8
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/sustenance.rsi
     layers:
@@ -1159,7 +1147,7 @@
 - type: entity
   parent: VendingMachineSnack
   id: VendingMachineSnackBlue
-  suffix: Blue
+  suffix: Blue, Snacks Vendor # starcup - added Snacks Vendor
   components:
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/snack-blue.rsi
@@ -1179,7 +1167,7 @@
 - type: entity
   parent: VendingMachineSnack
   id: VendingMachineSnackOrange
-  suffix: Orange
+  suffix: Orange, Snacks Vendor # starcup - added Snacks Vendor
   components:
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/snack-orange.rsi
@@ -1199,7 +1187,7 @@
 - type: entity
   parent: VendingMachineSnack
   id: VendingMachineSnackGreen
-  suffix: Green
+  suffix: Green, Snacks Vendor # starcup - added Snacks Vendor
   components:
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/snack-green.rsi
@@ -1219,7 +1207,7 @@
 - type: entity
   parent: VendingMachineSnack
   id: VendingMachineSnackTeal
-  suffix: Teal
+  suffix: Teal, Snacks Vendor # starcup - added Snacks Vendor
   components:
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/snack-teal.rsi
@@ -1241,18 +1229,14 @@
   id: VendingMachineSovietSoda
   name: ВОДА
   description: An old vending machine containing sweet water.
-  suffix: VODA
+  suffix: VODA, Drinks Vendor # starcup - added Drinks Vendor
   components:
   - type: VendingMachine
     pack: BodaInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+    initialStockQuality: 0.33
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    initialStockQuality: 0.33
   - type: DatasetVocalizer
     dataset: BodaAds
   - type: SpeakOnUIClosed
@@ -1278,12 +1262,11 @@
   id: VendingMachineTheater
   name: TheaterDrobe # starcup: renamed for consistency
   description: A vending machine containing costumes.
+  suffix: Fashion Vendor # starcup
   components:
   - type: VendingMachine
     pack: AutoDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
     screenState: screen
@@ -1314,12 +1297,11 @@
   id: VendingMachineVendomat
   name: Vendomat
   description: Only the finest robust equipment in space!
+  suffix: Engineering Vendor # starcup - debatable
   components:
   - type: VendingMachine
     pack: VendomatInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
   - type: DatasetVocalizer
@@ -1350,12 +1332,11 @@
   id: VendingMachineRobotics
   name: Robotech Deluxe
   description: All the tools you need to create your own robot army.
+  suffix: Robotics Vendor # starcup
   components:
   - type: VendingMachine
     pack: RoboticsInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
   - type: DatasetVocalizer
@@ -1387,12 +1368,11 @@
   id: VendingMachineYouTool
   name: YouTool
   description: "A vending machine containing standard tools. A label reads: Tools for tools."
+  suffix: Engineering Vendor # starcup
   components:
   - type: VendingMachine
     pack: YouToolInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
   - type: Sprite
@@ -1415,14 +1395,14 @@
   id: VendingMachineGames
   name: Good Clean Fun
   description: Helps supply the crew with recreation and some much-needed boosts to morale. Except when you roll three natural 1s in a row. # starcup: rewritten for tone
+  suffix: Misc Vendor # starcup
   components:
   - type: VendingMachine
     pack: GoodCleanFunInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
-    ejectState: eject-unshaded
+  - type: VendingMachineEject
     ejectDelay: 1.8
+  - type: VendingMachineVisuals
+    ejectState: eject-unshaded
   - type: DatasetVocalizer
     dataset: GoodCleanFunAds
   - type: SpeakOnUIClosed
@@ -1447,14 +1427,10 @@
   id: VendingMachineChang
   name: Mr. Chang
   description: A self-serving Chinese food machine, for all your Chinese food needs.
+  suffix: Snacks Vendor # starcup
   components:
   - type: VendingMachine
     pack: ChangInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
     initialStockQuality: 0.33
   - type: DatasetVocalizer
     dataset: ChangAds
@@ -1476,10 +1452,11 @@
     color: "#ffe599"
 
 - type: entity
-  parent: VendingMachine
+  parent: [ BaseMachinePowered, BaseMachineDestructible ] # starcup: merge-fix no longer vending machine
   id: VendingMachineSalvage
   name: Salvage Vendor
-  description: A dwarf's best friend!
+  description: Hawkmoon Acquisitions believes that giant axes are a privilege, not a right. Mine more ores to earn better equipment! # starcup - removed dwarves reference
+  suffix: Logistics Vendor # starcup
   components:
   #- type: VendingMachine # DeltaV: Use mining points instead of limited stock
   #  pack: SalvageEquipmentInventory
@@ -1487,6 +1464,87 @@
   #  brokenState: broken
   #  normalState: normal-unshaded
   #  denyState: deny-unshaded
+  # begin starcup: merge-fix: components from former parent
+  - type: ActionGrant
+    actions:
+    - ActionVendingThrow
+  - type: StationAiWhitelist
+  - type: AmbientOnPowered
+  - type: AmbientSound
+    volume: -9
+    range: 3
+    enabled: false
+    sound:
+      path: /Audio/Ambience/Objects/vending_machine_hum.ogg
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    noRot: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.45,0.25,0.45"
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+        density: 200
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 175
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
+    - trigger: !type:DamageTrigger
+        damage: 75
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Breakage" ]
+      - !type:EjectVendorItems
+  - type: Repairable
+    doAfterDelay: 8
+  - type: ActivatableUI
+    key: enum.VendingMachineUiKey.Key
+  - type: ActivatableUIRequiresPower
+  - type: WiresPanel
+  - type: Anchorable
+  - type: TypingIndicator
+    proto: robot
+  - type: Speech
+    speechVerb: Robotic
+    speechSounds: Vending
+  - type: Vocalizer
+    minVocalizeInterval: 8m
+    maxVocalizeInterval: 10m
+    hideChat: true
+  - type: VocalizerRequiresPower
+  - type: SpookySpeaker
+    messageSet: SpookySpeakerMessagesGeneric
+    speakChance: 0.2
+  - type: IntrinsicRadioReceiver
+  - type: ActiveRadio
+    channels:
+    - Common
+  - type: DoAfter
+  - type: Electrified
+    enabled: false
+    usesApcPower: true
+  - type: LitOnPowered
+  - type: ApcPowerReceiver
+    powerLoad: 200
+  - type: Actions
+  - type: SentienceTarget
+    flavorKind: station-event-random-sentience-flavor-mechanical
+    weight: 0.025 # fuck you in particular (it now needs 40 vending machines to be as likely as 1 interesting animal)
+  - type: StaticPrice
+    price: 100
+  - type: Appearance
+  - type: WiresVisuals
+  # end starcup merge-fix
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/mining.rsi
     layers:
@@ -1515,6 +1573,7 @@
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
   - type: Wires # DeltaV: Use shop vendor wires layout
+    boardName: wires-board-name-vendingmachine
     layoutId: ShopVendor
   - type: AccessReader
     access: [["Salvage"]]
@@ -1527,14 +1586,10 @@
   id: VendingMachineDonut
   name: Monkin' Donuts
   description: A donut vendor provided by Robust Industries, LLC.
+  suffix: Snacks Vendor # starcup
   components:
   - type: VendingMachine
     pack: DonutInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
     initialStockQuality: 0.33
   - type: DatasetVocalizer
     dataset: DonutAds
@@ -1562,12 +1617,10 @@
   id: VendingMachineHydrobe
   name: HyDrobe
   description: A machine with a catchy name. It dispenses botany related clothing and gear.
+  suffix: Botany Vendor # starcup
   components:
   - type: VendingMachine
     pack: HyDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: HyDrobeAds
   - type: SpeakOnUIClosed
@@ -1594,12 +1647,10 @@
   id: VendingMachineLawDrobe
   name: LawDrobe
   description: Objection! This wardrobe dispenses the rule of law... and lawyer clothing..
+  suffix: Lawyer Vendor # starcup
   components:
   - type: VendingMachine
     pack: LawDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: LawDrobeAds
   - type: SpeakOnUIClosed
@@ -1622,12 +1673,10 @@
   id: VendingMachineSecDrobe
   name: SecDrobe
   description: A vending machine for security and security-related clothing!
+  suffix: Security Vendor # starcup
   components:
   - type: VendingMachine
     pack: SecDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: SecDrobeAds
   - type: SpeakOnUIClosed
@@ -1654,12 +1703,10 @@
   id: VendingBarDrobe
   name: BarDrobe
   description: A stylish vendor to dispense the most stylish bar clothing!
+  suffix: Bar Vendor # starcup
   components:
   - type: VendingMachine
     pack: BarDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: BarDrobeAds
   - type: SpeakOnUIClosed
@@ -1681,12 +1728,11 @@
   parent: VendingMachine
   id: VendingMachineChapel
   name: PietyVend
+  suffix: Chapel Vendor # starcup
   components:
   - type: VendingMachine
     pack: PietyVendInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
+  - type: VendingMachineVisuals
     denyState: deny-unshaded
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/chapdrobe.rsi
@@ -1710,12 +1756,10 @@
   id: VendingMachineCargoDrobe
   name: LogiDrobe # DeltaV - Logistics Department replacing Cargo
   description: A highly advanced vending machine for buying logistics related clothing for free. # DeltaV - Logistics Department replacing Cargo
+  suffix: Logistics Vendor # starcup
   components:
   - type: VendingMachine
     pack: CargoDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: CargoDrobeAds
   - type: SpeakOnUIClosed
@@ -1742,12 +1786,10 @@
   id: VendingMachineMediDrobe
   name: MediDrobe
   description: A vending machine rumoured to be capable of dispensing clothing for medical personnel.
+  suffix: Medical Vendor # starcup
   components:
   - type: VendingMachine
     pack: MediDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: MediDrobeAds
   - type: SpeakOnUIClosed
@@ -1770,12 +1812,10 @@
   id: VendingMachineChemDrobe
   name: ChemDrobe
   description: A vending machine for dispensing chemistry related clothing.
+  suffix: Chemistry Vendor # starcup
   components:
   - type: VendingMachine
     pack: ChemDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: ChemDrobeAds
   - type: SpeakOnUIClosed
@@ -1792,18 +1832,17 @@
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: AccessReader
     access: [["Chemistry"]]
+  - type: AmbientMusicMarkerMedical
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineCuraDrobe
   name: CuraDrobe
   description: A lowstock vendor only capable of vending clothing for curators and librarians.
+  suffix: Library Vendor # starcup
   components:
   - type: VendingMachine
     pack: CuraDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: CuraDrobeAds
   - type: SpeakOnUIClosed
@@ -1826,12 +1865,10 @@
   id: VendingMachineAtmosDrobe
   name: AtmosDrobe
   description: Dispenses fashionable clothing for Atmospherics Technicians, a notable perk for what can be a rather thankless job. # starcup: rewritten for tone
+  suffix: Atmos Vendor # starcup
   components:
   - type: VendingMachine
     pack: AtmosDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: AtmosDrobeAds
   - type: SpeakOnUIClosed
@@ -1852,18 +1889,17 @@
     color: "#b89e2a"
   - type: AccessReader
     access: [["Engineering"]]
+  - type: AmbientMusicMarkerEngineering
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineEngiDrobe
   name: EngiDrobe
   description: A vending machine renowned for vending industrial grade clothing.
+  suffix: Engineering Vendor # starcup
   components:
   - type: VendingMachine
     pack: EngiDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: EngiDrobeAds
   - type: SpeakOnUIClosed
@@ -1884,18 +1920,17 @@
     color: "#b89e2a"
   - type: AccessReader
     access: [["Engineering"]]
+  - type: AmbientMusicMarkerEngineering
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineChefDrobe
   name: ChefDrobe
   description: This vending machine might not dispense meat, but it certainly dispenses chef related clothing.
+  suffix: Kitchen Vendor # starcup
   components:
   - type: VendingMachine
     pack: ChefDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: ChefDrobeAds
   - type: SpeakOnUIClosed
@@ -1918,12 +1953,10 @@
   id: VendingMachineDetDrobe
   name: DetDrobe
   description: A machine for all your detective needs, as long as you need clothes.
+  suffix: Detective Vendor # starcup
   components:
   - type: VendingMachine
     pack: DetDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: DetDrobeAds
   - type: SpeakOnUIClosed
@@ -1946,12 +1979,10 @@
   id: VendingMachineJaniDrobe
   name: JaniDrobe
   description: A self cleaning vending machine capable of dispensing clothing for janitors.
+  suffix: Janitor Vendor # starcup
   components:
   - type: VendingMachine
     pack: JaniDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: JaniDrobeAds
   - type: SpeakOnUIClosed
@@ -1978,12 +2009,10 @@
   id: VendingMachineSciDrobe
   name: SciDrobe
   description: A simple vending machine suitable to dispense well tailored Science clothing. # starcup: rewritten for tone
+  suffix: Science Vendor # starcup
   components:
   - type: VendingMachine
     pack: SciDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: SciDrobeAds
   - type: SpeakOnUIClosed
@@ -2006,12 +2035,10 @@
   id: VendingMachineSyndieDrobe
   name: SyndieDrobe
   description: Wardrobe machine encoded by the syndicate, contains elite outfits for various operations.
+  suffix: Fashion Vendor # starcup
   components:
   - type: VendingMachine
     pack: SyndieDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: SyndieDrobeAds
   - type: SpeakOnUIClosed
@@ -2038,12 +2065,10 @@
   id: VendingMachineRoboDrobe
   name: RoboDrobe
   description: A vending machine designed to dispense clothing known only to roboticists.
+  suffix: Robotics Vendor # starcup
   components:
   - type: VendingMachine
     pack: RoboDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: RoboDrobeAds
   - type: SpeakOnUIClosed
@@ -2066,12 +2091,10 @@
   id: VendingMachineGeneDrobe
   name: GeneDrobe
   description: A machine for dispensing clothing related to genetics.
+  suffix: Medical Vendor # starcup
   components:
   - type: VendingMachine
     pack: GeneDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: GeneDrobeAds
   - type: SpeakOnUIClosed
@@ -2088,18 +2111,17 @@
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: AccessReader
     access: [["Medical"]]
+  - type: AmbientMusicMarkerMedical
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineViroDrobe
   name: ViroDrobe
   description: An unsterilized machine for dispending virology related clothing.
+  suffix: Medical Vendor # starcup
   components:
   - type: VendingMachine
     pack: ViroDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: ViroDrobeAds
   - type: SpeakOnUIClosed
@@ -2116,18 +2138,17 @@
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: AccessReader
     access: [["Medical"]]
+  - type: AmbientMusicMarkerMedical
 
 - type: entity
   parent: VendingMachine
   id: VendingMachineCentDrobe
   name: CentDrobe
-  description: A one-of-a-kind vending machine for all your centcomm aesthetic needs!
+  description: A one-of-a-kind vending machine for all your CentComm aesthetic needs! # starcup - fixed caps
+  suffix: CentComm Vendor # starcup
   components:
   - type: VendingMachine
     pack: CentDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/centdrobe.rsi
     layers:
@@ -2149,19 +2170,17 @@
   parent: VendingMachine
   id: VendingMachineHappyHonk
   name: Happy Honk Dispenser
-  description: A happy honk meal box dispenser made by honk! co.
+  description: A Happy Honk meal box dispenser made by Honk! Co. # starcup - fixed caps
+  suffix: Kitchen Vendor # starcup
   components:
   - type: VendingMachine
     pack: HappyHonkDispenserInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
-    denyState: deny-unshaded
+    initialStockQuality: 1.0 # Nobody knows how Honk does it, but their vending machines always seem well-stocked...
+  - type: VendingMachineEject
     ejectDelay: 1.9
     soundVend: /Audio/Items/bikehorn.ogg
-    initialStockQuality: 1.0 # Nobody knows how Honk does it, but their vending machines always seem well-stocked...
+  - type: VendingMachineVisuals
+    denyState: deny-unshaded
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/happyhonk.rsi
     layers:
@@ -2190,12 +2209,10 @@
   id: VendingMachinePride
   name: Pride-O-Mat
   description: A vending machine containing pride.
+  suffix: Fashion Vendor # starcup
   components:
   - type: VendingMachine
     pack: PrideDrobeInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
   - type: DatasetVocalizer
     dataset: PrideDrobeAds
   - type: SpeakOnUIClosed
@@ -2219,9 +2236,9 @@
 # Gas Tank Dispenser
 
 - type: entity
-  parent: VendingMachine
+  parent: BaseVendingMachine
   id: VendingMachineTankDispenserEVA
-  suffix: EVA [O2, N2]
+  suffix: EVA [O2, N2], Engineering Vendor # starcup - added Engineering Vendor
   name: gas tank dispenser
   description: A vendor for dispensing gas tanks.
   components:
@@ -2232,9 +2249,9 @@
     state: dispenser
 
 - type: entity
-  parent: VendingMachine
+  parent: BaseVendingMachine
   id: VendingMachineTankDispenserEngineering
-  suffix: ENG [O2, Plasma]
+  suffix: ENG [O2, Plasma], Engineering Vendor # starcup - added Engineering Vendor
   name: gas tank dispenser
   description: A vendor for dispensing gas tanks. This one has an engineering livery.
   components:
@@ -2251,14 +2268,15 @@
   id: VendingMachineChemicals
   name: ChemVend
   description: Probably not the coffee machine.
+  suffix: Chemistry Vendor # starcup
   components:
   - type: VendingMachine
     pack: ChemVendInventory
-    offState: off
-    brokenState: broken
+  - type: VendingMachineEject
+    ejectDelay: 2
+  - type: VendingMachineVisuals
     normalState: normal
     denyState: deny
-    ejectDelay: 2
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/chemvend.rsi
     layers:
@@ -2274,20 +2292,22 @@
     guides:
     - Chemicals
     - Chemist
+  - type: AmbientMusicMarkerMedical
 
 - type: entity
   parent: VendingMachineChemicals
   id: VendingMachineChemicalsSyndicate
   name: SyndieJuice
-  description: Not made with freshly squeezed syndies I hope.
+  description: Not made with freshly squeezed Syndies, I hope. # starcup - caps+comma
+  suffix: Misc Vendor # starcup
   components:
   - type: VendingMachine
     pack: ChemVendInventorySyndicate
-    offState: off
-    brokenState: broken
+  - type: VendingMachineEject
+    ejectDelay: 2
+  - type: VendingMachineVisuals
     normalState: normal
     denyState: deny
-    ejectDelay: 2
   - type: AccessReader
     access: [["SyndicateAgent"]]
 
@@ -2297,12 +2317,12 @@
   id: VendingMachineWallMedicalCivilian
   name: Interdyne PharmAssist band-aid # starcup: NanoMed to Interdyne PharmAssist
   description: It's a wall-mounted medical equipment dispenser. Natural chemicals only!
+  suffix: Medical Vendor # starcup
   components:
   - type: VendingMachine
     pack: NanoMedCivilianWallInventory
+  - type: VendingMachineVisuals
     offState: off-civilian
-    brokenState: broken
-    normalState: normal-unshaded
     denyState: deny-unshaded
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/wallmed.rsi
@@ -2326,9 +2346,11 @@
   parent: VendingMachineWallMedicalCivilian
   id: VendingMachineWallMedical
   name: Interdyne PharmAssist # starcup: NanoMed to Interdyne PharmAssist
+  suffix: Medical Vendor # starcup
   components:
   - type: VendingMachine
     pack: NanoMedInventory
+  - type: VendingMachineVisuals
     offState: off
   - type: Sprite
     layers:

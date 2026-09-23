@@ -3,6 +3,7 @@
   # begin starcup: use parenting for our additions
   parent:
 #  - Plushies
+  - TrinketsGlorb
   - TrinketsBureaucracy
   - TrinketsLighter
   - TrinketsUtility
@@ -36,6 +37,7 @@
 # end starcup
   - BoxFolderPlasticClipboardThreePapers
   - BoxFolderClipboardThreePapers
+  - Camera # starcup
 # begin starcup: moved to Cosmetics
 #  - ClothingNeckLGBTPin
 #  - ClothingNeckAllyPin
@@ -84,6 +86,19 @@
   # imp edit end
   - GlassesJamjar
   - GlassesJensen
+  # begin starcup: Mothees Surplus Goggles Bonanza
+  - RimlessGlasses
+  - RimlessGlassesBlue
+  - RimlessGlassesPink
+  - RimlessGlassesRed
+  - TintedGlasses
+  - TintedGlassesBlue
+  - TintedGlassesPink
+  - TintedGlassesRed
+  - SurpBallisticY
+  - SurpBallisticG
+  - SurpBallisticB
+  # end starcup
 
 - type: loadoutGroup
   id: GroupTankHarness
@@ -172,8 +187,11 @@
   loadouts:
   - CaptainOuterClothing
   - CaptainWintercoat
-  - CommandSweater # starcup
-  - TrenchCoat # starcup
+  # begin starcup
+  - CommandSweater
+  - TrenchCoat
+  - CorpoJacketCybersun
+  # end starcup
 
 #- type: loadoutGroup
 #  id: CaptainJobTrinkets
@@ -223,8 +241,11 @@
   minLimit: 0
   loadouts:
   - HoPWintercoat
-  - CommandSweater # starcup
-  - TrenchCoat # starcup
+  # begin starcup
+  - CommandSweater
+  - TrenchCoat
+  - CorpoJacketCybersun
+  # end starcup
 
 #- type: loadoutGroup
 #  id: HoPJobTrinkets
@@ -287,6 +308,46 @@
   - SyndieRecruitJumpsuit
   - SyndieFormalDress
   - SyndieFormalJumpsuit
+  - FormalRedDress
+  - SailorSkirt
+  - BlueSundress
+  - WhiteSundress
+  - DaisySundress
+  - RippedPunkSkirt
+  - PinstripeDress
+  - GothicDress
+  - FireDress
+  - BlueCheongsam
+  - GreenCheongsam
+  - PurpleCheongsam
+  - RedCheongsam
+  - OldRedDress
+  - OldBlackDress
+  - OldRedVest
+  - OldBlackVest
+  - GymBraPencilSkirt
+  - BlueBlazerSkirt
+  - YellowSwoopDress
+  - RedSwoopDress
+  - QipaoSkirt
+  - QipaoSkirtSlim
+  - RedSariDress
+  - GreenSariDress
+  - FlamencoDress
+  - TangoDress
+  - OldBlackVest
+  - OldRedVest
+  - SailorSuit
+  - RippedPunkJeans
+  - StripedSuit
+  - BlueBlazer
+  - LightBlueShirt
+  - BlackFlannelKhakis
+  - RedFlannelKhakis
+  - RedFlannelJeans
+  - BlackFlannelJeans
+  - OliveSweater
+  - BarberSuit
   # end starcup
 
 - type: loadoutGroup
@@ -303,9 +364,13 @@
   - RedBandanaMask
   - SkullBandanaMask
   - BrownBandanaMask
+  - BlackFaceMask
+  - WhiteFaceMask
+  - RedFaceMask
   # end starcup
 
 - type: loadoutGroup
+  parent: [ Armwarmers ]
   id: PassengerGloves
   name: loadout-group-passenger-gloves
   minLimit: 0
@@ -324,9 +389,28 @@
   - WhiteGloves
   - BlackGloves
   - FingerlessGloves
+  - MittensPlain
+  - MittensBlack
+  - MittensBlue
+  - MittensBrown
+  - MittensGreen
+  - MittensLightBlue
+  - MittensOrange
+  - MittensPink
+  - MittensPurple
+  - MittensRed
+  - MittensWhite
+  - MittensYellow
+  - EveningGloves
+  - CuffsSpiked
+  - CuffsWhite
+  - CuffsRed
+  - CuffsBlack
+  - CuffsBrown
   # End starcup additions
 
 - type: loadoutGroup
+  parent: [ ColoredBackpacks, ColoredSatchels, ColoredDuffels, ColoredPurses ] # starcup
   id: CommonBackpack
   name: loadout-group-backpack
   loadouts:
@@ -336,12 +420,12 @@
   - LeatherSatchel # starcup
 
 - type: loadoutGroup
-  parent: [ Scarfs ] # starcup
+  parent: [ NeckFashionable, Cloaks ] # starcup
   id: PassengerNeck
   name: loadout-group-passenger-neck
   minLimit: 0
   loadouts:
-  - Mantle
+#  - Mantle # starcup - added with Cloaks
   - PlushieSnakeWorn # starcup
 
 - type: loadoutGroup
@@ -379,6 +463,15 @@
   - WinterCoatWhite
   - WinterCoatYellow
   - TrenchCoat
+  - OldBlackCoat
+  - OldRedCoat
+  - BartenderVest
+  - CorpoJacketCybersun
+  - CorpoJacketHawkmoon
+  - CorpoJacketInterdyne
+  - CorpoJacketElectra
+  - CorpoJacketDonkChef
+  - CorpoJacketDonkRoboticist
   # end starcup
 
 - type: loadoutGroup
@@ -408,6 +501,14 @@
   - BrownCowboyBoots
   - BlackCowboyBoots
   - WhiteCowboyBoots
+  - SocksPlain
+  - SocksBloodred
+  - SocksBee
+  - SocksWhite
+  - SocksPurple
+  - SocksRainbow
+  - SocksCoder
+  - GetaSandals
   # end starcup
 
 #- type: loadoutGroup
@@ -423,6 +524,11 @@
   loadouts:
   - BartenderHead
   - BartenderBowler
+  # begin starcup additions
+  - BrownFlatCapFancy
+  - WhiteFlatCapFancy
+  - BlueFlatCapFancy
+  # end starcup
 
 - type: loadoutGroup
   id: BartenderJumpsuit
@@ -448,6 +554,7 @@
   - BartenderApron
   - BartenderWintercoat
   - BartenderCuteApron # imp
+  - CorpoJacketGilthari # starcup
 
 - type: loadoutGroup
   id: BartenderJobTrinkets
@@ -494,6 +601,8 @@
   - ChefJacket
   - ChefWintercoat
   - ChefCuteApron # imp
+  - BartenderVest # starcup
+  - CorpoJacketDonkChef # starcup
 
 #- type: loadoutGroup
 #  id: ChefJobTrinkets
@@ -514,6 +623,11 @@
   - ClothingUniformBrownSuit
   - ClothingUniformBrownSuitSkirt
   - LibrarianSpaceDress
+  - DaisySundress
+  - OldRedDress
+  - OldBlackDress
+  - OldBlackVest
+  - OldRedVest
   # end starcup
 
 #- type: loadoutGroup
@@ -541,10 +655,12 @@
   - RedElegantDress
   - ClothingUniformCreamSuit
   - ClothingUniformCreamSuitSkirt
+  - DisheveledSuitSkirt
+  - DisheveledSuit
   # end starcup
 
 - type: loadoutGroup
-  parent: [ Scarfs ] # starcup
+  parent: [ NeckFashionable ] # starcup
   id: LawyerNeck
   name: loadout-group-lawyer-neck
   minLimit: 0
@@ -589,6 +705,11 @@
   - PurpleElegantDress
   - ClothingUniformFuneralSuit
   - ClothingUniformFuneralSuitSkirt
+  - OldRedDress
+  - OldBlackDress
+  - OldBlackVest
+  - OldRedVest
+  - GothicDress
   # end starcup
 
 - type: loadoutGroup
@@ -601,6 +722,8 @@
   - ChaplainBlackHoodie
   - ChaplainHoodie
   - WinterCoatBlack # starcup
+  - OldRedCoat
+  - OldBlackCoat
 
 - type: loadoutGroup
   parent: [ Scarfs ] # starcup
@@ -629,6 +752,7 @@
   - BibleNarsie
 
 - type: loadoutGroup
+  parent: [ RibbonsHead ] # starcup
   id: JanitorHead
   name: loadout-group-janitor-head
   minLimit: 0
@@ -656,7 +780,8 @@
   - OrangeGloves
   - PurpleGloves
   - WhiteGloves # starcup - to match maid outfit
-  - FingerlessGloves # starcup - to go with impractical tactical maid outfit (gloves are insuls)
+  - TacticoolMaidGloves # starcup - fake tac maid gloves that arent insuls
+  - EveningGloves # starcup - to match maid outfit
 
 - type: loadoutGroup
   id: JanitorOuterClothing
@@ -705,6 +830,7 @@
   loadouts:
   - BotanistApron
   - BotanistWintercoat
+  - CorpoJacketInterdyne # starcup
 
 #- type: loadoutGroup
 #  id: BotanistJobTrinkets
@@ -713,6 +839,7 @@
 #  loadouts:
 
 - type: loadoutGroup
+  parent: [ RibbonsHead ] # starcup
   id: ClownHead
   name: loadout-group-clown-head
   minLimit: 0
@@ -783,6 +910,12 @@
   - MimeHead
   - MimeFrenchBeret
   - MimeCap
+  # begin starcup additions
+  - BlackBeretArtist
+  - RedBeretArtist
+  - BlackEarmuffs
+  - BlackHijab
+  # end starcup additions
 
 - type: loadoutGroup
   id: MimeMask
@@ -792,6 +925,7 @@
   - MimeMaskSad
   - MimeMaskScared
   - MimeMaskBlushing
+  - KitsuneMask
 
 - type: loadoutGroup
   id: MimeJumpsuit
@@ -834,9 +968,8 @@
   minLimit: 2
   hidden: true
   loadouts:
-  - EmergencyNitrogenMime
-  - EmergencyOxygenMime
-  - EmergencySpeciesMothMime
+  - EmergencyNitrogen
+  - EmergencyOxygen
   - LoadoutSpeciesVoxNitrogen
   - EmergencyBoxMKC # starcup
 
@@ -858,6 +991,12 @@
   - ClothingUniformNightclubSuit
   - ClothingUniformNightclubSuitSkirt
   - PerformerJumpskirt
+  - PinstripeDress
+  - StripedSuit
+  - RippedPunkSkirt
+  - RippedPunkJeans
+  - TangoDress
+  - AltTangoDress
   # end starcup
 
 - type: loadoutGroup
@@ -946,6 +1085,7 @@
   - QuartermasterLongcoat # DeltaV - Longcoats
   - QuartermasterWintercoat
   - TrenchCoat # starcup
+  - CorpoJacketHawkmoon # starcup
 
 - type: loadoutGroup
   parent: CargoTechnicianShoes # starcup
@@ -974,6 +1114,12 @@
   minLimit: 0
   loadouts:
   - CargoTechnicianHead
+  # begin starcup
+  - ToqueKhaki
+  - ToqueBlack
+  - ToqueBlackPin
+  - BrownFlatCapFancy
+  # end starcup
 
 - type: loadoutGroup
   id: CargoTechnicianJumpsuit
@@ -1003,6 +1149,7 @@
   - CargoTechnicianWintercoat
   - LogisticsSweater # starcup
   - BomberJacket # starcup
+  - CorpoJacketHawkmoon # starcup
 
 - type: loadoutGroup
   id: CargoTechnicianShoes
@@ -1023,6 +1170,7 @@
   - DeckWorkerPDA
   - InventoryAssociatePDA
   - CargoPilotPDA
+  - MechPilotPDA
   # end starcup
 
 #- type: loadoutGroup
@@ -1045,6 +1193,7 @@
   minLimit: 0
   loadouts:
   - SalvageSpecialistWintercoat
+  - CorpoJacketHawkmoon # starcup
 
 - type: loadoutGroup
   parent: CargoTechnicianShoes # starcup
@@ -1097,6 +1246,7 @@
   loadouts:
   - ChiefEngineerLongcoat # DeltaV - Longcoats
   - ChiefEngineerWintercoat
+  - CorpoJacketElectra # starcup
 
 - type: loadoutGroup
   parent: StationEngineerShoes # starcup
@@ -1170,6 +1320,7 @@
   loadouts:
   - StationEngineerOuterVest
   - StationEngineerWintercoat
+  - CorpoJacketElectra # starcup
 
 - type: loadoutGroup
   id: StationEngineerShoes
@@ -1216,6 +1367,7 @@
   minLimit: 0
   loadouts:
   - AtmosphericTechnicianWintercoat
+  - CorpoJacketElectra # starcup
 
 - type: loadoutGroup
   id: AtmosphericTechnicianBackpack
@@ -1284,6 +1436,7 @@
   - ResearchDirectorLabCoat
   - ResearchDirectorLongcoat # DeltaV - Longcoats
   - ResearchDirectorWintercoat
+  - CorpoJacketElectra # starcup
 
 - type: loadoutGroup
   parent: ScientistShoes # starcup
@@ -1355,6 +1508,7 @@
   #- RoboticistLabCoat # starcup: moved to RoboticistOuterClothing
   #- RoboticistWintercoat # starcup: moved to RoboticistOuterClothing
   - SeniorResearcherLabCoat
+  - CorpoJacketElectra # starcup
 
 - type: loadoutGroup
   id: ScientistShoes
@@ -1598,6 +1752,7 @@
   - JensenCoat
   - TrenchCoat
   # end starcup
+  - SecurityOfficerWintercoat
 
 - type: loadoutGroup
   id: DetectiveJobTrinkets
@@ -1644,8 +1799,12 @@
   - LawyerJumpskirt
   - LawyerJumpsuitRed
   - LawyerJumpskirtRed
+  - DisheveledSuitSkirt
+  - DisheveledSuit
   - ClothingUniformBrosBlazer
   - ClothingUniformBrosBlazerSkirt
+  - BlueBlazer
+  - BlueBlazerSkirt
   # end starcup
 
 - type: loadoutGroup
@@ -1681,6 +1840,8 @@
   - LawyerJumpskirt
   - LawyerJumpsuitBlue
   - LawyerJumpskirtBlue
+  - DisheveledSuitSkirt
+  - DisheveledSuit
   # end starcup
 
 #- type: loadoutGroup
@@ -1689,7 +1850,46 @@
 #  minLimit: 0
 #  loadouts:
 
+- type: loadoutGroup
+  id: TramDriverJumpsuit
+  name: loadout-group-tramdriver-jumpsuit
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - TramDriverJumpsuit
+
+- type: loadoutGroup
+  id: TramDriverOuterClothing
+  name: loadout-group-tramdriver-outerclothing
+  minLimit: 0
+  loadouts:
+  - TramDriverSuit
+
+- type: loadoutGroup
+  id: TramDriverHat
+  name: loadout-group-tramdriver-hat
+  loadouts:
+  - TramDriverHat
+
+- type: loadoutGroup
+  id: TramDriverGloves
+  name: loadout-group-tramdriver-gloves
+  minLimit: 0
+  loadouts:
+  - TramDriverGlovesWhite
+  - TramDriverGlovesBlack
+
 # Other
+
+- type: loadoutGroup
+  id: SurvivalExtendedAntag
+  name: loadout-group-survival-extended
+  minLimit: 2
+  hidden: true
+  loadouts:
+  - EmergencyNitrogenExtendedAntag
+  - EmergencyOxygenExtendedAntag
+  - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup
   id: SurvivalSyndicate

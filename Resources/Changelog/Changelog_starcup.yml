@@ -3766,3 +3766,640 @@
   id: 8478
   time: '2026-06-28T20:02:06.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/912
+- author: bruhmogus
+  changes:
+  - message: Added a flashless travel camera to the Trinkets section of loadouts.
+      Say cheese!
+    type: Add
+  id: 8479
+  time: '2026-06-28T20:49:36.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/887
+- author: Psymbiote
+  changes:
+  - message: Added patriotic neocorp jackets for our employees who come from other
+      companies in the Syndicate. Command, engineering, science, medical and logistics
+      personnel; as well as roboticists, botanists, chefs, lawyers, and bartenders
+      can now find their original employers' colors in the loadout menu.
+    type: Add
+  id: 8480
+  time: '2026-06-29T21:20:13.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/903
+- author: bruhmogus
+  changes:
+  - message: Added two new shirt bows, worn in the neck slot.
+    type: Add
+  - message: Added a masquerade mask, available in bulk via the TheaterDrobe.
+    type: Add
+  - message: Added the Pyrite Mask, similar in appearance to the haunted Golden Mask,
+      but completely safe.
+    type: Add
+  - message: Added face masks to the ClothesMate and passenger loadout in three different
+      colors - red, white, and black.
+    type: Add
+  - message: Janitors now have access to the tacticool maid gloves, a pair of the
+      tactical maid gloves that aren't insulated. Style!
+    type: Add
+  - message: Passengers and Chefs now can wear vests in their loadouts.
+    type: Tweak
+  id: 8481
+  time: '2026-06-30T00:03:46.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/886
+- author: KoboldCatgirl
+  changes:
+  - message: Fixed various Banana Station object rotations.
+    type: Fix
+  - message: Added Lawyer and Paramedic slots to Banana.
+    type: Tweak
+  - message: Added various QOL bits and bobs to Banana, *slightly* expanding Science
+      in the process.
+    type: Tweak
+  - message: Banana's Botany now has a pet firebot. Not that we don't trust you, but...
+    type: Add
+  id: 8482
+  time: '2026-06-30T03:43:39.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/879
+- author: KoboldCatgirl
+  changes:
+  - message: Fixed initialization issues with Lavaland's fax machine, air alarms,
+      and containers.
+    type: Fix
+  id: 8483
+  time: '2026-06-30T04:04:06.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/915
+- author: Psymbiote
+  changes:
+  - message: Slimes can now sign up at SyndComm using their traditional, single-word
+      onomatopoeic names of old. (That is to say, they have new names in the random
+      generator.)
+    type: Add
+  id: 8484
+  time: '2026-07-02T01:21:42.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/916
+- author: Psymbiote
+  changes:
+  - message: Water deals more damage to slimes. Stay out of the mist!
+    type: Tweak
+  id: 8485
+  time: '2026-07-03T10:15:23.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/917
+- author: KoboldCatgirl
+  changes:
+  - message: 'Added two new fillable lines to the Records tab: Security Flags and
+      Medical Needs!'
+    type: Add
+  id: 8486
+  time: '2026-07-05T15:56:03.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/920
+- author: KoboldCatgirl
+  changes:
+  - message: Cleaned up some vending descriptions' grammar and removed Salvage Vend's
+      mention of dwarves.
+    type: Fix
+  id: 8487
+  time: '2026-07-05T15:56:03.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/919
+- author: Psymbiote
+  changes:
+  - message: Vulpekin have red blood again.
+    type: Fix
+  id: 8488
+  time: '2026-07-08T00:38:52.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/929
+- author: Psymbiote
+  changes:
+  - message: The broken vents, dens and hives left behind by intrusive vent fauna
+      can now be deconstructed for repairs. Exomorph goop and aberrant flesh messes
+      vents up beyond repair though, and the only recourse then is smashing.
+    type: Fix
+  id: 8489
+  time: '2026-07-08T21:12:32.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/924
+- author: Psymbiote
+  changes:
+  - message: Spiders will no longer make noises when they walk.
+    type: Tweak
+  id: 8490
+  time: '2026-07-08T21:24:45.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/932
+- author: bruhmogus
+  changes:
+  - message: The meat spike has been replaced with the butchering station, being a
+      much less graphic structure that instantly kills anything that you put onto
+      it.
+    type: Tweak
+  - message: Most large mobs now require the butchering station to be butchered.
+    type: Tweak
+  id: 8491
+  time: '2026-07-09T20:04:03.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/888
+- author: KoboldCatgirl
+  changes:
+  - message: Added a massive supply of new outfits to spawners, dressers, and the
+      Theaterdrobe, plus a few easter eggs.
+    type: Add
+  id: 8492
+  time: '2026-07-09T21:22:04.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/933
+- author: bruhmogus
+  changes:
+  - message: Added the Sleepy trait, allowing you to sleep on your own volition anywhere.
+    type: Add
+  id: 8493
+  time: '2026-07-11T15:12:16.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/925
+- author: IdiotWhoPlaysVIPRandGreene
+  changes:
+  - message: Added Six new goggles total - 3 that can be allocated to your loadout
+      before joining the round, 1 that can be found via activating the contraband
+      wire of the Medidrobe, 1 that is specifically for admin shenanigans/style, and
+      1 for bartenders to select in their loadouts!
+    type: Add
+  - message: Changed MKCs so that they have a proper speciesID now.
+    type: Tweak
+  - message: Fixed goggles for MKCs by adding a new sprite to prevent clipping!
+    type: Fix
+  id: 8494
+  time: '2026-07-12T23:03:00.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/931
+- author: KoboldCatgirl
+  changes:
+  - message: Cybersun has introduced constructable document printers to your sector.
+      The wonders of bureaucracy never cease!
+    type: Add
+  - message: You can now use paper to label bookshelves, including colored paper!
+    type: Add
+  - message: Added the Bookshelf Label Folder, for a sampling of paper colors!
+    type: Add
+  - message: Reduced book bag/bookshelf inventory sizes.
+    type: Tweak
+  id: 8495
+  time: '2026-07-17T21:40:03.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/940
+- author: KoboldCatgirl
+  changes:
+  - message: Added the dressup crate, a Cargo-ordered chest filled with pretty dresses
+      and cosmetics as well as a pair of barber scissors!
+    type: Add
+  - message: Added a ton of jumpsuits and jumpsuits to loadouts, primarily to civilian
+      jobs (especially Passenger) and the more snappy-dressing roles.
+    type: Add
+  - message: Added evening gloves, old-fashioned coats, and masquerade masks to a
+      few jobs' loadouts.
+    type: Add
+  - message: Added new alt-jobtitle PDAs for Botanist, Cargo Tech, Lawyer, and Reporter!
+    type: Add
+  - message: Added hairbows, ribbons, necklaces, and hairpins to Cosmetics, as well
+      as some jobs' head and neck slot options!
+    type: Add
+  - message: Fixed a spelling for the Chaplain's Derelictian PDA. Hear the Deus sing.
+    type: Fix
+  - message: Fixed Senior PDAs not providing custom job titles.
+    type: Fix
+  id: 8496
+  time: '2026-07-17T21:43:55.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/944
+- author: KoboldCatgirl
+  changes:
+  - message: Fixed SyndieTask header and printout
+    type: Fix
+  id: 8497
+  time: '2026-07-17T21:51:21.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/943
+- author: Vizier243
+  changes:
+  - message: Fixed the Syndcomm Drobe using a Nanotrasen access level.
+    type: Fix
+  id: 8498
+  time: '2026-07-18T05:53:35.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/946
+- author: KoboldCatgirl
+  changes:
+  - message: Syndicate Communications has been gifted by Electra Dynamics the beautiful
+      Ptarmigan Outpost, a lowpop terrestrial station set on the far side of Glacier's
+      frozen moon.
+    type: Add
+  id: 8499
+  time: '2026-07-19T15:53:26.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/910
+- author: KoboldCatgirl
+  changes:
+  - message: Donk Co has helpfully installed new advanced butchering stations into
+      almost every station's freezer! Drag livestock inside for a quick, clean kill.
+    type: Add
+  - message: Cybersun has generously had new document printers installed on every
+      station in the sector, mostly under the librarians' jurisdiction.
+    type: Add
+  - message: All libraries now come stocked with a guidebookshelf, bearing all the
+      practical information you'd ever need to know.
+    type: Add
+  - message: Virtually all libraries now come stocked with a book cart! Let's get
+      this book on the road!
+    type: Add
+  - message: Fixed Byoin's errant Medical/Bartender airlocks, Omega's haunted Atmos
+      door, Crux's disconnected blast doors, and other miscellaneous non-door-related
+      mapping bugs.
+    type: Fix
+  id: 8500
+  time: '2026-07-19T15:59:38.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/950
+- author: Vizier243
+  changes:
+  - message: SyndComm flippo lighters now use the correct access level.
+    type: Fix
+  id: 8501
+  time: '2026-07-19T17:36:38.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/948
+- author: little-meow-meow
+  changes:
+  - message: Roller skates have a unique footprint style.
+    type: Add
+  id: 8502
+  time: '2026-07-19T17:43:45.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/947
+- author: Vizier243
+  changes:
+  - message: The warden's winter boots can now hold a sidearm.
+    type: Fix
+  id: 8503
+  time: '2026-07-20T17:08:20.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/949
+- author: Psymbiote
+  changes:
+  - message: Cybersun Industries is proud to present the new Varied Identities Package
+      with all-new holograms and screens for the personable AI to maximize efficiency
+      and crew comfort when communicating! The time has finally come for AI to be
+      VIP.
+    type: Add
+  id: 8504
+  time: '2026-07-23T07:46:28.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/907
+- author: RadsammyT
+  changes:
+  - message: Added screen filters as an inherent trait for MKCs and as an optional
+      vision trait.
+    type: Add
+  id: 8505
+  time: '2026-07-25T02:33:51.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/911
+- author: Psymbiote
+  changes:
+  - message: Cat whimpers and dog pants aren't as loud anymore. Quieter critters.
+    type: Fix
+  id: 8506
+  time: '2026-07-27T19:03:04.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/934
+- author: KoboldCatgirl
+  changes:
+  - message: (Ptarmigan) fixed various unpowered machines
+    type: Fix
+  - message: (Ptarmigan) added various equipment to the departments, plus a pressure
+      control valve to Brig and Botany
+    type: Tweak
+  - message: (Ptarmigan) reworked Engineering Yard for a cleaner, safer atmos
+    type: Tweak
+  - message: (Ptarmigan) made miscellaneous QOL changes, including clearer Evac signage
+    type: Tweak
+  id: 8507
+  time: '2026-07-30T19:54:02.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/956
+- author: Psymbiote
+  changes:
+  - message: Slime people can audibly simmer again!
+    type: Fix
+  id: 8508
+  time: '2026-07-30T21:16:53.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/959
+- author: KoboldCatgirl
+  changes:
+  - message: MKCs can now drain power by using Alt-E on APCs and Alt-E, Z, and Left-Click
+      on power cells.
+    type: Add
+  - message: MKCs can now walk freely while they drain power cells.
+    type: Tweak
+  id: 8509
+  time: '2026-08-01T03:19:02.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/951
+- author: KoboldCatgirl
+  changes:
+  - message: Standardized cold protection levels on various overpowered winterwear,
+      including trench coats and armored coats.
+    type: Fix
+  - message: Gaiters, colored gloves, and various coats now provide some cold protection!
+    type: Tweak
+  - message: Fixed some Security personnel's winterwear not providing the proper armored
+      protection!
+    type: Fix
+  id: 8510
+  time: '2026-08-02T16:46:16.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/958
+- author: KoboldCatgirl
+  changes:
+  - message: Ptarmigan Outpost has been removed for the foreseeable future from all
+      shift rotations due to safety concerns.
+    type: Remove
+  id: 8511
+  time: '2026-08-09T03:35:35.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/963
+- author: little-meow-meow
+  changes:
+  - message: Reinforced steel wood walls are no longer replaced by rusted reinforced
+      steel walls at round start.
+    type: Fix
+  id: 8512
+  time: '2026-08-12T18:50:10.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/968
+- author: Psymbiote
+  changes:
+  - message: New vocal and body emote *sounds* for slime people!
+    type: Add
+  id: 8513
+  time: '2026-08-12T20:56:04.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/962
+- author: Psymbiote
+  changes:
+  - message: Mortar and pestle sounds have been replaced by softer alternatives.
+    type: Tweak
+  id: 8514
+  time: '2026-08-14T07:22:40.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/969
+- author: Oxdeception
+  changes:
+  - message: Changes from upstream have been merged. Check the changelog!
+    type: Add
+  - message: The plant analyzer is no longer functional, pending rework.
+    type: Remove
+  id: 8515
+  time: '2026-08-14T04:15:50.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/939
+- author: Psymbiote
+  changes:
+  - message: Caracal cats and Bingus now have proper sleep animations like other cats
+      and cat-adjacent beings.
+    type: Add
+  id: 8516
+  time: '2026-08-14T07:22:40.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/967
+- author: Psymbiote
+  changes:
+  - message: Beeping, squishing and honking emotes should work via chat triggers again.
+      Also, vulpekin have their emote icons back.
+    type: Fix
+  id: 8517
+  time: '2026-08-16T02:08:42.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/966
+- author: KoboldCatgirl
+  changes:
+  - message: Fixed photographs' glitchy inhand sprites!
+    type: Fix
+  id: 8518
+  time: '2026-08-20T07:00:42.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/975
+- author: Oxdeception
+  changes:
+  - message: Irish accents should work again
+    type: Fix
+  id: 8519
+  time: '2026-08-20T07:01:37.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/973
+- author: KoboldCatgirl
+  changes:
+  - message: Lobby times, expedition durations, and evac recall cutoffs modified by
+      x2, x1.5, and *0.005, respectively!
+    type: Tweak
+  id: 8520
+  time: '2026-08-20T07:00:42.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/974
+- author: Psymbiote
+  changes:
+  - message: Shuttles can FTL again, including Reach.
+    type: Fix
+  id: 8521
+  time: '2026-08-21T19:41:12.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/980
+- author: Oxdeception
+  changes:
+  - message: Brooms and similar cleaning tools should clean up decals again!
+    type: Fix
+  id: 8522
+  time: '2026-08-21T20:35:44.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/979
+- author: Psymbiote
+  changes:
+  - message: Go to work in style! Purses have been added, alongside new color variants
+      for backpacks, duffel bags and satchels. Passengers and other roles without
+      dedicated work bags can find them in their loadouts!
+    type: Add
+  id: 8523
+  time: '2026-08-21T22:43:05.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/965
+- author: Psymbiote
+  changes:
+  - message: New species! Ovinia have now joined the workforce at Syndicate Communications.
+    type: Add
+  - message: New generic icon for the tail wagging action.
+    type: Add
+  id: 8524
+  time: '2026-08-21T23:09:28.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/964
+- author: RadsammyT
+  changes:
+  - message: Ported holoflare pistols from BoxStation. Available as T1 Arsenal Research
+      in "Salvage Weaponry" in a protolathe or secfab.
+    type: Add
+  - message: standard flare guns are available to create at an autolathe.
+    type: Add
+  - message: A box of .50 flare shells can be bought at a Salvage Vendor for 800 points.
+    type: Add
+  id: 8525
+  time: '2026-08-22T14:00:08.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/972
+- author: KoboldCatgirl
+  changes:
+  - message: Ovinia can now digest pills.
+    type: Fix
+  - message: Ovinia will now spawn with survival kits.
+    type: Fix
+  id: 8526
+  time: '2026-08-24T13:29:22.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/985
+- author: KoboldCatgirl
+  changes:
+  - message: The main evac shuttle distro is no longer run on freezing gas canisters!
+    type: Fix
+  id: 8527
+  time: '2026-08-24T13:30:27.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/986
+- author: KoboldCatgirl
+  changes:
+  - message: MNKDrobe no longer spams console with sprite errors.
+    type: Fix
+  id: 8528
+  time: '2026-08-24T20:06:00.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/970
+- author: KoboldCatgirl
+  changes:
+  - message: Ported 37 new hairstyles, including a few new doptera wigs!
+    type: Add
+  id: 8529
+  time: '2026-08-25T15:30:56.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/981
+- author: KoboldCatgirl
+  changes:
+  - message: eliminated console warning spam for vulpekin markings!
+    type: Fix
+  - message: renamed vulpkanin plushie to vulpekin plushie!
+    type: Fix
+  id: 8530
+  time: '2026-08-25T15:38:32.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/987
+- author: KoboldCatgirl
+  changes:
+  - message: Cold-weather fashion expansion! Added 18 new beanies, 8 new trapper hats,
+      and 3 new earmuffs to Passenger and other loadouts. The WinterDrobe will contain
+      some as well!
+    type: Add
+  - message: Headwear fashion expansion! Added 6 new hijabs, turbans, sun visors,
+      and artist berets to Passenger and other loadouts. The TheaterDrobe will contain
+      some as well!
+    type: Add
+  - message: Costume fashion expansion! Added tiaras, princess hats, feathered caps,
+      magician capes, white half-masks, kitsune masks, and demon masks to TheaterDrobe
+      and other theatrical kits, plus a few selections to certain loadouts.
+    type: Add
+  - message: Eyewear fashion expansion! Added 4 new colors of tinted and rimless glasses!
+    type: Add
+  - message: Resprited the magician's tophat.
+    type: Tweak
+  id: 8531
+  time: '2026-08-25T17:02:54.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/983
+- author: KoboldCatgirl
+  changes:
+  - message: New fashionable neckwear! A whole bunch of new chokers, cloaks, cosmetic
+      collars, and neckerchiefs have been added to loadouts for Passengers, Logistics
+      employees, and others!
+    type: Add
+  id: 8532
+  time: '2026-08-26T00:22:50.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/984
+- author: KoboldCatgirl
+  changes:
+  - message: Restored the old pre-upmerge lizard plushie inhands!
+    type: Tweak
+  id: 8533
+  time: '2026-08-27T22:09:10.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/989
+- author: KoboldCatgirl
+  changes:
+  - message: Removed Late Start from voting pool.
+    type: Remove
+  id: 8534
+  time: '2026-08-29T16:14:07.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/991
+- author: KoboldCatgirl
+  changes:
+  - message: (non-player-facing) Updated the solution components on various downstream
+      foods, containers, hypopens, and creatures. Some reagent numbers have been increased,
+      including roses and giant candies.
+    type: Fix
+  - message: Rescue nanite injectors and other reagent containers no longer spawn
+      already spent.
+    type: Fix
+  - message: Fixed a typo in the dragonfly's description.
+    type: Fix
+  id: 8535
+  time: '2026-08-31T10:21:42.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/976
+- author: KoboldCatgirl
+  changes:
+  - message: 'Added a new trinket: Glorbs, little pearl-like glowballs produced by
+      slimes, to be worn on the head or face.'
+    type: Add
+  - message: New footwear! Added a bunch of new socks to Passenger and Prisoner loadouts
+      and the Pride drobe, plus the geta sandals and cloth wraps for them and Boxer
+      as well.
+    type: Add
+  - message: 'New handwear: Added temperature-protecting armwarmers and cosmetic wrist
+      cuffs to Passenger, Prisoner, and select other job loadouts, as well as the
+      Pride drobe, plus lounge singer gloves for Musicians!'
+    type: Add
+  - message: Added 12 new types of cold-weather mittens to various loadouts and clothing
+      vendors. Stop by the Winterdrobe to protect those precious digits in style!
+    type: Add
+  id: 8536
+  time: '2026-09-04T00:57:52.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/992
+- author: KoboldCatgirl
+  changes:
+  - message: Weather audio volume can now be adjusted via the Ambience volume slider!
+    type: Tweak
+  id: 8537
+  time: '2026-09-06T03:09:16.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/997
+- author: KoboldCatgirl
+  changes:
+  - message: Fixed SC folder/stickynote inhand sprites
+    type: Fix
+  - message: Colored paper now has colored inhand sprites.
+    type: Tweak
+  id: 8538
+  time: '2026-09-06T15:21:58.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/994
+- author: KoboldCatgirl
+  changes:
+  - message: Basic gloves no longer grant temperature protection.
+    type: Tweak
+  - message: Temperature protection from the ushanka, santa hat, red-and-white toque,
+      and security poncho has been reduced to match protection granted by other scarves
+      and winter hats.
+    type: Fix
+  id: 8539
+  time: '2026-09-06T15:29:34.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/993
+- author: KoboldCatgirl
+  changes:
+  - message: New proper female rodentia torsos!
+    type: Fix
+  - message: Fixed various errorspam and localizations related to rodentia and harpy
+      markings.
+    type: Fix
+  id: 8540
+  time: '2026-09-13T22:51:11.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/995
+- author: KoboldCatgirl
+  changes:
+  - message: Ported Den's thirteen colorful lounge chairs, which can be constructed
+      out of steel and cloth.
+    type: Add
+  - message: Ported Den's eight colors of beach umbrellas, which can be constructed
+      out of rods and cloth.
+    type: Add
+  - message: Ported Den's two new pool tiles, which can be produced at the cutter
+      machine!
+    type: Add
+  - message: Ported Den's wearable swim rings, orderable by Cargo in bulk!
+    type: Add
+  - message: (MAPPING) New pool water tiles from Den! Maybe don't drink the pool water.
+    type: Add
+  - message: (MAPPING) There are now random spawners for beach umbrellas, lounge chairs,
+      and swim tubes.
+    type: Add
+  id: 8541
+  time: '2026-09-14T13:31:20.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/998
+- author: KoboldCatgirl
+  changes:
+  - message: Expanded most species's height ranges! Also bumped up humans' minimum
+      height.
+    type: Tweak
+  id: 8542
+  time: '2026-09-16T07:44:38.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/988
+- author: KoboldCatgirl
+  changes:
+  - message: Reduced minimum height from 0.85 to 0.8 for humans, dionae, vulpekin,
+      MKCs, vox, ovinia, and unathi.
+    type: Fix
+  id: 8543
+  time: '2026-09-23T02:28:40.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/1001

@@ -24,6 +24,8 @@
   - BeerEyePatchHud
   - Sunglasses
   - Mirrorshades
+  - CheapSunglassesBig
+  - HallmasterSurplusBallisticGoggles
 
 - type: loadoutGroup
   id: BartenderID
@@ -46,6 +48,17 @@
   - CombatBoots
   - BotanistWinterBoots
 
+- type: loadoutGroup
+  id: BotanistID
+  name: loadout-group-botanist-id-starcup
+  loadouts:
+  - BotanistPDA
+  - FarmerPDA
+  - FloristPDA
+  - GardenerPDA
+  - HerbalistPDA
+  - MutageneticistPDA
+
 # Boxer
 - type: loadoutGroup
   id: BoxerHead
@@ -64,6 +77,8 @@
   - GladiatorUniform
   - KendoHakama
   - MNKGymBra
+  - SailorSkirt
+  - GymBraPencilSkirt
 
 - type: loadoutGroup
   id: BoxerBelt
@@ -82,6 +97,8 @@
   - RedShoes
   - YellowShoes
   - CombatBoots
+  - GetaSandals
+  - ClothWrapFeet
 
 - type: loadoutGroup
   id: BoxerJobTrinkets
@@ -121,7 +138,7 @@
   loadouts:
   - ChaplainPDA
   - AtheistShepherdPDA
-  - DeusDerelictionPDA
+  - DeusDerelictianPDA
   - DruidPDA
   - EpistemicSibylPDA
   - GoshanPreacherPDA
@@ -242,6 +259,8 @@
   loadouts:
   - WinterCoatBlack
   - WinterCoatBlue
+  - WinterCoatBlack
+  - CorpoJacketCybersun
 
 - type: loadoutGroup
   id: LawyerShoes
@@ -254,6 +273,14 @@
   - BlueHeels
   - WinterBoots
 
+- type: loadoutGroup
+  id: LawyerID
+  name: loadout-group-lawyer-id-starcup
+  loadouts:
+  - LawyerPDA
+  - AdvocatePDA
+  - CaseworkerPDA
+
 # Librarian
 - type: loadoutGroup
   id: LibrarianOuterClothing
@@ -262,6 +289,8 @@
   loadouts:
   - WinterCoatLightBrown
   - WinterCoatBrown
+  - OldBlackCoat
+  - OldRedCoat
 
 - type: loadoutGroup
   id: LibrarianShoes
@@ -277,6 +306,16 @@
 
 # Mime
 - type: loadoutGroup
+  id: MimeGloves
+  name: loadout-group-mime-shoes
+  loadouts:
+  - ArmWarmersStriped
+  - ArmWarmersFingerlessStriped
+  - CuffsBlack
+  - CuffsWhite
+  - CuffsRed
+
+- type: loadoutGroup
   id: MimeShoes
   name: loadout-group-mime-shoes
   loadouts:
@@ -287,8 +326,17 @@
   - BrownLeatherShoes
   - LaceupShoes
   - MimeWinterBoots
+  - SocksWhite
 
 # Musician
+- type: loadoutGroup
+  id: MusicianGloves
+  name: loadout-group-musician-gloves
+  loadouts:
+  - LoungeGloves
+  - CuffsSpiked
+  - EveningGloves
+
 - type: loadoutGroup
   id: MusicianShoes
   name: loadout-group-musician-shoes
@@ -310,6 +358,9 @@
   loadouts:
   - Sunglasses
   - Mirrorshades
+  - CheapSunglassesBig
+  - MasqueradeMask # sing once again with me
+  - WhiteHalfMask # our strange duet
 
 - type: loadoutGroup
   id: MusicianHead
@@ -318,6 +369,7 @@
   maxLimit: 1
   loadouts:
   - PerformerWig
+  - MagiciansTophat
 
 # Reporter
 - type: loadoutGroup
@@ -341,9 +393,20 @@
   loadouts:
   - Sunglasses
   - Mirrorshades
+  - CheapSunglassesBig
+
+- type: loadoutGroup
+  id: ReporterID
+  name: loadout-group-reporter-id-starcup
+  loadouts:
+  - ReporterPDA
+  - BiographerPDA
+  - DocumentarianPDA
+  - PlaywrightPDA
 
 # Service Worker
 - type: loadoutGroup
+  parent: [ RibbonsHead ]
   id: ServiceWorkerHead
   name: loadout-group-service-worker-head
   minLimit: 0
@@ -409,10 +472,11 @@
   loadouts:
   - Sunglasses
   - Mirrorshades
+  - CheapSunglassesBig
 
 # Passenger
 - type: loadoutGroup
-  parent: PlushiesWorn
+  parent: [ PlushiesWorn, RibbonsHead, HairpinsWorn ]
   id: PassengerHead
   name: loadout-group-assistant-head
   minLimit: 0
@@ -425,30 +489,69 @@
   - RedBandana
   - BrownBandana
   - SkullBandana
-  - Beanie
   - BartenderHead
   - BartenderBowler
+  - Beanie
+  - BeanieWhite
+  - BeanieBlue
+  - BeanieNavyBlue
+  - BeanieBlack
+  - BeaniePink
+  - BeanieDarkGreen
+  - ToqueBlack
+  - ToqueBlackPin
+  - ToqueBlue
+  - ToqueKhaki
+  - ToqueNavyBlue
+  - ToqueWhite
+  - ToquePink
   - RedBeret
-  - BrownFedora
-  - GreyFedora
-  - GreyFlatCap
+  - RedBeretArtist
+  - BlackBeretArtist
+  - BountyHunterHat
   - BrownCowboyHat
   - BlackCowboyHat
   - GreyCowboyHat
   - RedCowboyHat
   - WhiteCowboyHat
-  - BountyHunterHat
-  - StrawHat
-  - HeadBand
-  - OutlawHat
   - CatEarsNoTail
   - CatEarsWithTail
   - DogEarsNoTail
   - DogEarsWithTail
-  - WitchHat
+  - CreamEarmuffs
+  - BlackEarmuffs
+  - BrownEarmuffs
+  - BrownFedora
+  - GreyFedora
+  - GreyFlatCap
+  - BrownFlatCap
+  - BrownFlatCapFancy
+  - WhiteFlatCapFancy
+  - BlueFlatCapFancy
+  - WhiteHijab
+  - PinkHijab
+  - BlackHijab
+  - BlueHijab
+  - NavyBlueHijab
+  - CreamHijab
+  - HeadBand
+  - OutlawHat
   - PirateHat
-  - WarningCone
+  - StrawHat
   - SyndieCap
+  - SimpleTiara
+  - BlackSunVisor
+  - TrapperHatBlack
+  - TrapperHatGray
+  - TrapperHatBeige
+  - TrapperHatRed
+  - TrapperHatBlue
+  - TrapperHatGreen
+  - TrapperHatPurple
+  - TrapperHatPink
+  - WhiteTurban
+  - WarningCone
+  - WitchHat
 
 - type: loadoutGroup
   parent: [ Glasses ]
@@ -457,6 +560,7 @@
   minLimit: 0
   loadouts:
   - CheapSunglasses
+  - CheapSunglassesBig
 
 - type: loadoutGroup
   id: PassengerID
@@ -468,3 +572,9 @@
   - OffDutyCrewPDA
   - StudentPDA
   - VolunteerPDA
+
+# Misc
+- type: loadoutGroup
+  parent: [ Scarfs, RibbonsNeck, Chokers, Neckerchiefs ] # starcup
+  id: NeckFashionable
+  name: loadout-group-neck-fashionable

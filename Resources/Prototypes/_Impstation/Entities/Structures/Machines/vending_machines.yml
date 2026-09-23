@@ -3,17 +3,20 @@
   id: VendingMachineArticSeltz
   name: Artic Seltz
   description: Quench your thirst! All your healthful faves in one convenient vend! Brought to you by BODA and Asterade.
+  suffix: Drinks Vendor # starcup
   components:
   - type: VendingMachine
     pack: ArticSeltzInventory
-    dispenseOnHitChance: 0.25
-    dispenseOnHitThreshold: 2
+    initialStockQuality: 0.33
+  - type: VendingMachineDispenseOnHit
+    chance: 0.25
+    threshold: 2
+  - type: VendingMachineVisuals
     offState: off
     brokenState: broken
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    initialStockQuality: 0.33
   - type: DatasetVocalizer
     dataset: ArticSeltzAds
   - type: SpeakOnUIClosed

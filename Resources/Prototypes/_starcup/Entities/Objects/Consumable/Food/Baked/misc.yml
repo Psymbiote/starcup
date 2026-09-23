@@ -6,17 +6,15 @@
   id: FoodBakedMuffinChocolateImitation
   description: A delicious and spongy imitation chocolate muffin.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 14
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 6
-        - ReagentId: Vitamin
-          Quantity: 2
-        - ReagentId: CocoaPowderImitation
-          Quantity: 2
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 11
+      - ReagentId: Vitamin
+        Quantity: 1
+      - ReagentId: CocoaPowderImitation
+        Quantity: 1
 
 # Cookies
 
@@ -28,13 +26,11 @@
   - type: FlavorProfile
     flavors:
       - imitationchocolate
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 6
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 6
 
 # Waffles/Pancakes
 
@@ -47,19 +43,17 @@
   - type: FlavorProfile
     flavors:
       - imitationchocolate
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 5
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 11
 
 # Misc
 
 - type: entity
   name: imitation chocolate brownies
-  parent: FoodBakedBrownieBatch
+  parent: [ FoodBakedBrownieBatch, BaseSlicingRefinableFood ]
   id: FoodBakedBrownieBatchImitation
   description: A pan of imitation chocolate brownies.
   components:
@@ -67,16 +61,17 @@
     flavors:
       - sweet
       - imitationchocolate
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 78
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 30
-  - type: SliceableFood
-    count: 6
-    slice: FoodBakedBrownieImitation
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 54
+      - ReagentId: Sugar
+        Quantity: 34
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodBakedBrownieImitation
+      amount: 6
 
 - type: entity
   name: imitation chocolate brownie
@@ -88,17 +83,17 @@
     flavors:
       - sweet
       - imitationchocolate
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 13
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 7
+      - ReagentId: Sugar
+        Quantity: 5
 
 - type: entity
   name: imitation chocolate special brownies
-  parent: FoodBakedCannabisBrownieBatch
+  parent: [ FoodBakedCannabisBrownieBatch, BaseSlicingRefinableFood]
   id: FoodBakedCannabisBrownieBatchImitation
   components:
   - type: FlavorProfile
@@ -106,18 +101,19 @@
       - sweet
       - magical
       - imitationchocolate
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 228
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 30
-        - ReagentId: THC
-          Quantity: 150
-  - type: SliceableFood
-    count: 6
-    slice: FoodBakedCannabisBrownieImitation
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 56
+      - ReagentId: Sugar
+        Quantity: 32
+      - ReagentId: THC
+        Quantity: 16
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodBakedCannabisBrownieImitation
+      amount: 6
 
 - type: entity
   name: imitation chocolate special brownie
@@ -129,12 +125,37 @@
       - sweet
       - magical
       - imitationchocolate
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 38
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
-        - ReagentId: THC
-          Quantity: 25
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 7
+      - ReagentId: Sugar
+        Quantity: 4
+      - ReagentId: THC
+        Quantity: 2
+
+# Empanadas
+- type: entity
+  name: empanadas
+  parent: FoodBakedBase
+  id: FoodBakedEmpanada
+  description: A delicious dumpling come from the galaxy's chillest rodent.
+  components:
+  - type: Sprite
+    state: dumplings
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 10
+      - ReagentId: Protein
+        Quantity: 2
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - dough
+    - tomato
+  - type: Tag
+    tags:
+    - Meat

@@ -5,22 +5,20 @@
   id: VascularSystemPlant
   abstract: true
   components:
-  - type: SolutionContainerManager
-    solutions:
-      pool:
-        maxVol: 30
-        reagents:
-        - ReagentId: Resin
-          Quantity: 30
+  - type: Solution
+    id: vasculature
+    solution:
+      reagents:
+      - ReagentId: Resin
+        Quantity: 30
   - type: SolutionRegeneration
-    solution: pool
     generated:
       reagents:
       - ReagentId: Resin
         Quantity: 0.1
   #- type: DrainableSolution # Left here in case we want to add taps to them later.
-    #solution: pool
+    #solution: vasculature
   - type: DrawableSolution
-    solution: pool
+    solution: vasculature
   - type: InjectableSolution
-    solution: pool
+    solution: vasculature

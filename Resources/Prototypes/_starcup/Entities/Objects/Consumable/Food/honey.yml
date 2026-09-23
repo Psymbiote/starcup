@@ -4,15 +4,13 @@
   name: honey jar
   description: Golden treasure of bee and bear.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 50
-        reagents:
-        - ReagentId: Honey
-          Quantity: 50
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Honey
+        Quantity: 60
   - type: Label
-    currentLabel: reagent-name-honey
+    localizedLabel: reagent-name-honey
   - type: Sprite
     sprite: _starcup/Objects/Consumable/Drinks/honey_jar.rsi
     layers:
