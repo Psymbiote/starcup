@@ -92,6 +92,9 @@ reagent-desc-mime-tai = Orgeat not available? Nothing is better than nothing.
 reagent-name-bnw = black and white
 reagent-desc-bnw = The classic beer cocktail, but the pale ale looks a little paler than usual? Must be Nothing.
 
+reagent-name-bluescreen-curacao = bluescreen Curaçao
+reagent-desc-bluescreen-curacao = You used to need an illegal operation to get this stuff.
+
 # Rewritten Drinks
 reagent-desc-amasec-starcup = In the grim darkness of neocapitalism, there is only war.
 

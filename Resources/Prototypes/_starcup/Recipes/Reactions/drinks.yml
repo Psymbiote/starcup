@@ -462,7 +462,7 @@
     Nothing:
       amount: 1
   products:
-    SilentNight: 4
+    SilentNight: 3
 
 - type: reaction
   id: SilentNightNog
@@ -472,14 +472,34 @@
     Nothing:
       amount: 1
   products:
-    SilentNight: 2
+    SilentNight: 1
 
 - type: reaction
   id: MimeTai
+  requiredMixerCategories:
+  - Stir
   reactants:
-    Eggnog:
+    Rum:
+      amount: 1
+    JuiceOrange:
+      amount: 1
+    BlueCuracao:
+      amount: 1
+    JuiceLime:
+      amount: 1
+    ice:
       amount: 1
     Nothing:
       amount: 1
   products:
-    SilentNight: 2
+    MimeTai: 4
+
+- type: reaction
+  id: BluescreenCuracao
+  reactants:
+    Fersilicite:
+      amount: 1
+    BlueCuracao:
+      amount: 2
+  products:
+    BluescreenCuracao: 3

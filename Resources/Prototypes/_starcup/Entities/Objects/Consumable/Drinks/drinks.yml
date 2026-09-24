@@ -558,3 +558,17 @@
   - type: Icon
     sprite: _starcup/Objects/Consumable/Drinks/black_and_white.rsi
     state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkBluescreenCuracaoGlass
+  suffix: bluescreen curacao
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: BluescreenCuracao
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/bluescreen_curacao.rsi
+    state: icon

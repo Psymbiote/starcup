@@ -690,3 +690,22 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   fizziness: 0.6
+
+- type: reagent
+  id: BluescreenCuracao
+  name: reagent-name-bluescreen-curacao
+  parent: BaseAlcohol
+  desc: reagent-desc-bluescreen-curacao
+  physicalDesc: reagent-physical-desc-bubbly
+  flavor: bluescreencuracao
+  color: "#0099FF"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/bluescreen_curacao.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  metabolisms:
+    Digestion:
+      metabolites:
+        Ethanol: 0.5

@@ -195,6 +195,11 @@
   flavorType: Complex
   description: flavor-complex-black-and-white
 
+- type: flavor
+  id: bluescreencuracao
+  flavorType: Complex
+  description: flavor-complex-bluescreen-curacao
+
 # Rewritten Drink Flavors
 - type: flavor
   id: acidspit-starcup
