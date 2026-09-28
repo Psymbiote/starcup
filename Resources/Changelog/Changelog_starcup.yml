@@ -4410,3 +4410,19 @@
   id: 8544
   time: '2026-09-23T23:49:26.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/1004
+- author: Psymbiote
+  changes:
+  - message: Outer corners for wallpapers. This is really a mapping assets, constructing
+      wallpapers in game is unfortunately still bugged. You can always provide the
+      materials and ahelp!
+    type: Add
+  id: 8545
+  time: '2026-09-28T07:45:01.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/1002
+- author: Psymbiote
+  changes:
+  - message: Fixed mob scream actions. Now they should all make sound again.
+    type: Fix
+  id: 8546
+  time: '2026-09-28T07:45:41.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/1003
