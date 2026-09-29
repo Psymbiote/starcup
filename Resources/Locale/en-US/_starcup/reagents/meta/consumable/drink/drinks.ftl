@@ -28,3 +28,12 @@ reagent-desc-evil-princess = For holding daintily in one hand while dismissively
 
 reagent-name-cheermime = cheermime
 reagent-desc-cheermime = Isn't this just cherry soda... ?
+
+reagent-name-dragonslayer = dragonslayer
+reagent-desc-dragonslayer = The crowning goblet of a tried and true salvager.
+
+reagent-name-dragon-naysayer = dragon naysayer
+reagent-desc-dragon-naysayer = Silence the beast's lies.
+
+reagent-name-hivemind = hivemind
+reagent-desc-hivemind = Supposedly connects the drinker to the changelings' murderous telepathic frequencies. Hey, it beats drinking alone.

@@ -95,6 +95,9 @@ reagent-desc-bnw = The classic beer cocktail, but the pale ale looks a little pa
 reagent-name-bluescreen-curacao = bluescreen Curaçao
 reagent-desc-bluescreen-curacao = You used to need an illegal operation to get this stuff.
 
+reagent-name-coco-geisha = coco geisha
+reagent-desc-coco-geisha = The burn of whiskey and sake combined in a simple yet elegant cocktail.
+
 # Rewritten Drinks
 reagent-desc-amasec-starcup = In the grim darkness of neocapitalism, there is only war.
 

@@ -696,7 +696,7 @@
   name: reagent-name-bluescreen-curacao
   parent: BaseAlcohol
   desc: reagent-desc-bluescreen-curacao
-  physicalDesc: reagent-physical-desc-bubbly
+  physicalDesc: reagent-physical-desc-shiny
   flavor: bluescreencuracao
   color: "#0099FF"
   metamorphicSprite:
@@ -709,3 +709,22 @@
     Digestion:
       metabolites:
         Ethanol: 0.5
+
+- type: reagent
+  id: CocoGeisha
+  name: reagent-name-coco-geisha
+  parent: BaseAlcohol
+  desc: reagent-desc-coco-geisha
+  physicalDesc: reagent-physical-desc-shiny
+  flavor: cocogeisha
+  color: "#c2bcb5"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/coco_geisha.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  metabolisms:
+    Digestion:
+      metabolites:
+        Ethanol: 0.8

@@ -134,6 +134,48 @@
     sprite: _starcup/Objects/Consumable/Drinks/silent_night.rsi
     state: icon
 
+- type: entity
+  parent: DrinkGlass
+  id: DrinkDragonslayerGlass
+  suffix: dragonslayer
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Dragonslayer
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/dragonslayer.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkDragonNaysayerGlass
+  suffix: dragon naysayer
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: DragonNaysayer
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/dragon_naysayer.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: HivemindGlass
+  suffix: hivemind
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: DragonNaysayer
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/hivemind.rsi
+    state: icon
+
 # Alcohol
 - type: entity
   parent: DrinkGlass
@@ -571,4 +613,18 @@
         Quantity: 30
   - type: Icon
     sprite: _starcup/Objects/Consumable/Drinks/bluescreen_curacao.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkCocoGeishaGlass
+  suffix: coco geisha
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: CocoGeisha
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/coco_geisha.rsi
     state: icon

@@ -98,3 +98,93 @@
   metamorphicMaxFillLevels: 6
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
+
+- type: reagent
+  id: Dragonslayer
+  name: reagent-name-dragonslayer
+  parent: BaseDrink
+  desc: reagent-desc-dragonslayer
+  physicalDesc: reagent-physical-desc-abrasive
+  flavor: dragonslayer
+  color: "#f6774e"
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:ModifyBloodLevel
+        amount: 3
+      - !type:EvenHealthChange
+        damage:
+          Burn: -4
+          Brute: -4
+          Toxin: -3
+      - !type:HealthChange
+        damage:
+          types:
+            Bloodloss: -4
+      - !type:ModifyBleed
+        amount: -2
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/dragonslayer.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+
+- type: reagent
+  id: DragonNaysayer
+  name: reagent-name-dragon-naysayer
+  parent: BaseDrink
+  desc: reagent-desc-dragon-naysayer
+  physicalDesc: reagent-physical-desc-abrasive
+  flavor: dragonnaysayer
+  color: "#d49384"
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:GenericStatusEffect
+        key: Muted
+        component: Muted
+      - !type:SatiateThirst
+        factor: 2
+      - !type:ModifyBloodLevel
+        amount: 3
+      - !type:EvenHealthChange
+        damage:
+          Burn: -4
+          Brute: -4
+          Toxin: -3
+      - !type:HealthChange
+        damage:
+          types:
+            Bloodloss: -4
+      - !type:ModifyBleed
+        amount: -2
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/dragon_naysayer.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+
+- type: reagent
+  id: Hivemind
+  name: reagent-name-hivemind
+  parent: BaseDrink
+  desc: reagent-desc-hivemind
+  physicalDesc: reagent-physical-desc-enigmatic
+  flavor: hivemind
+  color: "#af6188"
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 1
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/hivemind.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true

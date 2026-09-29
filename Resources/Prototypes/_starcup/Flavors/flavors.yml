@@ -200,6 +200,26 @@
   flavorType: Complex
   description: flavor-complex-bluescreen-curacao
 
+- type: flavor
+  id: cocogeisha
+  flavorType: Complex
+  description: flavor-complex-coco-geisha
+
+- type: flavor
+  id: dragonslayer
+  flavorType: Complex
+  description: flavor-complex-dragonslayer
+
+- type: flavor
+  id: dragonnaysayer
+  flavorType: Complex
+  description: flavor-complex-dragon-naysayer
+
+- type: flavor
+  id: hivemind
+  flavorType: Complex
+  description: flavor-complex-hivemind
+
 # Rewritten Drink Flavors
 - type: flavor
   id: acidspit-starcup
