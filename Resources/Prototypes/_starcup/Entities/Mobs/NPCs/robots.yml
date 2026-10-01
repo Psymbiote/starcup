@@ -179,7 +179,7 @@
     rootTask:
       task: SimpleHostileCompound
   - type: MeleeWeapon
-    animation: WeaponArcClaw
+    animation: WeaponArcSlice
     soundHit:
       collection: SawCutting
     damage:
