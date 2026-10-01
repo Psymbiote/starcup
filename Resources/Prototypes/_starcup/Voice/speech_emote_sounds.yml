@@ -51,7 +51,7 @@
 
 - type: emoteSounds
   parent: HumanoidSilicon
-  id: DroneSilicon
+  id: DroneVoiceEmotes
   sounds:
     AmbientHumEmote:
       path: /Audio/_starcup/Effects/drone_hover.ogg

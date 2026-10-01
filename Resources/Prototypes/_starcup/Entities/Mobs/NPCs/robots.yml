@@ -60,21 +60,15 @@
     speechSounds: Pai
     allowedEmotes: ['AmbientHumEmote']
   - type: Vocal
-    emoteSounds: DroneSilicon
-  - type: AutoEmote
-    emotes:
-    - HumAutoEmote
+    emoteSounds: DroneVoiceEmotes
   - type: Deathgasp
     prototype: SiliconDeathgasp
     needsCritical: false
-#  - type: SpamEmitSound ## Need to find a way for it to stop emitting it once the mob is dead.
-#    sound:
-#      path: /Audio/_starcup/Effects/drone_hover.ogg
-#      minInterval: 1
-#      maxInterval: 1
 
 - type: entity
-  parent: MobBaseDrone
+  parent:
+  - MobBaseDrone
+  - MobHumAutoemote
   id: MobSecurityDrone
   name: security drone
   description: A security drone equipped with a stunner.
@@ -124,6 +118,8 @@
   name: laser drone
   description: A lethal security drone equipped with a laser.
   components:
+  - type: NameIdentifier
+    group: Cybersun
   - type: Sprite
     drawdepth: Mobs
     sprite: _starcup/Mobs/Silicon/drones.rsi
@@ -153,10 +149,11 @@
     rootTask:
       task: SimpleRangedHostileCompound
 
-## Other bots
 - type: entity
   id: MobViscerator
   parent: MobBaseDrone
+  name: viscerator
+  description: A drone equipped with spinning blades and a sensor for things that need to be sliced.
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -211,3 +208,12 @@
     damage:
       types:
         Heat: 12
+
+## Miscellaneous
+# This is here to add as an extra parent to robots that hum.
+- type: entity
+  id: MobHumAutoemote
+  components:
+  - type: AutoEmote
+    emotes:
+    - HumAutoEmote
