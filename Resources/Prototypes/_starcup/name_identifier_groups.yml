@@ -1,4 +1,4 @@
-﻿- type: nameIdentifierGroup
+- type: nameIdentifierGroup
   id: Cybersun
   format: name-identifier-format-cybersun
   minValue: 1000
