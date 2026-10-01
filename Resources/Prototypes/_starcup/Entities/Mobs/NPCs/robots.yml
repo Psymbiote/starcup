@@ -118,8 +118,6 @@
   name: laser drone
   description: A lethal security drone equipped with a laser.
   components:
-  - type: NameIdentifier
-    group: Cybersun
   - type: Sprite
     drawdepth: Mobs
     sprite: _starcup/Mobs/Silicon/drones.rsi

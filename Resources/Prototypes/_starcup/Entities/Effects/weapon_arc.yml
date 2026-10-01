@@ -36,7 +36,6 @@
     state: gore
   - type: TimedDespawn
     lifetime: 0.399
-    lifetime: 0.399
 
 - type: entity
   id: WeaponArcSlice
