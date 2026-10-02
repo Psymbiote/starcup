@@ -233,19 +233,25 @@ def changelog_entries_to_message_lines(entries: Iterable[ChangelogEntry]) -> lis
         message_lines.append("\n")
         message_lines.append(f"**{contributor_name}** updated:\n")
 
-        for entry in group:
-            url = entry.get("url")
-            if url and not url.strip():
-                url = None
-
-            for change in entry["changes"]:
-                emoji = TYPES_TO_EMOJI.get(change["type"], "❓")
-                message = change["message"]
-
-                if EXPERIMENTAL_LABEL in entry["labels"]:
-                    emoji = f"{emoji}{EXPERIMENTAL_EMOJI}"
-
-                message_lines.append(create_change_line(emoji, message, url))
+        try:
+            for entry in group:
+                url = entry.get("url")
+                if url and not url.strip():
+                    url = None
+    
+                for change in entry["changes"]:
+                    emoji = TYPES_TO_EMOJI.get(change["type"], "❓")
+                    message = change["message"]
+    
+                    if EXPERIMENTAL_LABEL in entry["labels"]:
+                        emoji = f"{emoji}{EXPERIMENTAL_EMOJI}"
+    
+                    message_lines.append(create_change_line(emoji, message, url))
+# begin starcup
+        except Exception:
+            print(f"[Warning] Caught exception while building message lines:", file=sys.stderr)
+            print(traceback.format_exc(), file=sys.stderr)
+# end starcup
 
     return message_lines
 
