@@ -66,3 +66,15 @@
   id: MobMimeletGear
   equipment:
     mask: ClothingMaskMime
+
+# InterDyne Enforcer Gear
+- type: startingGear
+  id: InterdyneEnforcerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitGenetics
+    eyes: ClothingEyesGlassesSurplusBallisticInterdyne
+    outerClothing: ClothingOuterCoatHighCollar
+    gloves: ClothingHandsGlovesNitrile
+    shoes: ClothingShoesBootsJack
+    id: SyndiPDA
+    pocket1: LauncherSyringe

@@ -19,3 +19,17 @@
   name: NanoTrasen shuttle pilot
   parent: MobNanotrasenFootsoldier
   id: MobNanotrasenFootsoldierPilot
+
+- type: entity
+  name: Interdyne enforcer
+  parent: MobSyndicateFootsoldier
+  id: MobInterdyneEnforcer
+  components:
+  - type: Loadout
+    prototypes:
+    - InterdyneEnforcerGear
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
