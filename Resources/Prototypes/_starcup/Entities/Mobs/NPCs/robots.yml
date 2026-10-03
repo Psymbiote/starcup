@@ -34,7 +34,7 @@
     states:
       Alive:
         Base: base
-        BaseUnshaded: unshaded
+        #BaseUnshaded: unshaded
       Dead:
         Base: dead
         #BaseUnshaded: dead
@@ -73,6 +73,9 @@
   name: security drone
   description: A security drone equipped with a stunner.
   components:
+  - type: NpcFactionMember
+    factions:
+    - NanoTrasen
   - type: Sprite
     drawdepth: Mobs
     sprite: _starcup/Mobs/Silicon/drones.rsi
@@ -107,7 +110,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - SimpleHostile
+    - Syndicate
   - type: HTN
     rootTask:
       task: SimpleRangedHostileCompound
@@ -142,7 +145,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - SimpleHostile
+    - Syndicate
   - type: HTN
     rootTask:
       task: SimpleRangedHostileCompound
@@ -167,17 +170,19 @@
     states:
       Alive:
         Base: base
-        BaseUnshaded: unshaded
+        #BaseUnshaded: unshaded
       Dead:
         Base: destroyed
+        #BaseUnshaded: destroyed
   - type: NpcFactionMember
     factions:
-    - SimpleHostile
+    - Syndicate
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
   - type: MeleeWeapon
     animation: WeaponArcSlice
+    attackRate: 0.75
     soundHit:
       collection: SawCutting
     damage:
@@ -205,7 +210,7 @@
     impactEffect: BulletImpactEffectOrangeDisabler
     damage:
       types:
-        Heat: 12
+        Heat: 10
 
 ## Miscellaneous
 # This is here to add as an extra parent to robots that hum.
