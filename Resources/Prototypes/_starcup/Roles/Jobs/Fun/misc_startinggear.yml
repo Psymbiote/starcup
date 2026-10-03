@@ -67,14 +67,14 @@
   equipment:
     mask: ClothingMaskMime
 
-# InterDyne Enforcer Gear
+# InterDyne Biodrone Gear
 - type: startingGear
-  id: InterdyneEnforcerGear
+  id: InterdyneBiodroneGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitGenetics
     eyes: ClothingEyesGlassesSurplusBallisticInterdyne
     outerClothing: ClothingOuterCoatHighCollar
     gloves: ClothingHandsGlovesNitrile
     shoes: ClothingShoesBootsJack
-    id: SyndiPDA
     pocket1: LauncherSyringe
+    pocket2: CombatScalpel

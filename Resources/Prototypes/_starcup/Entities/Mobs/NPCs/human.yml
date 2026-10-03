@@ -21,15 +21,14 @@
   id: MobNanotrasenFootsoldierPilot
 
 - type: entity
-  name: Interdyne enforcer
+  name: biodrone
   parent: MobSyndicateFootsoldier
-  id: MobInterdyneEnforcer
+  id: MobInterdyneBiodrone
+  description: Interdyne's very own homunculi, disposable footsoldiers with no higher cognitive functions than their programming.
   components:
   - type: Loadout
     prototypes:
-    - InterdyneEnforcerGear
-  - type: InputMover
-  - type: MobMover
-  - type: HTN
-    rootTask:
-      task: SimpleHumanoidHostileCompound
+    - InterdyneBiodroneGear
+  - type: NameIdentifier
+    group: Biodrone
+  - type: Unrevivable
