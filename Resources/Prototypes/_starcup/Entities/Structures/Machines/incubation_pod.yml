@@ -48,8 +48,6 @@
     powerLoad: 200
   - type: Appearance
   - type: Climbable
-  - type: StaticPrice
-    price: 1000
   - type: ContainerContainer
     containers:
       machine_board: !type:Container
