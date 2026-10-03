@@ -4441,3 +4441,11 @@
   id: 8547
   time: '2026-10-03T15:30:39.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/1006
+- author: KoboldCatgirl
+  changes:
+  - message: Added the printable silence cyborg module, which furnishes a soft-spoken
+      cyborgs with an AAC tablet, tape recorder, mime crayon, camera, and more!
+    type: Add
+  id: 8548
+  time: '2026-10-03T16:28:19.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/1008
