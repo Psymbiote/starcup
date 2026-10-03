@@ -4426,3 +4426,18 @@
   id: 8546
   time: '2026-09-28T07:45:41.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/1003
+- author: KoboldCatgirl
+  changes:
+  - message: 'Ported new trinkets: designer pens, prize balls, the tailor''s knife,
+      and hand mirrors/the hair comb (also attainable in theater crates)!'
+    type: Add
+  - message: Ported Den's worn hand sprites for gold/silver rings!
+    type: Add
+  - message: 'Ported new plushies: teddy bears and ragdolls (available in loadouts),
+      space bears, giant space bears, harpies, dragons, and deer!'
+    type: Add
+  - message: Ported the walking cane and S&S AAC tablet for Accessibility loadouts.
+    type: Add
+  id: 8547
+  time: '2026-10-03T15:30:39.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/1006
