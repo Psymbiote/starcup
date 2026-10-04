@@ -46,7 +46,7 @@
 - type: entity
   parent: MobSyndicateFootsoldier
   id: MobFPACaptain
-  name: FPA captain
+  name: FPA Ster-Captain # I think the 'e', as in 'aster', gives the title a stronger sound. Halfway between 'star' and 'stern'.
   description: The captain of a Five Points Armory vessel. A real big shot, or so they think.
   components:
   - type: Loadout
