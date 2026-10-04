@@ -67,7 +67,7 @@
   equipment:
     mask: ClothingMaskMime
 
-# InterDyne Biodrone Gear
+# InterDyne Pharmaceuticals gear
 - type: startingGear
   id: InterdyneBiodroneGear
   equipment:
@@ -78,3 +78,34 @@
     shoes: ClothingShoesBootsJack
     pocket1: LauncherSyringe
     pocket2: CombatScalpel
+
+# Five Points Armory gear
+- type: startingGear
+  id: FPAHenchmanGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNanotrasen
+    head: ClothingHeadHatBluesoft
+    eyes: ClothingEyesGlassesCheapSunglassesBig
+    outerClothing: ClothingCorpoJacketFPA
+    gloves: ClothingHandsGlovesFingerless
+    id: NTPDA
+    ears: ClothingHeadsetAltNanotrasen
+    shoes: ClothingShoesBootsNTFilled
+    pocket1: WeaponLaserSvalinn
+    pocket2: PowerCellHigh
+  inhand:
+  - TelescopicBaton
+
+- type: startingGear
+  id: FPACaptainGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCaptain
+    head: ClothingHeadHatCapcap
+    outerClothing: ClothingCorpoJacketFPA
+    id: NTPDA
+    ears: ClothingHeadsetAltNanotrasen
+    belt: ClothingBeltSheathFilled
+    shoes: ClothingShoesBootsNTFilled
+    pocket1: PowerCellHigh
+  inhand:
+  - WeaponEnergyShotgun

@@ -32,3 +32,23 @@
   - type: NameIdentifier
     group: Biodrone
   - type: Unrevivable
+
+- type: entity
+  name: FPA henchman
+  parent: MobSyndicateFootsoldier
+  id: MobFPAHenchman
+  description: A low-rate NanoTrasen toadie. Probably wouldn't be missed in this sector.
+  components:
+  - type: Loadout
+    prototypes:
+    - FPAHenchmanGear
+
+- type: entity
+  name: FPA captain
+  parent: MobSyndicateFootsoldier
+  id: MobFPAHenchman
+  description: The captain of a Five Points Armory vessel. A real big shot, or so they think.
+  components:
+  - type: Loadout
+    prototypes:
+    - FPACaptainGear

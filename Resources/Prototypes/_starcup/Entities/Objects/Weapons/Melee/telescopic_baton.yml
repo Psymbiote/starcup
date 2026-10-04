@@ -1,0 +1,60 @@
+# SPDX-FileCopyrightText: 2024 Remuchi
+# SPDX-FileCopyrightText: 2024 Skubman
+# SPDX-FileCopyrightText: 2024 dge21
+# SPDX-FileCopyrightText: 2025 MajorMoth
+# SPDX-FileCopyrightText: 2025 portfiend
+# SPDX-FileCopyrightText: 2025 sleepyyapril
+#
+# SPDX-License-Identifier: MIT AND AGPL-3.0-or-later
+# Moved to our namespace due to extensive modification.
+
+- type: entity
+  id: TelescopicBaton
+  parent: [ BaseCommandContraband, BaseItem ]
+  name: telescopic baton
+  description: A compact personal defense weapon. Sturdy enough to knock the feet out from under attackers.
+  components:
+  - type: Sprite
+    sprite: _DEN/Objects/Weapons/Melee/telebaton.rsi
+    layers:
+    - state: icon-off
+    - state: icon
+      visible: false
+      map: [ "baton" ]
+  - type: Item
+    size: Small
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/_DEN/Weapons/telescopicon.ogg
+      params:
+        volume: -2
+    soundDeactivate:
+      path: /Audio/_DEN/Weapons/telescopicoff.ogg
+      params:
+        volume: -2
+  - type: ComponentToggler
+    components:
+    - type: DisarmMalus
+      malus: 0.6
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Blunt: 8
+  - type: ItemToggleSize
+    activatedSize: Normal
+  - type: UseDelay
+    delay: 2
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    bluntStaminaDamageFactor: 1.5
+    damage:
+      types:
+        Blunt: 1
+  - type: Appearance
+  - type: ToggleableVisuals
+    spriteLayer: baton
+    inhandVisuals:
+      left:
+      - state: inhand-left-baton
+      right:
+      - state: inhand-right-baton
