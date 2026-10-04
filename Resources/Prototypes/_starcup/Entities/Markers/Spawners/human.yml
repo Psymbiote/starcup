@@ -1,7 +1,7 @@
 - type: entity
-  name: NanoTrasen footsoldier spawner
-  id: SpawnMobNanotrasenFootSoldier
   parent: MarkerBase
+  id: SpawnMobNanotrasenFootSoldier
+  name: NanoTrasen footsoldier spawner
   components:
 #I don't know why they did it like this I just copied it
   - type: Sprite
@@ -26,18 +26,18 @@
     - MobNanotrasenFootsoldier
 
 - type: entity
-  name: NanoTrasen shuttle pilot spawner
-  id: SpawnMobNanotrasenFootsoldierPilot
   parent: SpawnMobNanotrasenFootSoldier
+  id: SpawnMobNanotrasenFootsoldierPilot
+  name: NanoTrasen shuttle pilot spawner
   components:
   - type: ConditionalSpawner
     prototypes:
     - MobNanotrasenFootsoldierPilot
 
 - type: entity
-  name: Interdyne biodrone spawner
-  id: SpawnMobMobInterdyneBiodrone
   parent: MarkerBaseStarcup
+  id: SpawnMobInterdyneBiodrone
+  name: Interdyne biodrone spawner
   components:
   - type: Sprite
     layers:
@@ -59,3 +59,34 @@
   - type: ConditionalSpawner
     prototypes:
     - MobInterdyneBiodrone
+
+# FPA
+- type: entity
+  parent: MarkerBaseStarcup
+  id: SpawnMobFPAHenchman
+  name: FPA Henchman spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: shadowgreen
+    - state: green
+    - sprite: Mobs/Species/Human/parts.rsi
+      state: full
+    - sprite: Clothing/Shoes/Boots/combatboots.rsi
+      state: equipped-FEET
+    - sprite: Clothing/Uniforms/Jumpsuit/nanotrasen.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: _DEN/Clothing/OuterClothing/WinterCoats/corpo_jacket_five_points_armory.rsi
+      state: equipped-OUTERCLOTHING
+    - sprite: Clothing/Hands/Gloves/fingerless.rsi
+      state: equipped-HAND
+    - sprite: _DEN/Clothing/Eyes/Glasses/sunglasses_big.rsi
+      state: equipped-EYES
+    - sprite: Clothing/Head/Soft/bluesoft.rsi
+      state: equipped-HELMET
+    - sprite: _starcup/Clothing/Ears/Headsets/nanotrasen.rsi
+      state: alt-equipped-EARS
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+    - MobFPAHenchman

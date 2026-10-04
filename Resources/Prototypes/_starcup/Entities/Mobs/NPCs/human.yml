@@ -1,7 +1,7 @@
 - type: entity
-  name: NanoTrasen footsoldier
   parent: MobHuman
   id: MobNanotrasenFootsoldier
+  name: NanoTrasen footsoldier
   components:
     - type: NpcFactionMember
       factions:
@@ -17,13 +17,13 @@
 
 - type: entity
   name: NanoTrasen shuttle pilot
-  parent: MobNanotrasenFootsoldier
   id: MobNanotrasenFootsoldierPilot
+  parent: MobNanotrasenFootsoldier
 
 - type: entity
-  name: biodrone
   parent: MobSyndicateFootsoldier
   id: MobInterdyneBiodrone
+  name: biodrone
   description: Interdyne's very own homunculi, disposable footsoldiers with no higher cognitive functions than their programming.
   components:
   - type: Loadout
@@ -34,9 +34,9 @@
   - type: Unrevivable
 
 - type: entity
-  name: FPA henchman
   parent: MobSyndicateFootsoldier
   id: MobFPAHenchman
+  name: FPA henchman
   description: A low-rate NanoTrasen toadie. Probably wouldn't be missed in this sector.
   components:
   - type: Loadout
@@ -44,9 +44,9 @@
     - FPAHenchmanGear
 
 - type: entity
-  name: FPA captain
   parent: MobSyndicateFootsoldier
-  id: MobFPAHenchman
+  id: MobFPACaptain
+  name: FPA captain
   description: The captain of a Five Points Armory vessel. A real big shot, or so they think.
   components:
   - type: Loadout

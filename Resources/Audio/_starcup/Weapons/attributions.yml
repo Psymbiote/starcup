@@ -1,0 +1,12 @@
+- files:
+    - telecopicon.ogg
+    - telecopicoff.ogg
+  license: "CC0-1.0"
+  copyright: "Sampled from Flick/Telescopic Baton by Bow-Tie."
+  source: "https://freesound.org/s/500806/"
+
+- files:
+    - telecopichit.ogg
+  license: "CC0-1.0"
+  copyright: "Modified from bullet_impact_metal_heavy_08 by Gamemaster Audio."
+  source: "https://sonniss.com/gameaudiogdc/"

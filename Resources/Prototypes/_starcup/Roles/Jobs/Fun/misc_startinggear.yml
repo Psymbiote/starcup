@@ -77,7 +77,8 @@
     gloves: ClothingHandsGlovesNitrile
     shoes: ClothingShoesBootsJack
     pocket1: LauncherSyringe
-    pocket2: CombatScalpel
+  inhand:
+  - CombatScalpel
 
 # Five Points Armory gear
 - type: startingGear

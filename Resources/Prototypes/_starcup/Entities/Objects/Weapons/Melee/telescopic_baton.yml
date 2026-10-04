@@ -10,7 +10,7 @@
 
 - type: entity
   id: TelescopicBaton
-  parent: [ BaseCommandContraband, BaseItem ]
+  parent: [ BaseItem, BaseSecurityContraband, BaseExaminableClothing ]
   name: telescopic baton
   description: A compact personal defense weapon. Sturdy enough to knock the feet out from under attackers.
   components:
@@ -25,21 +25,23 @@
     size: Small
   - type: ItemToggle
     soundActivate:
-      path: /Audio/_DEN/Weapons/telescopicon.ogg
-      params:
-        volume: -2
+      path: /Audio/_starcup/Weapons/telescopicon.ogg
+     #params:
+        #volume: -2
     soundDeactivate:
-      path: /Audio/_DEN/Weapons/telescopicoff.ogg
-      params:
-        volume: -2
+      path: /Audio/_starcup/Weapons/telescopicoff.ogg
   - type: ComponentToggler
     components:
     - type: DisarmMalus
       malus: 0.6
   - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/_starcup/Weapons/telescopichit.ogg
+      params:
+        variation: 0.125
     activatedDamage:
       types:
-        Blunt: 8
+        Blunt: 7
   - type: ItemToggleSize
     activatedSize: Normal
   - type: UseDelay
@@ -58,3 +60,5 @@
       - state: inhand-left-baton
       right:
       - state: inhand-right-baton
+  - type: ExaminableClothing
+    examineText: clothing-telescopic-baton
