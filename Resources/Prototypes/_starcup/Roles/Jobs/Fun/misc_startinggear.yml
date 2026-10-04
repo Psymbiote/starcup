@@ -105,8 +105,9 @@
     outerClothing: ClothingCorpoJacketFPA
     id: NTPDA
     ears: ClothingHeadsetAltNanotrasen
-    belt: ClothingBeltSheathFilled
+    belt: ClothingBeltSheath
     shoes: ClothingShoesBootsNTFilled
+    back: WeaponEnergyShotgun
     pocket1: PowerCellHigh
   inhand:
-  - WeaponEnergyShotgun
+  - CaptainSabre
