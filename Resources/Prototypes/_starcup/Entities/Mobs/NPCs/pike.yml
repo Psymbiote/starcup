@@ -51,10 +51,8 @@
     speechSounds: SharkminnowSpeechSounds
     allowedEmotes: ['CreatureGrowl']
   - type: Vocal
-    sounds:
-      Unsexed: SharkminnowSpeechEmotes
-    screamId: CreatureGrowl
-    screamAction: ActionEmitSound
+    emoteSounds: SharkminnowSpeechEmotes
+    emoteAction: ActionCreatureGrowl
   - type: AutoEmote
     emotes:
     - GrowlAutoEmote

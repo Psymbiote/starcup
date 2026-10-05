@@ -21132,17 +21132,14 @@ entities:
       rot: -6.283185307179586 rad
       pos: -0.35275316,-9.408485
       parent: 2
-    - type: SolutionContainerManager
-      solutions:
-        beaker:
-          temperature: 293.15
-          canReact: True
-          maxVol: 50
-          name: null
-          reagents:
-          - data: null
-            ReagentId: Cryoxadone
-            Quantity: 50
+    - type: Solution
+      solution:
+        temperature: 293.15
+        canReact: True
+        name: null
+        reagents:
+        - ReagentId: Cryoxadone
+          Quantity: 60
 - proto: Bed
   entities:
   - uid: 1355
@@ -83052,7 +83049,6 @@ entities:
   - uid: 11853
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
       pos: -6.5,15.5
       parent: 2
   - uid: 11854
@@ -85518,13 +85514,11 @@ entities:
   - uid: 12346
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -9.5,-4.5
       parent: 2
   - uid: 12347
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: -9.5,-5.5
       parent: 2
   - uid: 12348
@@ -85575,73 +85569,61 @@ entities:
   - uid: 12357
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 37.5,75.5
       parent: 2
   - uid: 12358
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 34.5,75.5
       parent: 2
   - uid: 12359
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 35.5,75.5
       parent: 2
   - uid: 12360
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 36.5,75.5
       parent: 2
   - uid: 12361
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 40.5,75.5
       parent: 2
   - uid: 12362
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 41.5,75.5
       parent: 2
   - uid: 12363
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 42.5,75.5
       parent: 2
   - uid: 12364
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 44.5,75.5
       parent: 2
   - uid: 12365
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 46.5,74.5
       parent: 2
   - uid: 12366
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 47.5,74.5
       parent: 2
   - uid: 12367
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 48.5,74.5
       parent: 2
   - uid: 12368
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 49.5,74.5
       parent: 2
   - uid: 12369
@@ -85702,7 +85684,6 @@ entities:
   - uid: 12380
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
       pos: -6.5,16.5
       parent: 2
 - proto: GrilleBroken
@@ -87518,17 +87499,14 @@ entities:
       rot: -6.283185307179586 rad
       pos: -0.5884385,-9.248528
       parent: 2
-    - type: SolutionContainerManager
-      solutions:
-        beaker:
-          temperature: 293.15
-          canReact: True
-          maxVol: 100
-          name: null
-          reagents:
-          - data: null
-            ReagentId: Cryoxadone
-            Quantity: 100
+    - type: Solution
+      solution:
+        temperature: 293.15
+        canReact: True
+        name: null
+        reagents:
+        - ReagentId: Cryoxadone
+          Quantity: 120
 - proto: LeftArmHuman
   entities:
   - uid: 12656

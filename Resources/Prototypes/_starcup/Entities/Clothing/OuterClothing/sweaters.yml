@@ -1,22 +1,18 @@
 - type: entity
-  parent: ClothingOuterBase
+  parent: [ SolutionFood, SolutionNormal, ClothingOuterBase, TemperatureProtection ]
   id: ClothingOuterSweaterBase
   abstract: true
   components:
-  - type: TemperatureProtection
-    heatingCoefficient: 1.1
-    coolingCoefficient: 0.6
   - type: Item
     size: Normal
   - type: Edible
     requiresSpecialDigestion: true
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 30
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 30
+  - type: Solution
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 30
   - type: Tag
     tags:
     - ClothMade

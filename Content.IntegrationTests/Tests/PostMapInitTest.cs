@@ -85,7 +85,8 @@ namespace Content.IntegrationTests.Tests
          // "/Maps/centcomm.yml",
             "/Maps/Shuttles/AdminSpawn/**", // admin gaming
     		"/Maps/_starcup/syndcomm.yml", // starcup: contains centcomm rubber stamp, centcomm folder, handheld crew monitor
-            "/Maps/_starcup/Events/event-syndcomm-epilogue.yml" // starcup: contains centcomm rubber stamp, centcomm folder, handheld crew monitor
+            "/Maps/_starcup/Events/event-syndcomm-epilogue.yml", // starcup: contains centcomm rubber stamp, centcomm folder, handheld crew monitor
+            "/Maps/_starcup/Events/event-reach-ptarmheist.yml" // starcup: contains perforator shuttle guns
         };
 
         /// <summary>
@@ -335,7 +336,6 @@ namespace Content.IntegrationTests.Tests
             var pair = Pair;
             var server = pair.Server;
 
-            var mapManager = server.ResolveDependency<IMapManager>();
             var entManager = server.ResolveDependency<IEntityManager>();
             var mapLoader = entManager.System<MapLoaderSystem>();
             var mapSystem = entManager.System<SharedMapSystem>();
@@ -362,7 +362,7 @@ namespace Content.IntegrationTests.Tests
                 EntityUid? targetGrid = null;
                 var memberQuery = entManager.GetEntityQuery<StationMemberComponent>();
 
-                var grids = mapManager.GetAllGrids(mapId).ToList();
+                var grids = mapSystem.GetAllGrids(mapId).ToList();
                 var gridUids = grids.Select(o => o.Owner).ToList();
                 targetGrid = gridUids.First();
 

@@ -15,8 +15,22 @@
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
       visible: false
+  # begin starcup - add inhands
+  - type: Item
+    sprite: Objects/Misc/bureaucracy.rsi
+    size: Tiny
+    inhandVisuals:
+      left:
+      - state: paper-inhand-left
+        color: "#e670b5"
+      right:
+      - state: paper-inhand-right
+        color: "#e670b5"
+  # end starcup
   - type: PaperVisuals
     backgroundModulate: "#eb87c0"
+  - type: PaperLabelType
+    paperType: PaperDyedPink
 
 - type: entity
   parent: Paper
@@ -35,8 +49,22 @@
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
       visible: false
+  # begin starcup - add inhands
+  - type: Item
+    sprite: Objects/Misc/bureaucracy.rsi
+    size: Tiny
+    inhandVisuals:
+      left:
+      - state: paper-inhand-left
+        color: "#ba453f"
+      right:
+      - state: paper-inhand-right
+        color: "#ba453f"
+  # end starcup
   - type: PaperVisuals
     backgroundModulate: "#ba453f"
+  - type: PaperLabelType
+    paperType: PaperDyedRed
 
 - type: entity
   parent: Paper
@@ -55,8 +83,22 @@
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
       visible: false
+  # begin starcup - add inhands
+  - type: Item
+    sprite: Objects/Misc/bureaucracy.rsi
+    size: Tiny
+    inhandVisuals:
+      left:
+      - state: paper-inhand-left
+        color: "#ec912e"
+      right:
+      - state: paper-inhand-right
+        color: "#ec912e"
+  # end starcup
   - type: PaperVisuals
     backgroundModulate: "#ec912e"
+  - type: PaperLabelType
+    paperType: PaperDyedOrange
 
 - type: entity
   parent: Paper
@@ -75,8 +117,22 @@
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
       visible: false
+  # begin starcup - add inhands
+  - type: Item
+    sprite: Objects/Misc/bureaucracy.rsi
+    size: Tiny
+    inhandVisuals:
+      left:
+      - state: paper-inhand-left
+        color: "#ffd617"
+      right:
+      - state: paper-inhand-right
+        color: "#ffd617"
+  # end starcup
   - type: PaperVisuals
     backgroundModulate: "#fee36c"
+  - type: PaperLabelType
+    paperType: PaperDyedYellow
 
 - type: entity
   parent: Paper
@@ -95,8 +151,22 @@
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
       visible: false
+  # begin starcup - add inhands
+  - type: Item
+    sprite: Objects/Misc/bureaucracy.rsi
+    size: Tiny
+    inhandVisuals:
+      left:
+      - state: paper-inhand-left
+        color: "#c7dd4b"
+      right:
+      - state: paper-inhand-right
+        color: "#c7dd4b"
+  # end starcup
   - type: PaperVisuals
     backgroundModulate: "#c7dd4b"
+  - type: PaperLabelType
+    paperType: PaperDyedGrass
 
 - type: entity
   parent: Paper
@@ -115,8 +185,22 @@
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
       visible: false
+  # begin starcup - add inhands
+  - type: Item
+    sprite: Objects/Misc/bureaucracy.rsi
+    size: Tiny
+    inhandVisuals:
+      left:
+      - state: paper-inhand-left
+        color: "#0da04d"
+      right:
+      - state: paper-inhand-right
+        color: "#0da04d"
+  # end starcup
   - type: PaperVisuals
     backgroundModulate: "#0da04d"
+  - type: PaperLabelType
+    paperType: PaperDyedGreen
 
 - type: entity
   parent: Paper
@@ -135,8 +219,22 @@
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
       visible: false
+  # begin starcup - add inhands
+  - type: Item
+    sprite: Objects/Misc/bureaucracy.rsi
+    size: Tiny
+    inhandVisuals:
+      left:
+      - state: paper-inhand-left
+        color: "#1796c8"
+      right:
+      - state: paper-inhand-right
+        color: "#1796c8"
+  # end starcup
   - type: PaperVisuals
     backgroundModulate: "#1796c8"
+  - type: PaperLabelType
+    paperType: PaperDyedOcean
 
 - type: entity
   parent: Paper
@@ -155,8 +253,22 @@
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
       visible: false
+  # begin starcup - add inhands
+  - type: Item
+    sprite: Objects/Misc/bureaucracy.rsi
+    size: Tiny
+    inhandVisuals:
+      left:
+      - state: paper-inhand-left
+        color: "#49cddd"
+      right:
+      - state: paper-inhand-right
+        color: "#49cddd"
+  # end starcup
   - type: PaperVisuals
     backgroundModulate: "#49cddd"
+  - type: PaperLabelType
+    paperType: PaperDyedSky
 
 - type: entity
   parent: Paper
@@ -175,8 +287,22 @@
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
       visible: false
+  # begin starcup - add inhands
+  - type: Item
+    sprite: Objects/Misc/bureaucracy.rsi
+    size: Tiny
+    inhandVisuals:
+      left:
+      - state: paper-inhand-left
+        color: "#7c70d7"
+      right:
+      - state: paper-inhand-right
+        color: "#7c70d7"
+  # end starcup
   - type: PaperVisuals
     backgroundModulate: "#938bda"
+  - type: PaperLabelType
+    paperType: PaperDyedPurple
 
 - type: entity
   parent: Paper
@@ -195,8 +321,22 @@
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
       visible: false
+  # begin starcup - add inhands
+  - type: Item
+    sprite: Objects/Misc/bureaucracy.rsi
+    size: Tiny
+    inhandVisuals:
+      left:
+      - state: paper-inhand-left
+        color: "#cfbdaa"
+      right:
+      - state: paper-inhand-right
+        color: "#cfbdaa"
+  # end starcup
   - type: PaperVisuals
     backgroundModulate: "#cfbdaa"
+  - type: PaperLabelType
+    paperType: PaperDyedTan
 
 - type: entity
   parent: Paper
@@ -215,8 +355,22 @@
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
       visible: false
+  # begin starcup - add inhands
+  - type: Item
+    sprite: Objects/Misc/bureaucracy.rsi
+    size: Tiny
+    inhandVisuals:
+      left:
+      - state: paper-inhand-left
+        color: "#a47449"
+      right:
+      - state: paper-inhand-right
+        color: "#a47449"
+  # end starcup
   - type: PaperVisuals
     backgroundModulate: "#a47449"
+  - type: PaperLabelType
+    paperType: PaperDyedBrown
 
 - type: entity
   parent: BoxBase

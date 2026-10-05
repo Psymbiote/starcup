@@ -29,8 +29,9 @@
         layer:
         - MidImpassable
   - type: Damageable
-    damageContainer: StructuralInorganic
     damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
   - type: Destructible
     thresholds:
     - trigger:
@@ -84,33 +85,17 @@
   suffix: Airtight, Clear
   description: Heavy duty, slightly stronger, airtight plastic flaps. Definitely can't get past those. No way.
   components:
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 150
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: Airtight
   - type: StaticPrice
     price: 100
 
 - type: entity
   id: PlasticFlapsAirtightOpaque
-  parent: PlasticFlapsBase
+  parent: PlasticFlapsOpaque # starcup
   name: airtight plastic flaps
   suffix: Airtight, Opaque
   description: Heavy duty, slightly stronger, airtight plastic flaps. Definitely can't get past those. No way.
   components:
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 150
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: Airtight
   - type: StaticPrice
     price: 100
