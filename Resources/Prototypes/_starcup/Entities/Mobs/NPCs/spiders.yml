@@ -1,3 +1,54 @@
+## Giant spiders
+- type: entity
+  name: black spider
+  parent: MobSpiderAngryBase
+  id: MobGiantSpiderBlack
+  description: A less physically imposing, slightly more poisonous species of giant spider.
+  components:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: SolutionRegeneration
+    solution: melee
+    generated:
+      reagents:
+      - ReagentId: Toxin
+        Quantity: 1
+  - type: MeleeChemicalInjector
+    transferAmount: 1
+    solution: melee
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: nurse
+      sprite: Mobs/Animals/spider.rsi
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: nurse-moving
+    noMovementLayers:
+      movement:
+        state: nurse
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: nurse
+      Critical:
+        Base: nurse_dead
+      Dead:
+        Base: nurse_dead
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Piercing: 5
+
 - type: entity
   name: guard spider
   parent: MobSpiderAngryBase
@@ -96,7 +147,7 @@
   name: midwife spider
   parent: MobSpiderAngryBase
   id: MobGiantSpiderMidwife
-  description: A dubiously nicknamed spider that delivers her young to the hunt.
+  description: A dubiously nicknamed spider that brings her young to the hunt.
   components:
   - type: MobThresholds
     thresholds:
@@ -109,7 +160,7 @@
       - ReagentId: Toxin
         Quantity: 1
   - type: MeleeChemicalInjector
-    transferAmount: 1
+    transferAmount: 0
     solution: melee
   - type: Sprite
     drawdepth: Mobs
@@ -151,10 +202,10 @@
     soundGunshot: null
   - type: RechargeBasicEntityAmmo
     showExamineText: false
-    rechargeCooldown: 0
+    rechargeCooldown: 10
     rechargeSound: null
   - type: BasicEntityAmmoProvider
-    proto: MobSpiderling
+    proto: MobSpiderlingBrood
     capacity: 1
     count: 1
   - type: HTN
@@ -162,16 +213,147 @@
       task: SimpleRangedHostileCompound
 
 - type: entity
-  id: MobSpiderling
+  name: nurse spider
+  parent: MobSpiderAngryBase
+  id: MobGiantSpiderNurse
+  description: THe results of escaped Interdyne experiments allowed to breed. Its rich webs can be spun into effective suture.
+  components:
+  - type: Spider
+    webPrototype: SpiderWebNurse
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      70: Dead
+  - type: SolutionRegeneration
+    solution: melee
+    generated:
+      reagents:
+      - ReagentId: Toxin
+        Quantity: 1
+  - type: MeleeChemicalInjector
+    transferAmount: 1
+    solution: melee
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: nurse
+      sprite: _starcup/Mobs/Animals/Arachnids/spider.rsi
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: nurse-moving
+    noMovementLayers:
+      movement:
+        state: nurse
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: nurse
+      Critical:
+        Base: nurse_dead
+      Dead:
+        Base: nurse_dead
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Piercing: 6
+  - type: Gun
+    fireRate: 0.45
+    projectileSpeed: 15
+    selectedMode: SemiAuto
+    showExamineText: false
+    availableModes: [ SemiAuto ]
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/syringe_gun.ogg
+  - type: RechargeBasicEntityAmmo
+    showExamineText: false
+    rechargeCooldown: 0
+    rechargeSound: null
+  - type: BasicEntityAmmoProvider
+    proto: BulletWebNurse
+    capacity: 1
+    count: 1
+  - type: HTN
+    rootTask:
+      task: BasiliskCompound
+    blackboard:
+      VisionRadius: !type:Single
+        7
+      AggroVisionRadius: !type:Single
+        12
+      NavSmash: !type:Bool
+        true
+
+- type: entity
+  name: viper spider
+  parent: MobSpiderAngryBase
+  id: MobGiantSpiderViper
+  description: A delicate yet nimble spider whose bite delivers lethal poison.
+  components:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: SolutionRegeneration
+    solution: melee
+    generated:
+      reagents:
+      - ReagentId: HeartbreakerToxin
+        Quantity: 1
+  - type: MeleeChemicalInjector
+    transferAmount: 1
+    solution: melee
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: viper
+      sprite: Mobs/Animals/spider.rsi
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: viper-moving
+    noMovementLayers:
+      movement:
+        state: viper
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: viper
+      Critical:
+        Base: viper_dead
+      Dead:
+        Base: viper_dead
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Piercing: 6
+  - type: Spider
+    spawnsWebsAsNonPlayer: false
+
+## Small spiders
+- type: entity
+  id: MobSpiderlingBase
   parent:
   - SimpleMobBase
   - BaseMobAnimal
-  name: spiderling
-  description: The midwife's brood.
+  name: spider
+  description: Itsy bitsy in nature.
+  abstract: true
   components:
   - type: Sprite
     drawdepth: SmallMobs
-    sprite: _starcup/Mobs/Animals/Arachnids/Spiderling.rsi
+    sprite: _starcup/Mobs/Animals/Arachnids/small_spider.rsi
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: spider
@@ -248,7 +430,7 @@
     bloodReferenceSolution:
       reagents:
       - ReagentId: CopperBlood
-        Quantity: 20
+        Quantity: 5
   - type: MovementSpeedModifier
     baseWalkSpeed: 3.5
     baseSprintSpeed: 4.0
@@ -268,81 +450,31 @@
     muzzleFlash: null
   - type: NpcFactionMember
     factions:
-    - SimpleHostile
+    - SimpleNeutral
     - BugHunter
     - GiantBugHunter
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
-  - type: TimedDespawn
-    lifetime: 100
   - type: NoSlip
   - type: IgnoreSpiderWeb
 
 - type: entity
-  name: nurse spider
-  parent: MobSpiderAngryBase
-  id: MobGiantSpiderNurse
-  description: Less physically imposing than other spiders. Spits gobs of web.
+  id: MobSpiderling
+  parent: MobSpiderlingBase
+
+- type: entity
+  id: MobSpiderlingBrood
+  parent: MobSpiderlingBase
+  name: spiderling brood
+  description: Voracious children of the midwife spider.
   components:
-  - type: MobThresholds
-    thresholds:
-      0: Alive
-      70: Dead
-  - type: SolutionRegeneration
-    solution: melee
-    generated:
-      reagents:
-      - ReagentId: Toxin
-        Quantity: 1
-  - type: MeleeChemicalInjector
-    transferAmount: 1
-    solution: melee
   - type: Sprite
-    drawdepth: Mobs
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
-      state: nurse
-      sprite: Mobs/Animals/spider.rsi
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: nurse-moving
-    noMovementLayers:
-      movement:
-        state: nurse
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: nurse
-      Critical:
-        Base: nurse_dead
-      Dead:
-        Base: nursee_dead
-  - type: MeleeWeapon
-    altDisarm: false
-    angle: 0
-    animation: WeaponArcBite
-    soundHit:
-      path: /Audio/Effects/bite.ogg
-    damage:
-      types:
-        Piercing: 6
-  - type: Gun
-    fireRate: 0.5
-    selectedMode: SemiAuto
-    showExamineText: false
-    availableModes:
-    - SemiAuto
-    soundGunshot: null
-  - type: RechargeBasicEntityAmmo
-    showExamineText: false
-    rechargeCooldown: 0
-    rechargeSound: null
-  - type: BasicEntityAmmoProvider
-    proto: MobSpiderling
-    capacity: 1
-    count: 1
-  - type: HTN
-    rootTask:
-      task: SimpleRangedHostileCompound
+    sprite: _starcup/Mobs/Animals/Arachnids/spiderling.rsi
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+    - BugHunter
+    - GiantBugHunter
+  - type: TimedDespawn
+    lifetime: 100
