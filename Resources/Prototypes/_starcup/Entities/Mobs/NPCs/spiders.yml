@@ -85,10 +85,10 @@
     damage:
       types:
         Piercing: 6
-  - type: BurrowAbility
-    action: ActionBurrowLarge
   - type: Spider
     spawnsWebsAsNonPlayer: false
+  - type: BurrowAbility
+    action: ActionBurrowLarge
 
 - type: entity
   name: hunter spider
@@ -238,7 +238,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base", "movement"]
       state: nurse
-      sprite: _starcup/Mobs/Animals/Arachnids/spider.rsi
+      sprite: _starcup/Mobs/Animals/Arachnids/nurse_spider.rsi
   - type: SpriteMovement
     movementLayers:
       movement:
@@ -390,6 +390,31 @@
     damage:
       types:
         Piercing: 5
+  - type: Gun
+    fireRate: 0.45
+    projectileSpeed: 15
+    selectedMode: SemiAuto
+    showExamineText: false
+    availableModes: [ SemiAuto ]
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/syringe_gun.ogg
+  - type: RechargeBasicEntityAmmo
+    showExamineText: false
+    rechargeCooldown: 0
+    rechargeSound: null
+  - type: BasicEntityAmmoProvider
+    proto: BulletWeb
+    capacity: 1
+    count: 1
+  - type: HTN
+    rootTask:
+      task: BasiliskCompound
+    blackboard:
+      VisionRadius: !type:Single
+        7
+      AggroVisionRadius: !type:Single
+        12
+      NavSmash: !type:Bool
+        true
   - type: SpawnWallAbility
     productionLength: 10
     entityProduced: WallWeb
@@ -401,6 +426,157 @@
       path: /Audio/_starcup/Effects/organic_build_finished.ogg
       params:
         variation: 0.125
+
+- type: entity
+  name: breaching spider
+  parent: MobSpiderAngryBase
+  id: MobGiantSpiderBreacher
+  description: Sturdy tunneling spiders that can break through concrete and steel.
+  components:
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodMeatSpider
+      amount: 4
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: base
+      sprite: _starcup/Mobs/Animals/Arachnids/breacher_spider.rsi
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: base-moving
+    noMovementLayers:
+      movement:
+        state: base
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: base
+      Critical:
+        Base: base_dead
+      Dead:
+        Base: base_dead
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Piercing: 8
+        Structural: 15
+  - type: Spider
+    spawnsWebsAsNonPlayer: false
+  - type: BurrowAbility
+    action: ActionBurrowLarge
+
+- type: entity
+  name: tank spider
+  parent: MobSpiderAngryBase
+  id: MobGiantSpiderTank
+  description: A slow, durable hunter that relies on its poison for the kill and catches up to the remains.
+  components:
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodMeatSpider
+      amount: 6
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      180: Dead
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: base
+      sprite: _starcup/Mobs/Animals/Arachnids/tank_spider.rsi
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: base-moving
+    noMovementLayers:
+      movement:
+        state: base
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: base
+      Critical:
+        Base: base_dead
+      Dead:
+        Base: base_dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 1.5
+    baseSprintSpeed: 3
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Piercing: 5
+  - type: SolutionRegeneration
+    solution: melee
+    generated:
+      reagents:
+      - ReagentId: Toxin
+        Quantity: 5
+
+- type: entity
+  name: ambush spider
+  parent: MobSpiderAngryBase
+  id: MobGiantSpiderAmbush
+  description: This ambush predator has the uncanny ability to meld almost perfectly with its surroundings.
+  components:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: base
+      sprite: _starcup/Mobs/Animals/Arachnids/ambush_spider.rsi
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: base-moving
+    noMovementLayers:
+      movement:
+        state: base
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: base
+      Critical:
+        Base: base_dead
+      Dead:
+        Base: base_dead
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Piercing: 5
+  - type: Stealth
+    enabledOnDeath: false
+    maxVisibility: 1.2
+  - type: StealthOnMove
+    #passiveVisibilityRate: -0.25
+    #movementVisibilityRate: 0.25
 
 ## Small spiders
 - type: entity
