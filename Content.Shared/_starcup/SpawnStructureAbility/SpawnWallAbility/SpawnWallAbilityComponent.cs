@@ -43,7 +43,7 @@ public sealed partial class SpawnWallAbilityComponent : Component
     [DataField]
     [ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
-    public EntProtoId Action = "ActionXenoResinWall";
+    public EntProtoId Action = "ActionWebWall";
 
     [AutoNetworkedField]
     [DataField("actionEntity")]

@@ -393,7 +393,7 @@
   - type: SpawnWallAbility
     productionLength: 10
     entityProduced: WallWeb
-    hungerCost: 10
+    hungerCost: 5
     minHungerThreshold: Starving
     soundProgress:
       path: /Audio/_starcup/Effects/organic_build_progress.ogg
