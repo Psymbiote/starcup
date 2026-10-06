@@ -29,14 +29,13 @@ public abstract partial class SharedSpawnWallAbilitySystem : EntitySystem
     // Systems
     [Dependency] private readonly SharedActionsSystem _actionsSystem = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfterSystem = default!;
-    [Dependency] private readonly HungerSystem _hungerSystem = default!;
+    [Dependency] private readonly SatiationSystem _satiation = default!;
     [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!; // starcup audio stuff
     [Dependency] private readonly TurfSystem _turf = default!;
     [Dependency] private readonly SharedMapSystem _mapSystem = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly IMapManager _mapManager = default!;
 
     public override void Initialize()
     {
@@ -93,20 +92,17 @@ public abstract partial class SharedSpawnWallAbilitySystem : EntitySystem
             return;
 
         if (_turf.IsTileBlocked(gridUid.Value,
-                coordinates.Value.ToVector2i(EntityManager, _mapManager, _transform),
+                coordinates.Value.ToVector2i(EntityManager, _transform),
                 CollisionGroup.MobMask))
         {
             _popupSystem.PopupClient(Loc.GetString(comp.PopupTextBlocked), uid, uid);
             return;
         }
 
-        if (!TryComp<HungerComponent>(uid, out var hungerComp)
-            || _hungerSystem.IsHungerBelowState(uid,
-                comp.MinHungerThreshold,
-                _hungerSystem.GetHunger(hungerComp) - comp.HungerCost,
-                hungerComp))
+        if (!TryComp<SatiationComponent>(uid, out var satiationComponent) ||
+            !_satiation.IsValueInRange((uid, satiationComponent), SatiationSystem.Hunger, above: comp.MinHungerThreshold, hypotheticalValueDelta: -comp.HungerCost))
         {
-            _popupSystem.PopupClient(Loc.GetString(comp.PopupTextHunger), uid, uid);
+            _popupSystem.PopupEntity(Loc.GetString(comp.PopupTextHunger), uid, uid);
             return;
         }
 
@@ -157,25 +153,22 @@ public abstract partial class SharedSpawnWallAbilitySystem : EntitySystem
             return;
 
         if (_turf.IsTileBlocked(gridUid.Value,
-                coordinates.Value.ToVector2i(EntityManager, _mapManager, _transform),
+                coordinates.Value.ToVector2i(EntityManager, _transform),
                 CollisionGroup.MobMask))
         {
             _popupSystem.PopupClient(Loc.GetString(comp.PopupTextBlocked), uid, uid);
             return;
         }
 
-        if (!TryComp<HungerComponent>(uid,
-                out var hungerComp) // A check, just incase the doafter is somehow performed when the entity is not in the right hunger state.
-            || _hungerSystem.IsHungerBelowState(uid,
-                comp.MinHungerThreshold,
-                _hungerSystem.GetHunger(hungerComp) - comp.HungerCost,
-                hungerComp))
+        // A check, just incase the doafter is somehow performed when the entity is not in the right hunger state.
+        if (!TryComp<SatiationComponent>(uid, out var satiationComponent) ||
+            !_satiation.IsValueInRange((uid, satiationComponent), SatiationSystem.Hunger, above: comp.MinHungerThreshold, hypotheticalValueDelta: -comp.HungerCost))
         {
-            _popupSystem.PopupClient(Loc.GetString(comp.PopupTextHunger), uid, uid);
+            _popupSystem.PopupEntity(Loc.GetString(comp.PopupTextHunger), uid, uid);
             return;
         }
 
-        _hungerSystem.ModifyHunger(uid, -comp.HungerCost, hungerComp);
+        _satiation.ModifyValue((uid, satiationComponent), SatiationSystem.Hunger, -comp.HungerCost);
 
         _audio.PlayPredicted(comp.SoundFinished, uid, uid); // starcup audio stuff
 

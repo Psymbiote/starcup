@@ -3,6 +3,7 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 using Robust.Shared.Audio;
+using Content.Shared.Nutrition.Prototypes;
 
 namespace Content.Shared.SpawnWallAbility;
 
@@ -65,12 +66,10 @@ public sealed partial class SpawnWallAbilityComponent : Component
     public float HungerCost = 5f;
 
     /// <summary>
-    /// The lowest hunger threshold that this mob can be in before it's allowed to spawn structures.
+    /// If the entity's hunger satiation is below this value, it cannot spin web.
     /// </summary>
-    [DataField("minHungerThreshold")]
-    [ViewVariables(VVAccess.ReadWrite)]
-    [AutoNetworkedField]
-    public HungerThreshold MinHungerThreshold = HungerThreshold.Okay;
+    [DataField(required: true), AutoNetworkedField]
+    public SatiationValue MinHungerThreshold;
 
     /// <summary>
     /// This gets played whenever the action is used.

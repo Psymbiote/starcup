@@ -341,6 +341,67 @@
   - type: Spider
     spawnsWebsAsNonPlayer: false
 
+- type: entity
+  name: tangle spider
+  parent: MobSpiderAngryBase
+  id: MobGiantSpiderTangle
+  description: A long-legged giant spider specialized in building large, secure nests.
+  components:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: SolutionRegeneration
+    solution: melee
+    generated:
+      reagents:
+      - ReagentId: Toxin
+        Quantity: 2
+  - type: MeleeChemicalInjector
+    transferAmount: 1
+    solution: melee
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: base
+      sprite: _starcup/Mobs/Animals/Arachnids/tangle_spider.rsi
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: base-moving
+    noMovementLayers:
+      movement:
+        state: base
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: base
+      Critical:
+        Base: base_dead
+      Dead:
+        Base: base_dead
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Piercing: 5
+  - type: SpawnWallAbility
+    productionLength: 10
+    entityProduced: WallWeb
+    hungerCost: 10
+    minHungerThreshold: Starving
+    soundProgress:
+      path: /Audio/_starcup/Effects/organic_build_progress.ogg
+    soundFinished:
+      path: /Audio/_starcup/Effects/organic_build_finished.ogg
+      params:
+        variation: 0.125
+
 ## Small spiders
 - type: entity
   id: MobSpiderlingBase
