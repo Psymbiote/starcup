@@ -3244,6 +3244,7 @@
   id: MobGiantSpiderWizard
   description: This spider looks a little magical
   suffix: Wizard
+  categories: [ HideSpawnMenu ] # starcup: we aren't going to spawn it, clutters the entity spawn menu
   components:
   - type: Accentless
     removes:

@@ -58,3 +58,10 @@
   license: "CC0-1.0"
   copyright: 'Sampled from GORE Wriggle tortured squishy slime by Articulated Sounds.'
   source: "https://sonniss.com/gameaudiogdc/"
+
+- files:
+  - organic_destroy_1.ogg
+  - organic_destroy_2.ogg
+  license: "CC0-1.0"
+  copyright: 'Sampled from RIPS AND TEARS Carpet Tear 02 by RDGSFX007.'
+  source: "https://sonniss.com/gameaudiogdc/"

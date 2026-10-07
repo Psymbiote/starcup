@@ -216,7 +216,7 @@
   name: nurse spider
   parent: MobSpiderAngryBase
   id: MobGiantSpiderNurse
-  description: THe results of escaped Interdyne experiments allowed to breed. Its rich webs can be spun into effective suture.
+  description: The results of escaped Interdyne experiments that bred in the wild. Their bioengineered webs can be spun into effective sutures.
   components:
   - type: Spider
     webPrototype: SpiderWebNurse
@@ -418,7 +418,7 @@
   - type: SpawnWallAbility
     productionLength: 10
     entityProduced: WallWeb
-    hungerCost: 5
+    hungerCost: 9
     minHungerThreshold: Starving
     soundProgress:
       path: /Audio/_starcup/Effects/organic_build_progress.ogg
@@ -513,8 +513,8 @@
       Dead:
         Base: base_dead
   - type: MovementSpeedModifier
-    baseWalkSpeed: 1.5
-    baseSprintSpeed: 3
+    baseWalkSpeed: 1
+    baseSprintSpeed: 2
   - type: MeleeWeapon
     altDisarm: false
     angle: 0
@@ -575,8 +575,8 @@
     enabledOnDeath: false
     maxVisibility: 1.2
   - type: StealthOnMove
-    #passiveVisibilityRate: -0.25
-    #movementVisibilityRate: 0.25
+    passiveVisibilityRate: -0.25
+    movementVisibilityRate: 0.25
 
 ## Small spiders
 - type: entity
@@ -689,7 +689,6 @@
     factions:
     - SimpleNeutral
     - BugHunter
-    - GiantBugHunter
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
