@@ -593,7 +593,6 @@
     spawned:
     - id: FoodMeatSlime
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: Cockroach
   - type: Tag
     tags:
@@ -621,10 +620,8 @@
     speechVerb: SmallMob
     speechSounds: BeetleSpeechSounds
   - type: Vocal
-    sounds:
-      Unsexed: BeetleSpeechEmotes
-    screamId: CreatureClick
-    screamAction: ActionEmitSound
+    emoteSounds: BeetleSpeechEmotes
+    emoteAction: ActionCreatureBuzz
   - type: ReplacementAccent
     accent: crab
   - type: Bloodstream

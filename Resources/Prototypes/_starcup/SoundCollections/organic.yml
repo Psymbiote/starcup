@@ -1,8 +1,8 @@
 - type: soundCollection
   id: OrganicDestroy
   files:
-    - /Audio/_starcup/Effects/organic_destruction_1.ogg
-    - /Audio/_starcup/Effects/organic_destruction_2.ogg
+    - /Audio/_starcup/Effects/organic_destroy_1.ogg
+    - /Audio/_starcup/Effects/organic_destroy_2.ogg
 
 - type: soundCollection
   id: PlantDestruction
