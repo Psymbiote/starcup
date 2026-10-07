@@ -9,15 +9,6 @@
     thresholds:
       0: Alive
       60: Dead
-  - type: SolutionRegeneration
-    solution: melee
-    generated:
-      reagents:
-      - ReagentId: Toxin
-        Quantity: 1
-  - type: MeleeChemicalInjector
-    transferAmount: 1
-    solution: melee
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -100,14 +91,11 @@
     thresholds:
       0: Alive
       80: Dead
-  - type: SolutionRegeneration
-    solution: melee
-    generated:
-      reagents:
-      - ReagentId: Ebriotoxin
-        Quantity: 1
+  - type: SolutionManager
+    solutions:
+    - SolutionVenomSpiderHunter
   - type: MeleeChemicalInjector
-    transferAmount: 3
+    transferAmount: 1.5
     solution: melee
   - type: Sprite
     drawdepth: Mobs
@@ -153,15 +141,6 @@
     thresholds:
       0: Alive
       80: Dead
-  - type: SolutionRegeneration
-    solution: melee
-    generated:
-      reagents:
-      - ReagentId: Toxin
-        Quantity: 1
-  - type: MeleeChemicalInjector
-    transferAmount: 0
-    solution: melee
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -224,14 +203,8 @@
     thresholds:
       0: Alive
       70: Dead
-  - type: SolutionRegeneration
-    solution: melee
-    generated:
-      reagents:
-      - ReagentId: Toxin
-        Quantity: 1
   - type: MeleeChemicalInjector
-    transferAmount: 1
+    transferAmount: 1.5
     solution: melee
   - type: Sprite
     drawdepth: Mobs
@@ -299,12 +272,9 @@
     thresholds:
       0: Alive
       60: Dead
-  - type: SolutionRegeneration
-    solution: melee
-    generated:
-      reagents:
-      - ReagentId: HeartbreakerToxin
-        Quantity: 1
+  - type: SolutionManager
+    solutions:
+    - SolutionVenomSpiderViper
   - type: MeleeChemicalInjector
     transferAmount: 1
     solution: melee
@@ -351,14 +321,8 @@
     thresholds:
       0: Alive
       60: Dead
-  - type: SolutionRegeneration
-    solution: melee
-    generated:
-      reagents:
-      - ReagentId: Toxin
-        Quantity: 2
   - type: MeleeChemicalInjector
-    transferAmount: 1
+    transferAmount: 1.35
     solution: melee
   - type: Sprite
     drawdepth: Mobs
@@ -476,6 +440,9 @@
     spawnsWebsAsNonPlayer: false
   - type: BurrowAbility
     action: ActionBurrowLarge
+  - type: MeleeChemicalInjector
+    transferAmount: 0
+    solution: melee
 
 - type: entity
   name: tank spider
@@ -524,12 +491,9 @@
     damage:
       types:
         Piercing: 5
-  - type: SolutionRegeneration
+  - type: MeleeChemicalInjector
+    transferAmount: 3
     solution: melee
-    generated:
-      reagents:
-      - ReagentId: Toxin
-        Quantity: 5
 
 - type: entity
   name: ambush spider
@@ -714,3 +678,26 @@
     - GiantBugHunter
   - type: TimedDespawn
     lifetime: 100
+
+# Spider venmos
+- type: entity
+  parent: [SolutionWeapon, SolutionTiny]
+  id: SolutionVenomSpiderHunter
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: Ebriotoxin
+        Quantity: 1
+
+- type: entity
+  parent: [SolutionWeapon, SolutionTiny]
+  id: SolutionVenomSpiderViper
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: HeartbreakerToxin
+        Quantity: 1

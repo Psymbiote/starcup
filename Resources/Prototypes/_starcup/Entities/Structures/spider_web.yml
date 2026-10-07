@@ -31,9 +31,8 @@
     materialComposition:
       WebSilkNurse: 100
   - type: Sprite
-    sprite: Objects/Materials/silk.rsi
+    sprite: _starcup/Objects/Materials/silk.rsi
     state: icon
-    color: "#74feff"
   - type: Stack
     count: 50
     stackType: WebSilkNurse
@@ -55,9 +54,8 @@
     - ClothMade
     - RawMaterial
   - type: Item
-    sprite: Objects/Materials/silk.rsi
+    sprite: _starcup/Objects/Materials/silk.rsi
     heldPrefix: silk
-    color: "#74feff"
 
 - type: entity
   parent: MaterialWebSilkNurse
@@ -78,7 +76,7 @@
   parent: BaseLargeStack
   id: WebSilkNurse
   name: stack-silk-nurse
-  icon: { sprite: /Textures/_starcup/Objects/Materials/silk.rsi, state: icon }
+  icon: { sprite: _starcup/Objects/Materials/silk.rsi, state: icon }
   spawn: MaterialWebSilkNurse1
 
 # Projectiles
