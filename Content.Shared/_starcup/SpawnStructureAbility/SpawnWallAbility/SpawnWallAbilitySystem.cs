@@ -24,7 +24,7 @@ namespace Content.Shared.SpawnWallAbility;
 public abstract partial class SharedSpawnWallAbilitySystem : EntitySystem
 {
     // Managers
-    [Dependency] private readonly INetManager _netManager = default!;
+    [Dependency] private INetManager _netManager = default!;
 
     // Systems
     [Dependency] private SharedActionsSystem _actionsSystem = default!;
