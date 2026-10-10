@@ -59,14 +59,6 @@
     {
       "name": "wielded-inhand-right",
       "directions": 4
-    },
-    {
-      "name": "cover-wielded-inhand-left",
-      "directions": 4
-    },
-    {
-      "name": "cover-wielded-inhand-right",
-      "directions": 4
     }
   ]
 }
