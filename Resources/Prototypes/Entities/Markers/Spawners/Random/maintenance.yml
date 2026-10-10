@@ -31,6 +31,10 @@
       - id: ClothingShoeSlippersDuck
       - id: ClothingUnderSocksBee
       - id: ClothingUnderSocksCoder
+      - id: ClothingUnderSocksCoderValid
+      - id: ClothingHandsCoderValidWarmers
+      - id: ClothingHandsArmWarmersFingerlessValid
+      - id: ClothingHandsArmWarmersFingerless
       - id: ClothingHeadHatSquid
       # Animal Masks
       - !type:GroupSelector
@@ -136,6 +140,7 @@
       - id: ToyFigurineSkeleton
       - id: MysteryFigureBox
       - id: MysterySpaceBladeBox # starcup
+      - id: HairComb # starcup
       # Cult
       - !type:AllSelector
         children:
@@ -149,6 +154,7 @@
       - id: ClothingHeadHatOutlawHat
       - id: ClothingHeadHatUshanka
       - id: ClothingHeadHatBunny
+      - id: ClothingMaskKitsune # starcup
       - id: ClothingMaskNeckGaiter
       - id: ClothingNeckScarfStripedZebra
       - id: ClothingOuterGhostSheet
@@ -193,10 +199,14 @@
         - id: ClothingHeadHatPinClover
         - id: ClothingHeadHatPinButterfly
         - id: ClothingNeckNecklacePendantGoldRuby
+        - id: ClothingNeckBellCollar
+        - id: ClothingNeckCowBellCollar
+        - id: ClothingHeadHatCuteTiara
+        - id: RandomGlorb
       # end starcup
     # Rare Group
     - !type:GroupSelector
-      weight: 2
+      weight: 15
       children:
       - id: DrinkMugDog
       - id: CigarGold
@@ -204,6 +214,7 @@
       - id: WristwatchGold
       - id: RubberStampGreytide
       - id: MysteryLighterBox
+      - id: PrizeBall # starcup
 
 - type: entity
   name: Maint Loot Spawner

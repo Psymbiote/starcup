@@ -4,29 +4,29 @@
   id: FoodCakeChocolateImitation
   description: A cake with added imitation chocolate.
   components:
-  - type: SliceableFood
-    slice: FoodCakeChocolateSliceImitation
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 55
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 40
-        - ReagentId: Vitamin
-          Quantity: 5
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodCakeChocolateSliceImitation
+      amount: 8
+  - type: Solution
+    solution:
+      maxVol: 55
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 40
+      - ReagentId: Vitamin
+        Quantity: 5
 
 - type: entity
   name: slice of imitation chocolate cake
   parent: FoodCakeChocolateSlice
   id: FoodCakeChocolateSliceImitation
   components:
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 15
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 8
-        - ReagentId: Vitamin
-          Quantity: 2
+  - type: Solution
+    solution:
+      maxVol: 15
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 8
+      - ReagentId: Vitamin
+        Quantity: 2

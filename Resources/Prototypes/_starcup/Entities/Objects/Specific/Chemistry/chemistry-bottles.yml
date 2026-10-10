@@ -4,14 +4,13 @@
   parent: BaseChemistryBottleFilled
   components:
   - type: Label
-    currentLabel: reagent-name-ammonia
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Ammonia
-          Quantity: 30
+    localizedLabel: reagent-name-ammonia
+  - type: Solution
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: Ammonia
+        Quantity: 30
 
 - type: entity
   id: ChemistryBottleElectrolyticNanites
@@ -19,14 +18,13 @@
   parent: BaseChemistryBottleFilled
   components:
   - type: Label
-    currentLabel: reagent-name-electrolytic-nanites
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: ElectrolyticNanites
-          Quantity: 30
+    localizedLabel: reagent-name-electrolytic-nanites
+  - type: Solution
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: ElectrolyticNanites
+        Quantity: 30
 
 - type: entity
   id: ChemistryBottleCrystalLatticeNanites
@@ -34,14 +32,13 @@
   parent: BaseChemistryBottleFilled
   components:
   - type: Label
-    currentLabel: reagent-name-crystal-lattice-nanites
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: CrystalLatticeNanites
-          Quantity: 30
+    localizedLabel: reagent-name-crystal-lattice-nanites
+  - type: Solution
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: CrystalLatticeNanites
+        Quantity: 30
 
 - type: entity
   id: ChemistryBottleOpticalFiberNanites
@@ -49,14 +46,13 @@
   parent: BaseChemistryBottleFilled
   components:
   - type: Label
-    currentLabel: reagent-name-optical-fiber-nanites
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: OpticalFiberNanites
-          Quantity: 30
+    localizedLabel: reagent-name-optical-fiber-nanites
+  - type: Solution
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: OpticalFiberNanites
+        Quantity: 30
 
 - type: entity
   id: ChemistryBottleReconstructorNanites
@@ -64,14 +60,13 @@
   parent: BaseChemistryBottleFilled
   components:
   - type: Label
-    currentLabel: reagent-name-reconstructor-nanites
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: ReconstructorNanites
-          Quantity: 30
+    localizedLabel: reagent-name-reconstructor-nanites
+  - type: Solution
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: ReconstructorNanites
+        Quantity: 30
 
 - type: entity
   id: ChemistryBottleOverclockNanites
@@ -79,11 +74,10 @@
   parent: BaseChemistryBottleFilled
   components:
   - type: Label
-    currentLabel: reagent-name-overclock-nanites
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: OverclockNanites
-          Quantity: 30
+    localizedLabel: reagent-name-overclock-nanites
+  - type: Solution
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: OverclockNanites
+        Quantity: 30

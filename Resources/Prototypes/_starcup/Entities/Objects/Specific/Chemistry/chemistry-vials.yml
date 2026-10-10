@@ -4,14 +4,13 @@
   name: vial of blood # named for loadout purposes
   components:
   - type: Label
-    currentLabel: reagent-name-blood
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 10
-        reagents:
-        - ReagentId: Blood
-          Quantity: 10
+    localizedLabel: reagent-name-blood
+  - type: Solution
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: Blood
+        Quantity: 10
   - type: Tag
     tags:
     - CentrifugeCompatible

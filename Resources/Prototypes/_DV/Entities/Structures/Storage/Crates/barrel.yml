@@ -18,8 +18,9 @@
     sprite: _DV/Objects/Storage/barrel.rsi
     state: base
   - type: Damageable
-    damageContainer: StructuralInorganic
     damageModifierSet: Wood
+  - type: Injurable
+    damageContainer: StructuralInorganic
   - type: Destructible
     thresholds:
     - trigger:
@@ -76,10 +77,9 @@
   name: wooden keg
   description: A musty old wooden keg, with a tap attached to the front.
   components:
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        maxVol: 500
+  - type: Solution # starcup - remove SolutionContainerManager
+    solution:
+      maxVol: 500
   - type: ExaminableSolution
     solution: tank
   - type: UserInterface
@@ -104,8 +104,9 @@
     - state: base
       map: ["enum.StorageVisualLayers.Base"]
   - type: Damageable
-    damageContainer: StructuralInorganic
     damageModifierSet: Wood
+  - type: Injurable
+    damageContainer: StructuralInorganic
   - type: StaticPrice
     price: 50
   - type: Construction
@@ -134,13 +135,12 @@
   id: WoodenKegRootBeer
   components:
   - type: Label
-    currentLabel: reagent-name-root-beer
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        reagents:
-        - ReagentId: RootBeer
-          Quantity: 500
+    localizedLabel: reagent-name-root-beer
+  - type: Solution # starcup - remove SolutionContainerManager
+    solution:
+      reagents:
+      - ReagentId: RootBeer
+        Quantity: 500
 
 - type: entity
   parent: WoodenKeg
@@ -149,13 +149,12 @@
   id: WoodenKegBeer
   components:
   - type: Label
-    currentLabel: reagent-name-beer
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        reagents:
-        - ReagentId: Beer
-          Quantity: 500
+    localizedLabel: reagent-name-beer
+  - type: Solution # starcup - remove SolutionContainerManager
+    solution:
+      reagents:
+      - ReagentId: Beer
+        Quantity: 500
 
 - type: entity
   parent: WoodenKeg
@@ -164,10 +163,9 @@
   id: WoodenKegWine
   components:
   - type: Label
-    currentLabel: reagent-name-wine
-  - type: SolutionContainerManager
-    solutions:
-      tank:
-        reagents:
-        - ReagentId: Wine
-          Quantity: 500
+    localizedLabel: reagent-name-wine
+  - type: Solution # starcup - remove SolutionContainerManager
+    solution:
+      reagents:
+      - ReagentId: Wine
+        Quantity: 500
