@@ -4484,3 +4484,13 @@
   id: 8553
   time: '2026-10-09T03:06:46.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/1018
+- author: Psymbiote
+  changes:
+  - message: In attention to the many different species in our sector, shoes are no
+      longer required to board a Syndicate Communications vessel or station. **If
+      your character wears shoes, make sure they're wearing them on your loadout before
+      the next round!**
+    type: Tweak
+  id: 8554
+  time: '2026-10-11T02:16:32.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/1016
