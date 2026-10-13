@@ -655,3 +655,37 @@
       amount: 1
   products:
     Y2Koffee: 1
+
+- type: reaction
+  id: OriginalSin
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    Sake:
+      amount: 1
+    Honey:
+      amount: 1
+    Vodka:
+      amount: 1
+    Absinthe:
+      amount: 1
+  products:
+    OriginalSin: 1
+
+- type: reaction
+  id: BlueSkiesAhead
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    Sake:
+      amount: 1
+    Rum:
+      amount: 1
+    BlueCuracao:
+      amount: 1
+    JuiceLime:
+      amount: 1
+    Ice:
+      amount: 1
+  products:
+    BlueSkiesAhead: 1

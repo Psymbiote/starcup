@@ -53,9 +53,6 @@ reagent-desc-silent-sister =  Named after a mysterious order of nuns that is now
 reagent-name-silicon-morning-coffee = silicon morning coffee
 reagent-desc-silicon-morning-coffee =  Nothing like a cup of moil to get you up and running.
 
-reagent-name-starcup = cup of stars
-reagent-desc-starcup =  Always worth insisting upon.
-
 reagent-name-sweet-union = sweet union
 reagent-desc-sweet-union =  Some things are just meant to be.
 

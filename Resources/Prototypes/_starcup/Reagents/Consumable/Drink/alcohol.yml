@@ -631,7 +631,7 @@
   desc: reagent-desc-silent-night
   physicalDesc: reagent-physical-desc-creamy
   flavor: silentnight
-  color: "#eadfca"
+  color: "#e3d2b6"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/silent_night.rsi
     state: icon_empty
@@ -656,7 +656,7 @@
   desc: reagent-desc-mime-tai
   physicalDesc: reagent-physical-desc-creamy
   flavor: mimetai
-  color: "#eadfca"
+  color: "#ecba7a"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/mime_tai.rsi
     state: icon_empty
@@ -681,7 +681,7 @@
   desc: reagent-desc-bnw
   physicalDesc: reagent-physical-desc-bubbly
   flavor: blackandwhite
-  color: "#d0d1a3"
+  color: "#787878"
   recognizable: false
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/black_and_white.rsi
@@ -708,7 +708,7 @@
   metabolisms:
     Digestion:
       metabolites:
-        Ethanol: 0.5
+        Ethanol: 0.25
 
 - type: reagent
   id: CocoGeisha
@@ -717,7 +717,7 @@
   desc: reagent-desc-coco-geisha
   physicalDesc: reagent-physical-desc-shiny
   flavor: cocogeisha
-  color: "#c2bcb5"
+  color: "#dbdbdb"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/coco_geisha.rsi
     state: icon_empty
@@ -727,7 +727,7 @@
   metabolisms:
     Digestion:
       metabolites:
-        Ethanol: 0.8
+        Ethanol: 0.2
 
 - type: reagent
   id: Starcup
@@ -736,7 +736,7 @@
   desc: reagent-desc-starcup
   physicalDesc: reagent-physical-desc-twinkling
   flavor: starcup
-  color: "#af6188"
+  color: "#2c455a"
   metabolisms:
     Digestion:
       effects:
@@ -747,5 +747,49 @@
     sprite: _starcup/Objects/Consumable/Drinks/starcup_white.rsi
     state: icon_empty
   metamorphicMaxFillLevels: 3
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+
+- type: reagent
+  id: OriginalSin
+  name: reagent-name-original-sin
+  parent: BaseDrink
+  desc: reagent-desc-original-sin
+  physicalDesc: reagent-physical-desc-crisp
+  flavor: originalsin
+  color: "#bebbb2"
+  metabolisms:
+    Digestion:
+      metabolites:
+        Ethanol: 0.25
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 1
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/sakeglass_blue.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 1
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+
+- type: reagent
+  id: BlueSkiesAhead
+  name: reagent-name-blue-skies.ahead
+  parent: BaseDrink
+  desc: reagent-desc-blue-skies.ahead
+  physicalDesc: reagent-physical-desc-crisp
+  flavor: blueskiesahead
+  color: "#00b6a4"
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 3
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/sakeglass_purple.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 1
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: true

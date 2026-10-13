@@ -83,7 +83,7 @@
   desc: reagent-desc-cheermime
   physicalDesc: reagent-physical-desc-fizzy
   flavor: cheermime
-  color: "#ff8071"
+  color: "#d2262f"
   metabolisms:
     Digestion:
       effects:
@@ -106,7 +106,7 @@
   desc: reagent-desc-dragonslayer
   physicalDesc: reagent-physical-desc-abrasive
   flavor: dragonslayer
-  color: "#f6774e"
+  color: "#f4692e"
   metabolisms:
     Digestion:
       effects:
@@ -139,7 +139,7 @@
   desc: reagent-desc-dragon-naysayer
   physicalDesc: reagent-physical-desc-abrasive
   flavor: dragonnaysayer
-  color: "#d49384"
+  color: "#b6978d"
   metabolisms:
     Digestion:
       effects:
@@ -175,7 +175,7 @@
   desc: reagent-desc-hivemind
   physicalDesc: reagent-physical-desc-enigmatic
   flavor: hivemind
-  color: "#af6188"
+  color: "#a75d82"
   metabolisms:
     Digestion:
       effects:
@@ -196,7 +196,7 @@
   desc: reagent-desc-hivemime
   physicalDesc: reagent-physical-desc-enigmatic
   flavor: hivemime
-  color: "#af6188"
+  color: "#444444"
   metabolisms:
     Digestion:
       effects:
@@ -217,7 +217,7 @@
   desc: reagent-desc-sugarslime
   physicalDesc: reagent-physical-desc-bubbly
   flavor: sugarslime
-  color: "#af6188"
+  color: "#8ae6fa"
   metabolisms:
     Digestion:
       effects:
@@ -238,7 +238,7 @@
   desc: reagent-desc-quiet-convert
   physicalDesc: reagent-physical-desc-bubbling
   flavor: quietconvert
-  color: "#af6188"
+  color: "#515151"
   metabolisms:
     Digestion:
       effects:
@@ -259,7 +259,7 @@
   desc: reagent-desc-silent-sister
   physicalDesc: reagent-physical-desc-robust
   flavor: silentsister
-  color: "#af6188"
+  color: "#dd332f"
   metabolisms:
     Digestion:
       effects:
@@ -280,7 +280,7 @@
   desc: reagent-desc-silicon-morning-coffee
   physicalDesc: reagent-physical-desc-oily
   flavor: siliconmorningcoffee
-  color: "#af6188"
+  color: "#665140"
   metabolisms:
     Digestion:
       effects:
@@ -301,7 +301,7 @@
   desc: reagent-desc-sweet-union
   physicalDesc: reagent-physical-desc-sweet
   flavor: sweetunion
-  color: "#af6188"
+  color: "#7e1d1d"
   metabolisms:
     Digestion:
       effects:
@@ -322,7 +322,7 @@
   desc: reagent-desc-y2koffee
   physicalDesc: reagent-physical-desc-inky
   flavor: sweetunion
-  color: "#af6188"
+  color: "#464066"
   metabolisms:
     Digestion:
       effects:

@@ -260,6 +260,16 @@
   flavorType: Complex
   description: flavor-complex-y2koffee
 
+- type: flavor
+  id: originalsin
+  flavorType: Complex
+  description: flavor-complex-original-sin
+
+- type: flavor
+  id: blueskiesahead
+  flavorType: Complex
+  description: flavor-complex-blue-skies-ahead
+
 # Rewritten Drink Flavors
 - type: flavor
   id: acidspit-starcup

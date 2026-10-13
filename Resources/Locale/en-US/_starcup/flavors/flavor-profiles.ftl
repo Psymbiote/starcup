@@ -52,6 +52,8 @@ flavor-complex-silicon-morning-coffee = like coffee leaking out a starship engin
 flavor-complex-starcup = like the restful reward of loving toil and labor
 flavor-complex-sweet-union = like an oath and a promise
 flavor-complex-y2koffee = like the buzz of nanites shutting down
+flavor-complex-original-sin = like absinthe, perfectly rolled off
+flavor-complex-blue-skies-ahead = like a sharply pleasant chill in a hot summer day
 
 # Drinks (Rewrites)
 flavor-complex-acidspit-starcup = like your tongue is on fire

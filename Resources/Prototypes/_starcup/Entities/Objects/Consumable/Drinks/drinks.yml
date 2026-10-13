@@ -260,6 +260,34 @@
     sprite: _starcup/Objects/Consumable/Drinks/silicon_morning_coffee.rsi
     state: icon
 
+- type: entity
+  parent: DrinkGlass
+  id: SweetUnionGlass
+  suffix: Sweet Union
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: SweetUnion
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/sweet_union.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: Y2KoffeeGlass
+  suffix: Y2Koffee
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Y2Koffee
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/y2koffee.rsi
+    state: icon
+
 # Alcohol
 - type: entity
   parent: DrinkGlass
@@ -729,28 +757,14 @@
 
 - type: entity
   parent: DrinkGlass
-  id: SweetUnionGlass
-  suffix: Sweet Union
+  id: OriginalSinGlass
+  suffix: Original Sin
   components:
   - type: Solution
     solution:
       reagents:
-      - ReagentId: SweetUnion
+      - ReagentId: OriginalSin
         Quantity: 30
   - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/sweet_union.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
-  id: Y2KoffeeGlass
-  suffix: Y2Koffee
-  components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Y2Koffee
-        Quantity: 30
-  - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/y2koffee.rsi
+    sprite: _starcup/Objects/Consumable/Drinks/sakeglass_blue.rsi
     state: icon

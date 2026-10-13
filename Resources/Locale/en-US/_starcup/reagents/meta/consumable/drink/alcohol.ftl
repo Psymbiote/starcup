@@ -98,6 +98,15 @@ reagent-desc-bluescreen-curacao = You used to need an illegal operation to get t
 reagent-name-coco-geisha = coco geisha
 reagent-desc-coco-geisha = The burn of whiskey and sake combined in a simple yet elegant cocktail.
 
+reagent-name-starcup = cup of stars
+reagent-desc-starcup =  Always worth insisting upon.
+
+reagent-name-original-sin = original sin
+reagent-desc-original-sin =  Damnation has never been this tempting.
+
+reagent-name-original-sin = blue skies ahead
+reagent-desc-original-sin =  Rich cyan glints through crisp, crushed ice.
+
 # Rewritten Drinks
 reagent-desc-amasec-starcup = In the grim darkness of neocapitalism, there is only war.
 
