@@ -104,8 +104,8 @@ reagent-desc-starcup =  Always worth insisting upon.
 reagent-name-original-sin = original sin
 reagent-desc-original-sin =  Damnation has never been this tempting.
 
-reagent-name-original-sin = blue skies ahead
-reagent-desc-original-sin =  Rich cyan glints through crisp, crushed ice.
+reagent-name-blue-skies-ahead = blue skies ahead
+reagent-desc-blue-skies-ahead =  Rich cyan glints through crisp, crushed ice.
 
 # Rewritten Drinks
 reagent-desc-amasec-starcup = In the grim darkness of neocapitalism, there is only war.

@@ -40,7 +40,7 @@ flavor-complex-silent-night = like the promise of a shooting star in a quiet eve
 flavor-complex-mime-tai = like an evocative suggestion of almonds
 flavor-complex-black-and-white = like the comfort needed to enjoy the silence
 flavor-complex-bluescreen-curacao = like F▒T̸A̷L̶ ̶E̴R̶R̵O̸R̸
-flavor-complex-mime-tai = like furtive glances with a dry touch of coconut
+flavor-complex-coco-geisha = like furtive glances with a dry touch of coconut
 flavor-complex-dragonslayer = like rebirth in cosmic flame
 flavor-complex-dragon-naysayer = like a willpower to deny fate itself
 flavor-complex-hivemind = like an icy knife slicing through your thoughts
@@ -54,6 +54,7 @@ flavor-complex-sweet-union = like an oath and a promise
 flavor-complex-y2koffee = like the buzz of nanites shutting down
 flavor-complex-original-sin = like absinthe, perfectly rolled off
 flavor-complex-blue-skies-ahead = like a sharply pleasant chill in a hot summer day
+flavor-complex-court-jester = like the wisdom keen of a servant most humble
 
 # Drinks (Rewrites)
 flavor-complex-acidspit-starcup = like your tongue is on fire

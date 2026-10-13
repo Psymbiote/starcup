@@ -646,8 +646,6 @@
       - !type:GenericStatusEffect
         key: Muted
         component: Muted
-      - !type:SatiateThirst
-        factor: 3
 
 - type: reagent
   id: MimeTai
@@ -671,8 +669,6 @@
       - !type:GenericStatusEffect
         key: Muted
         component: Muted
-      - !type:SatiateThirst
-        factor: 2
 
 - type: reagent
   id: BlackAndWhite

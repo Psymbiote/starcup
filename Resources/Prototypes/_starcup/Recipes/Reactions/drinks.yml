@@ -689,3 +689,17 @@
       amount: 1
   products:
     BlueSkiesAhead: 1
+
+- type: reaction
+  id: CourtJester
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    Laughter:
+      amount: 1
+    Cream:
+      amount: 1
+    RootBeer:
+      amount: 1
+  products:
+    CourtJester: 1

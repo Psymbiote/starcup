@@ -76,8 +76,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkCherryLimeade
-  suffix: cherry limeade
+  id: DrinkCherryLimeadeGlass
+  suffix: Cherry Limeade
   components:
   - type: Solution
     solution:
@@ -90,8 +90,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkEvilPrincess
-  suffix: evil princess
+  id: DrinkEvilPrincessGlass
+  suffix: Evil Princess
   components:
   - type: Solution
     solution:
@@ -104,32 +104,28 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkCheermime
-  suffix: cheermime
+  id: DrinkCheermimeGlass
+  suffix: Cheermime
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Cheermime
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Cheermime
+        Quantity: 30
   - type: Icon
     sprite: _starcup/Objects/Consumable/Drinks/cheermime.rsi
     state: icon
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkSilentNight
-  suffix: silent night
+  id: DrinkSilentNightGlass
+  suffix: Silent Night
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: SilentNight
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: SilentNight
+        Quantity: 30
   - type: Icon
     sprite: _starcup/Objects/Consumable/Drinks/silent_night.rsi
     state: icon
@@ -137,7 +133,7 @@
 - type: entity
   parent: DrinkGlass
   id: DrinkDragonslayerGlass
-  suffix: dragonslayer
+  suffix: Dragonslayer
   components:
   - type: Solution
     solution:
@@ -151,7 +147,7 @@
 - type: entity
   parent: DrinkGlass
   id: DrinkDragonNaysayerGlass
-  suffix: dragon naysayer
+  suffix: Dragon Naysayer
   components:
   - type: Solution
     solution:
@@ -188,20 +184,6 @@
         Quantity: 30
   - type: Icon
     sprite: _starcup/Objects/Consumable/Drinks/hivemime.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
-  id: SugarslimeGlass
-  suffix: Sugarslime
-  components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Sugarslime
-        Quantity: 30
-  - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/sugarslime.rsi
     state: icon
 
 - type: entity
@@ -288,10 +270,24 @@
     sprite: _starcup/Objects/Consumable/Drinks/y2koffee.rsi
     state: icon
 
+- type: entity
+  parent: DrinkGlass
+  id: CourtJesterGlass
+  suffix: Court Jester
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: CourtJester
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/court_jester.rsi
+    state: icon
+
 # Alcohol
 - type: entity
   parent: DrinkGlass
-  id: DrinkAdiosMotherfucker
+  id: DrinkAdiosMotherfuckerGlass
   suffix: adios, motherfucker
   components:
   - type: Solution
@@ -305,7 +301,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkAfterburner
+  id: DrinkAfterburnerGlass
   suffix: afterburner
   components:
   - type: Solution
@@ -319,7 +315,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkAmbrosia
+  id: DrinkAmbrosiaGlass
   suffix: ambrosia
   components:
   - type: Solution
@@ -333,7 +329,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkAppletini
+  id: DrinkAppletiniGlass
   suffix: appletini
   components:
   - type: Solution
@@ -347,7 +343,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkAviation
+  id: DrinkAviationGlass
   suffix: aviation
   components:
   - type: Solution
@@ -361,7 +357,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkBlackVelvet
+  id: DrinkBlackVelvetGlass
   suffix: black velvet
   components:
   - type: Solution
@@ -375,7 +371,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkBlueLagoon
+  id: DrinkBlueLagoonGlass
   suffix: Blue Lagoon
   components:
   - type: Solution
@@ -389,7 +385,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkBrainScrambler
+  id: DrinkBrainScramblerGlass
   suffix: brain scrambler
   components:
   - type: Solution
@@ -403,7 +399,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkBramble
+  id: DrinkBrambleGlass
   suffix: bramble
   components:
   - type: Solution
@@ -417,7 +413,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkBuzzedBunny
+  id: DrinkBuzzedBunnyGlass
   suffix: buzzed bunny
   components:
   - type: Solution
@@ -431,7 +427,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkCactus
+  id: DrinkCactusGlass
   suffix: cactus
   components:
   - type: Solution
@@ -445,8 +441,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkCherryBomb
-  suffix: cherry bomb
+  id: DrinkCherryBombGlass
+  suffix: Cherry Bomb
   components:
   - type: Solution
     solution:
@@ -459,8 +455,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkCorpseReviver
-  suffix: corpse reviver
+  id: DrinkCorpseReviverGlass
+  suffix: Corpse Reviver
   components:
   - type: Solution
     solution:
@@ -473,8 +469,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkCryptid
-  suffix: cryptid
+  id: DrinkCryptidGlass
+  suffix: Cryptid
   components:
   - type: Solution
     solution:
@@ -487,8 +483,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkEarthquake
-  suffix: earthquake
+  id: DrinkEarthquakeGlass
+  suffix: Earthquake
   components:
   - type: Solution
     solution:
@@ -501,8 +497,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkEclipse
-  suffix: eclipse
+  id: DrinkEclipseGlass
+  suffix: Eclipse
   components:
   - type: Solution
     solution:
@@ -515,8 +511,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkEmeraldBreeze
-  suffix: emerald breeze
+  id: DrinkEmeraldBreezeGlass
+  suffix: Emerald Breeze
   components:
   - type: Solution
     solution:
@@ -529,8 +525,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkFaeriesCheer
-  suffix: faerie's cheer
+  id: DrinkFaeriesCheerGlass
+  suffix: Faerie's Cheer
   components:
   - type: Solution
     solution:
@@ -543,8 +539,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkGoblinsBrew
-  suffix: goblin's brew
+  id: DrinkGoblinsBrewGlass
+  suffix: Goblin's Brew
   components:
   - type: Solution
     solution:
@@ -557,8 +553,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkMoonMist
-  suffix: moon mist
+  id: DrinkMoonMistGlass
+  suffix: Moon Mist
   components:
   - type: Solution
     solution:
@@ -571,8 +567,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkMushburger
-  suffix: mushburger
+  id: DrinkMushburgerGlass
+  suffix: Mushburger
   components:
   - type: Solution
     solution:
@@ -585,8 +581,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkNecropolitan
-  suffix: necropolitan
+  id: DrinkNecropolitanGlass
+  suffix: Necropolitan
   components:
   - type: Solution
     solution:
@@ -599,8 +595,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkParadiseLost
-  suffix: paradise lost
+  id: DrinkParadiseLostGlass
+  suffix: Paradise Lost
   components:
   - type: Solution
     solution:
@@ -613,8 +609,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkRainbowShooter
-  suffix: rainbow shooter
+  id: DrinkRainbowShooterGlass
+  suffix: Rainbow Shooter
   components:
   - type: Solution
     solution:
@@ -627,8 +623,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkRedDog
-  suffix: red dog
+  id: DrinkRedDogGlass
+  suffix: Red Dog
   components:
   - type: Solution
     solution:
@@ -642,7 +638,7 @@
 - type: entity
   parent: DrinkGlass
   id: DrinkRedEye
-  suffix: red eye
+  suffix: Red Eye
   components:
   - type: Solution
     solution:
@@ -655,8 +651,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkSakuraMartini
-  suffix: sakura martini
+  id: DrinkSakuraMartiniGlass
+  suffix: Sakura Martini
   components:
   - type: Solution
     solution:
@@ -669,8 +665,8 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkSnakebite
-  suffix: snakebite
+  id: DrinkSnakebiteGlass
+  suffix: Snakebite
   components:
   - type: Solution
     solution:
@@ -683,32 +679,28 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkMimeTai
-  suffix: mime tai
+  id: DrinkMimeTaiGlass
+  suffix: Mime Tai
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: MimeTai
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: MimeTai
+        Quantity: 30
   - type: Icon
     sprite: _starcup/Objects/Consumable/Drinks/mime_tai.rsi
     state: icon
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkBlackAndWhite
-  suffix: black and white
+  id: DrinkBlackAndWhiteGlass
+  suffix: Black and White
   components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: BlackAndWhite
-          Quantity: 30
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: BlackAndWhite
+        Quantity: 30
   - type: Icon
     sprite: _starcup/Objects/Consumable/Drinks/black_and_white.rsi
     state: icon
@@ -716,7 +708,7 @@
 - type: entity
   parent: DrinkGlass
   id: DrinkBluescreenCuracaoGlass
-  suffix: bluescreen curacao
+  suffix: Bluescreen Curaçao
   components:
   - type: Solution
     solution:
@@ -730,7 +722,7 @@
 - type: entity
   parent: DrinkGlass
   id: DrinkCocoGeishaGlass
-  suffix: coco geisha
+  suffix: Coco Geisha
   components:
   - type: Solution
     solution:
@@ -767,4 +759,18 @@
         Quantity: 30
   - type: Icon
     sprite: _starcup/Objects/Consumable/Drinks/sakeglass_blue.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: BlueSkiesAheadGlass
+  suffix: Blue Skies Ahead
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: BlueSkiesAhead
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/sakeglass_purple.rsi
     state: icon

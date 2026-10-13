@@ -38,8 +38,8 @@ reagent-desc-dragon-naysayer = Silence the beast's lies.
 reagent-name-hivemind = hivemind
 reagent-desc-hivemind = Supposedly connects the drinker to the changelings' murderous telepathic frequencies. Hey, it beats drinking alone.
 
-reagent-name-hivemind = hivemime
-reagent-desc-hivemind =  For when you need the voices in your head to shut up for a little while.
+reagent-name-hivemime = hivemime
+reagent-desc-hivemime =  For when you need the voices in your head to shut up for a little while.
 
 reagent-name-sugarslime = sugarslime
 reagent-desc-sugarslime =  A syrupy drink to wash your worries away.
@@ -58,3 +58,6 @@ reagent-desc-sweet-union =  Some things are just meant to be.
 
 reagent-name-y2koffee = Y2Koffee
 reagent-desc-y2koffee =  The caffeine crash from this probably isn't half bad as people say.
+
+reagent-name-court-jester = Court jester
+reagent-desc-court-jester =  Art thou the jester, or art thou the fool?
