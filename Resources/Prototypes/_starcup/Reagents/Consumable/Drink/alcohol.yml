@@ -728,3 +728,24 @@
     Digestion:
       metabolites:
         Ethanol: 0.8
+
+- type: reagent
+  id: Starcup
+  name: reagent-name-starcup
+  parent: BaseDrink
+  desc: reagent-desc-starcup
+  physicalDesc: reagent-physical-desc-twinkling
+  flavor: starcup
+  color: "#af6188"
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 1
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/starcup_white.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true

@@ -44,6 +44,14 @@ flavor-complex-mime-tai = like furtive glances with a dry touch of coconut
 flavor-complex-dragonslayer = like rebirth in cosmic flame
 flavor-complex-dragon-naysayer = like a willpower to deny fate itself
 flavor-complex-hivemind = like an icy knife slicing through your thoughts
+flavor-complex-hivemime = as if millions of voices suddenly cried out in flavor and were suddenly silenced
+flavor-complex-sugarslime = like laughter bubbling among inky sorrows
+flavor-complex-quiet-convert = like laughter that feels at home in the quiet night
+flavor-complex-silent-sister = like becoming nothing, and thus being able to be anything
+flavor-complex-silicon-morning-coffee = like coffee leaking out a starship engine
+flavor-complex-starcup = like the restful reward of loving toil and labor
+flavor-complex-sweet-union = like an oath and a promise
+flavor-complex-y2koffee = like the buzz of nanites shutting down
 
 # Drinks (Rewrites)
 flavor-complex-acidspit-starcup = like your tongue is on fire

@@ -220,6 +220,46 @@
   flavorType: Complex
   description: flavor-complex-hivemind
 
+- type: flavor
+  id: hivemime
+  flavorType: Complex
+  description: flavor-complex-hivemime
+
+- type: flavor
+  id: sugarslime
+  flavorType: Complex
+  description: flavor-complex-sugarslime
+
+- type: flavor
+  id: quietconvert
+  flavorType: Complex
+  description: flavor-complex-quiet-convert
+
+- type: flavor
+  id: silentsister
+  flavorType: Complex
+  description: flavor-complex-silent-sister
+
+- type: flavor
+  id: siliconmorningcoffee
+  flavorType: Complex
+  description: flavor-complex-silicon-morning-coffee
+
+- type: flavor
+  id: starcup
+  flavorType: Complex
+  description: flavor-complex-starcup
+
+- type: flavor
+  id: sweetunion
+  flavorType: Complex
+  description: flavor-complex-sweet-union
+
+- type: flavor
+  id: y2koffee
+  flavorType: Complex
+  description: flavor-complex-y2koffee
+
 # Rewritten Drink Flavors
 - type: flavor
   id: acidspit-starcup

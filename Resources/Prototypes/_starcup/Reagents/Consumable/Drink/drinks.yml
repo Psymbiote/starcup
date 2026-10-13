@@ -188,3 +188,150 @@
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: true
+
+- type: reagent
+  id: Hivemime
+  name: reagent-name-hivemime
+  parent: BaseDrink
+  desc: reagent-desc-hivemime
+  physicalDesc: reagent-physical-desc-enigmatic
+  flavor: hivemime
+  color: "#af6188"
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 1
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/hivemime.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+
+- type: reagent
+  id: Sugarslime
+  name: reagent-name-sugarslime
+  parent: BaseDrink
+  desc: reagent-desc-sugarslime
+  physicalDesc: reagent-physical-desc-bubbly
+  flavor: sugarslime
+  color: "#af6188"
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 1
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/sugarslime.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+
+- type: reagent
+  id: QuietConvert
+  name: reagent-name-quiet-convert
+  parent: BaseDrink
+  desc: reagent-desc-quiet-convert
+  physicalDesc: reagent-physical-desc-bubbling
+  flavor: quietconvert
+  color: "#af6188"
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 1
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/quiet_convert.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+
+- type: reagent
+  id: SilentSister
+  name: reagent-name-silent-sister
+  parent: BaseDrink
+  desc: reagent-desc-silent-sister
+  physicalDesc: reagent-physical-desc-robust
+  flavor: silentsister
+  color: "#af6188"
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 1
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/silent_sister.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+
+- type: reagent
+  id: SiliconMorningCoffee
+  name: reagent-name-silicon-morning-coffee
+  parent: BaseDrink
+  desc: reagent-desc-silicon-morning-coffee
+  physicalDesc: reagent-physical-desc-oily
+  flavor: siliconmorningcoffee
+  color: "#af6188"
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 1
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/silicon_morning_coffee.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+
+- type: reagent
+  id: SweetUnion
+  name: reagent-name-sweet-union
+  parent: BaseDrink
+  desc: reagent-desc-sweet-union
+  physicalDesc: reagent-physical-desc-sweet
+  flavor: sweetunion
+  color: "#af6188"
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 1
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/sweet_union.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+
+- type: reagent
+  id: Y2Koffee
+  name: reagent-name-y2koffee
+  parent: BaseDrink
+  desc: reagent-desc-y2koffee
+  physicalDesc: reagent-physical-desc-inky
+  flavor: sweetunion
+  color: "#af6188"
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 1
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/y2koffee.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true

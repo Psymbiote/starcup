@@ -37,3 +37,27 @@ reagent-desc-dragon-naysayer = Silence the beast's lies.
 
 reagent-name-hivemind = hivemind
 reagent-desc-hivemind = Supposedly connects the drinker to the changelings' murderous telepathic frequencies. Hey, it beats drinking alone.
+
+reagent-name-hivemind = hivemime
+reagent-desc-hivemind =  For when you need the voices in your head to shut up for a little while.
+
+reagent-name-sugarslime = sugarslime
+reagent-desc-sugarslime =  A syrupy drink to wash your worries away.
+
+reagent-name-quiet-convert = quiet convert
+reagent-desc-quiet-convert =  A drink to celebrate when joy turns to inner peace.
+
+reagent-name-silent-sister = silent sister
+reagent-desc-silent-sister =  Named after a mysterious order of nuns that is nowhere to be found.
+
+reagent-name-silicon-morning-coffee = silicon morning coffee
+reagent-desc-silicon-morning-coffee =  Nothing like a cup of moil to get you up and running.
+
+reagent-name-starcup = cup of stars
+reagent-desc-starcup =  Always worth insisting upon.
+
+reagent-name-sweet-union = sweet union
+reagent-desc-sweet-union =  Some things are just meant to be.
+
+reagent-name-y2koffee = Y2Koffee
+reagent-desc-y2koffee =  The caffeine crash from this probably isn't half bad as people say.
