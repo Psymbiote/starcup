@@ -771,3 +771,8 @@
   id: floral
   flavorType: Complex
   description: flavor-complex-floral
+
+- type: flavor
+  id: stardust
+  flavorType: Base
+  description: flavor-base-stardust
