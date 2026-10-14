@@ -293,9 +293,9 @@
   name: reagent-name-court-jester
   parent: BaseDrink
   desc: reagent-desc-court-jester
-  physicalDesc: reagent-physical-desc-creamy
+  physicalDesc: reagent-physical-desc-starry
   flavor: courtjester
-  color: "#464066"
+  color: "#efb6c0"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/court_jester.rsi
     state: icon_empty

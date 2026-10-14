@@ -462,7 +462,7 @@
     Nothing:
       amount: 1
   products:
-    SilentNight: 3
+    SilentNight: 4
 
 - type: reaction
   id: SilentNightNog
@@ -472,7 +472,7 @@
     Nothing:
       amount: 1
   products:
-    SilentNight: 1
+    SilentNight: 2
 
 - type: reaction
   id: MimeTai
@@ -487,15 +487,17 @@
       amount: 1
     JuiceLime:
       amount: 1
-    ice:
+    Ice:
       amount: 1
     Nothing:
       amount: 1
   products:
-    MimeTai: 4
+    MimeTai: 6
 
 - type: reaction
   id: BluescreenCuracao
+  requiredMixerCategories:
+  - Shake
   reactants:
     Fersilicite:
       amount: 1
@@ -520,7 +522,7 @@
     Angobitters:
       amount: 1
   products:
-    CocoGeisha: 3
+    CocoGeisha: 5
 
 - type: reaction
   id: Dragonslayer
@@ -542,7 +544,7 @@
     Nothing:
       amount: 1
   products:
-    DragonNaysayer: 1
+    DragonNaysayer: 2
 
 - type: reaction
   id: Hivemind
@@ -554,7 +556,7 @@
     ChangelingSting:
       amount: 1
   products:
-    Hivemind: 1
+    Hivemind: 3
 
 - type: reaction
   id: Hivemime
@@ -564,7 +566,7 @@
     Silencer:
       amount: 1
   products:
-    Hivemime: 1
+    Hivemime: 2
 
 - type: reaction
   id: QuietConvert
@@ -574,7 +576,7 @@
     Nothing:
       amount: 1
   products:
-    QuietConvert: 1
+    QuietConvert: 2
 
 - type: reaction
   id: Sugarslime
@@ -586,7 +588,7 @@
     Slime:
       amount: 1
   products:
-    Sugarslime: 1
+    Sugarslime: 3
 
 - type: reaction
   id: SilentSister
@@ -598,7 +600,7 @@
     JuiceBanana:
       amount: 1
   products:
-    SilentSister: 1
+    SilentSister: 3
 
 - type: reaction
   id: SiliconMorningCoffee
@@ -612,7 +614,7 @@
     WeldingFuel:
       amount: 1
   products:
-    SiliconMorningCoffee: 1
+    SiliconMorningCoffee: 3
 
 - type: reaction
   id: Starcup
@@ -630,7 +632,7 @@
     Plasma:
       amount: 1
   products:
-    Starcup: 1
+    Starcup: 11
 
 - type: reaction
   id: SweetUnion
@@ -642,19 +644,18 @@
     SilentSister:
       amount: 1
   products:
-    SweetUnion: 1
+    SweetUnion: 2
 
 - type: reaction
   id: Y2Koffee
-  requiredMixerCategories:
-  - Stir
+  minTemp: 340
   reactants:
     SiliconMorningCoffee:
       amount: 1
     Fersilicite:
       amount: 1
   products:
-    Y2Koffee: 1
+    Y2Koffee: 2
 
 - type: reaction
   id: OriginalSin
@@ -670,7 +671,7 @@
     Absinthe:
       amount: 1
   products:
-    OriginalSin: 1
+    OriginalSin: 4
 
 - type: reaction
   id: BlueSkiesAhead
@@ -688,7 +689,7 @@
     Ice:
       amount: 1
   products:
-    BlueSkiesAhead: 1
+    BlueSkiesAhead: 5
 
 - type: reaction
   id: CourtJester
@@ -702,4 +703,61 @@
     RootBeer:
       amount: 1
   products:
-    CourtJester: 1
+    CourtJester: 3
+
+- type: reaction
+  id: PinkSquirrel
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    JuiceCherry:
+      amount: 1
+    Cream:
+      amount: 1
+    CoffeeLiqueur:
+      amount: 1
+    CocoaPowder:
+      amount: 1
+  products:
+    PinkSquirrel: 4
+
+- type: reaction
+  id: PinkSquirrelImitation
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    JuiceCherry:
+      amount: 1
+    Cream:
+      amount: 1
+    CoffeeLiqueur:
+      amount: 1
+    CocoaPowderImitation:
+      amount: 1
+  products:
+    PinkSquirrel: 4
+
+- type: reaction
+  id: MKCDrink
+  reactants:
+    Moonshine:
+      amount: 1
+    Ketchunaise:
+      amount: 1
+    Coffee:
+      amount: 1
+    WeldingFuel:
+      amount: 1
+      catalyst: true
+  products:
+    MKCDrink: 4
+
+- type: reaction
+  id: BlackAndWhite
+  reactants:
+    Ale:
+      amount: 1
+    Nothing:
+      amount: 1
+  products:
+    BlackAndWhite: 2

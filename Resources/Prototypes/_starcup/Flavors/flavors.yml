@@ -275,6 +275,16 @@
   flavorType: Complex
   description: flavor-complex-court-jester
 
+- type: flavor
+  id: pinksquirrel
+  flavorType: Complex
+  description: flavor-complex-pink-squirrel
+
+- type: flavor
+  id: mkcflavor
+  flavorType: Complex
+  description: flavor-complex-mkc
+
 # Rewritten Drink Flavors
 - type: flavor
   id: acidspit-starcup

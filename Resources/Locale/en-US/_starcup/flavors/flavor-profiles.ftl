@@ -55,6 +55,8 @@ flavor-complex-y2koffee = like the buzz of nanites shutting down
 flavor-complex-original-sin = like absinthe, perfectly rolled off
 flavor-complex-blue-skies-ahead = like a sharply pleasant chill in a hot summer day
 flavor-complex-court-jester = like the wisdom keen of a servant most humble
+flavor-complex-pink-squirrel = creamy and nutty
+flavor-complex-mkc = like a knife dipped in fuel, with a hint of tomato
 
 # Drinks (Rewrites)
 flavor-complex-acidspit-starcup = like your tongue is on fire

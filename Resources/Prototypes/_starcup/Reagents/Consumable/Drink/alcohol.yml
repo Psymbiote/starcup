@@ -700,7 +700,7 @@
     state: icon_empty
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+  metamorphicChangeColor: false
   metabolisms:
     Digestion:
       metabolites:
@@ -719,7 +719,7 @@
     state: icon_empty
   metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+  metamorphicChangeColor: false
   metabolisms:
     Digestion:
       metabolites:
@@ -733,18 +733,12 @@
   physicalDesc: reagent-physical-desc-twinkling
   flavor: starcup
   color: "#2c455a"
-  metabolisms:
-    Digestion:
-      effects:
-      - !type:Satiate
-        satiationType: Thirst
-        factor: 1
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/starcup_white.rsi
     state: icon_empty
   metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
+  metamorphicChangeColor: false
 
 - type: reagent
   id: OriginalSin
@@ -758,10 +752,6 @@
     Digestion:
       metabolites:
         Ethanol: 0.25
-      effects:
-      - !type:Satiate
-        satiationType: Thirst
-        factor: 1
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/sakeglass_blue.rsi
     state: icon_empty
@@ -771,9 +761,9 @@
 
 - type: reagent
   id: BlueSkiesAhead
-  name: reagent-name-blue-skies.ahead
+  name: reagent-name-blue-skies-ahead
   parent: BaseDrink
-  desc: reagent-desc-blue-skies.ahead
+  desc: reagent-desc-blue-skies-ahead
   physicalDesc: reagent-physical-desc-crisp
   flavor: blueskiesahead
   color: "#00b6a4"
@@ -782,10 +772,40 @@
       effects:
       - !type:Satiate
         satiationType: Thirst
-        factor: 3
+        factor: 1.5
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/sakeglass_purple.rsi
     state: icon_empty
   metamorphicMaxFillLevels: 1
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: true
+
+- type: reagent
+  id: PinkSquirrel
+  name: reagent-name-pink-squirrel
+  parent: BaseDrink
+  desc: reagent-desc-pink-squirrel
+  physicalDesc: reagent-physical-desc-creamy
+  flavor: pinksquirrel
+  color: "#f7bccc"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/pink_squirrel.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+
+- type: reagent
+  id: MKCDrink
+  name: reagent-name-mkc
+  parent: BaseDrink
+  desc: reagent-desc-mkc
+  physicalDesc: reagent-physical-desc-thick
+  flavor: mkcflavor
+  color: "#8e675c"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/MKC_drink.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false

@@ -774,3 +774,31 @@
   - type: Icon
     sprite: _starcup/Objects/Consumable/Drinks/sakeglass_purple.rsi
     state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: PinkSquirrelGlass
+  suffix: Pink Squirrel
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: PinkSquirrel
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/pink_squirrel.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: MKCGlass
+  suffix: M.K.C.
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: MKCDrink
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/MKC_drink.rsi
+    state: icon
