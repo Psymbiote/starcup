@@ -10,6 +10,18 @@
     "states": [
         {
             "name": "wood01"
+        },
+        {
+            "name": "double_edge_south"
+        },
+        {
+            "name": "double_edge_east"
+        },
+        {
+            "name": "double_edge_north"
+        },
+        {
+            "name": "double_edge_west"
         }
     ]
 }
