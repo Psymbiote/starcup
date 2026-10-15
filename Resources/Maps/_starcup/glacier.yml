@@ -67816,7 +67816,7 @@ entities:
     - type: Transform
       pos: 18.27082,-39.1835
       parent: 2
-- proto: DrinkCherryBomb
+- proto: DrinkCherryBombGlass
   entities:
   - uid: 15594
     components:
