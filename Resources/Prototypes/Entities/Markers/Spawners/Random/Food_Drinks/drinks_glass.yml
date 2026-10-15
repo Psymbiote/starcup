@@ -131,17 +131,27 @@
         - id: DrinkInsideScoopGlass
         # End Den additions
         # begin starcup additions
-        - id: DrinkAppletini
-        - id: DrinkBlackVelvet
-        - id: DrinkBlueLagoon
-        - id: DrinkBramble
-        - id: DrinkCactus
-        - id: DrinkCorpseReviver
-        - id: DrinkEarthquake
-        - id: DrinkFaeriesCheer
-        - id: DrinkMoonMist
-        - id: DrinkRainbowShooter
-        - id: DrinkSnakebite
+        - id: DrinkAppletiniGlass
+        - id: DrinkBlackVelvetGlass
+        - id: DrinkBlueLagoonGlass
+        - id: DrinkBrambleGlass
+        - id: DrinkCactusGlass
+        - id: DrinkCorpseReviverGlass
+        - id: DrinkEarthquakeGlass
+        - id: DrinkFaeriesCheerGlass
+        - id: DrinkMoonMistGlass
+        - id: DrinkRainbowShooterGlass
+        - id: DrinkSnakebiteGlass
+        - id: DrinkBlackAndWhiteGlass
+        - id: DrinkCheermimeGlass
+        - id: DrinkCocoGeishaGlass
+        - id: DrinkCourtJesterGlass
+        - id: DrinkMKCGlass
+        - id: DrinkMimeTaiGlass
+        - id: DrinkPinkSquirrelGlass
+        - id: DrinkSiliconMorningCoffeeGlass
+        - id: DrinkSilentSisterGlass
+        - id: DrinkSugarslimeGlass
         # end starcup additions
         - !type:GroupSelector #rare
           weight: 0.05
@@ -160,4 +170,11 @@
           - id: DrinkHoochGlass
           - id: DrinkBeepskySmashGlass
           - id: DrinkBacchusBlessing
+          # begin starcup additions
+          - id: DrinkHivemindGlass
+          - id: DrinkBluescreenCuracaoGlass
+          - id: DrinkOriginalSinGlass
+          - id: DrinkBlueSkiesAheadGlass
+          - id: DrinkY2KoffeeGlass
+          # end starcup additions
     offset: 0.0
