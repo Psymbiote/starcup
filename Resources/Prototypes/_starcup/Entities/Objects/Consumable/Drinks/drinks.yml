@@ -160,7 +160,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: HivemindGlass
+  id: DrinkHivemindGlass
   suffix: Hivemind
   components:
   - type: Solution
@@ -174,7 +174,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: HivemimeGlass
+  id: DrinkHivemimeGlass
   suffix: Hivemime
   components:
   - type: Solution
@@ -188,7 +188,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: SugarslimeGlass
+  id: DrinkSugarslimeGlass
   suffix: Sugarslime
   components:
   - type: Solution
@@ -202,7 +202,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: QuietConvertGlass
+  id: DrinkQuietConvertGlass
   suffix: Quiet Convert
   components:
   - type: Solution
@@ -216,7 +216,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: SilentSisterGlass
+  id: DrinkSilentSisterGlass
   suffix: Silent Sister
   components:
   - type: Solution
@@ -230,7 +230,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: SiliconMorningCoffeeGlass
+  id: DrinkSiliconMorningCoffeeGlass
   suffix: Silicon Morning Coffee
   components:
   - type: Solution
@@ -244,7 +244,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: SweetUnionGlass
+  id: DrinkSweetUnionGlass
   suffix: Sweet Union
   components:
   - type: Solution
@@ -258,7 +258,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: Y2KoffeeGlass
+  id: DrinkY2KoffeeGlass
   suffix: Y2Koffee
   components:
   - type: Solution
@@ -272,7 +272,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: CourtJesterGlass
+  id: DrinkCourtJesterGlass
   suffix: Court Jester
   components:
   - type: Solution
@@ -735,7 +735,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: StarcupGlass
+  id: DrinkStarcupGlass
   suffix: Cup of Stars
   components:
   - type: Solution
@@ -749,7 +749,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: OriginalSinGlass
+  id: DrinkOriginalSinGlass
   suffix: Original Sin
   components:
   - type: Solution
@@ -763,7 +763,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: BlueSkiesAheadGlass
+  id: DrinkBlueSkiesAheadGlass
   suffix: Blue Skies Ahead
   components:
   - type: Solution
@@ -777,7 +777,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: PinkSquirrelGlass
+  id: DrinkPinkSquirrelGlass
   suffix: Pink Squirrel
   components:
   - type: Solution
@@ -791,7 +791,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: MKCGlass
+  id: DrinkMKCGlass
   suffix: M.K.C.
   components:
   - type: Solution
