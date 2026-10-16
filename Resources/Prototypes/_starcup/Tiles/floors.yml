@@ -27,7 +27,7 @@
   id: FloorTileFancy
   name: fancy tile
   sprite: /Textures/_starcup/Tiles/fancy.png
-  edgeSpritePriority:
+  edgeSpritePriority: 6
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
