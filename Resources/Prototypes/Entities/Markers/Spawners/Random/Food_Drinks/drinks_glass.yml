@@ -131,17 +131,17 @@
         - id: DrinkInsideScoopGlass
         # End Den additions
         # begin starcup additions
-        - id: DrinkAppletiniGlass
-        - id: DrinkBlackVelvetGlass
-        - id: DrinkBlueLagoonGlass
-        - id: DrinkBrambleGlass
-        - id: DrinkCactusGlass
-        - id: DrinkCorpseReviverGlass
-        - id: DrinkEarthquakeGlass
-        - id: DrinkFaeriesCheerGlass
-        - id: DrinkMoonMistGlass
-        - id: DrinkRainbowShooterGlass
-        - id: DrinkSnakebiteGlass
+        - id: DrinkAppletini
+        - id: DrinkBlackVelvet
+        - id: DrinkBlueLagoon
+        - id: DrinkBramble
+        - id: DrinkCactus
+        - id: DrinkCorpseReviver
+        - id: DrinkEarthquake
+        - id: DrinkFaeriesCheer
+        - id: DrinkMoonMist
+        - id: DrinkRainbowShooter
+        - id: DrinkSnakebite
         - id: DrinkBlackAndWhiteGlass
         - id: DrinkCheermimeGlass
         - id: DrinkCocoGeishaGlass
