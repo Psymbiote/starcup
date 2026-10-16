@@ -56,7 +56,7 @@
   - type: Sprite
     sprite: _starcup/Tiles/Planet/water_deep.rsi
     layers:
-    - sprite: Tiles/Planet/water_deep.rsi
+    - sprite: _starcup/Tiles/Planet/water_deep.rsi
       state: base
     - map: [ "enum.EdgeLayer.South" ]
       state: double_edge_south
