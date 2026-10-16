@@ -1,6 +1,7 @@
 - type: tile
   abstract: true
   id: BaseStationTile
+  edgeSpritePriority: 6 # starcup
   isSubfloor: false
   deconstructTools: [ Prying ]
   footstepSounds:

@@ -1,53 +1,23 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "https://github.com/discordia-space/CEV-Eris/tree/d1b3041899a42ef1fb59cd7ad4a83a300b35638c",
+    "copyright": "https://github.com/tgstation/tgstation/tree/423404b31e36c4605faacec881b324db8997b0a6, modified by Psymbiote",
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
         {
-            "name": "desert"
+            "name": "double_edge_south"
         },
         {
-            "name": "desert_dug"
+            "name": "double_edge_east"
         },
         {
-            "name": "desert0"
+            "name": "double_edge_north"
         },
         {
-            "name": "desert1"
-        },
-        {
-            "name": "desert2"
-        },
-        {
-            "name": "desert3"
-        },
-        {
-            "name": "desert4"
-        },
-        {
-            "name": "lowdesert"
-        },
-        {
-            "name": "lowdesert_dug"
-        },
-        {
-            "name": "lowdesert0"
-        },
-        {
-            "name": "lowdesert1"
-        },
-        {
-            "name": "lowdesert2"
-        },
-        {
-            "name": "lowdesert3"
-        },
-        {
-            "name": "lowdesert4"
+            "name": "double_edge_west"
         }
     ]
 }

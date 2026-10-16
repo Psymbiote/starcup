@@ -5,6 +5,7 @@
   sprite: /Textures/_starcup/Tiles/carpet_blue.png
   variants: 4
   placementVariants: [0, 1, 2, 3]
+  edgeSpritePriority: 7
   itemDrop: FloorTileItemStarcupCarpetBlue
 
 - type: tile
@@ -116,7 +117,6 @@
   id: FloorStarcupCarpetGingham
   name: gingham carpet
   sprite: /Textures/_starcup/Tiles/Interior/gingham_carpet/base.png
-  edgeSpritePriority: 4
   edgeSprites:
     SouthEast: /Textures/_starcup/Tiles/Interior/gingham_carpet/single_edge.png
     NorthEast: /Textures/_starcup/Tiles/Interior/gingham_carpet/single_edge.png
@@ -139,7 +139,6 @@
   id: FloorStarcupCarpetShagWhite
   name: white shag carpet
   sprite: /Textures/_starcup/Tiles/Interior/white_shag_carpet/base.png
-  edgeSpritePriority: 4
   edgeSprites:
     SouthEast: /Textures/_starcup/Tiles/Interior/white_shag_carpet/single_edge.png
     NorthEast: /Textures/_starcup/Tiles/Interior/white_shag_carpet/single_edge.png

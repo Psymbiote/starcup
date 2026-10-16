@@ -2,6 +2,7 @@
   id: BaseFloorPlanet
   abstract: true
   heatCapacity: 10000
+  edgeSpritePriority: 2 # starcup
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
@@ -15,7 +16,6 @@
   sprite: /Textures/Tiles/Planet/dirt.rsi/dirt.png
   variants: 4
   # begin starcup
-  edgeSpritePriority: 2
   edgeSprites:
     SouthEast: /Textures/_starcup/Tiles/Planet/dirt_grassy.rsi/single_edge.png
     NorthEast: /Textures/_starcup/Tiles/Planet/dirt_grassy.rsi/single_edge.png
@@ -64,7 +64,7 @@
   name: tiles-grass-planet-floor
   sprite: /Textures/Tiles/Planet/Grass/grass.png
   variants: 4
-  edgeSpritePriority: 5
+  edgeSpritePriority: 5 # starcup
   edgeSprites:
     # begin starcup: Rounded edges for a more natural look
     SouthEast: /Textures/_starcup/Tiles/Planet/Grass/single_edge.png
@@ -132,6 +132,7 @@
   id: FloorIce
   name: tiles-ice
   sprite: /Textures/Tiles/Planet/Snow/ice.png
+  edgeSpritePriority: 1 # starcup
   isSubfloor: true
   friction: 0.05
   heatCapacity: 10000

@@ -2,14 +2,12 @@
   id: FloorStarcupWoodBrick
   name: brick-pattern wood floor
   sprite: /Textures/_starcup/Tiles/Interior/brick_wood/wood01.png
-  # begin starcup: add edges
-  edgeSpritePriority: 1
+  edgeSpritePriority: 6
   edgeSprites:
     South: /Textures/_starcup/Tiles/Interior/brick_wood/double_edge_south.png
     East: /Textures/_starcup/Tiles/Interior/brick_wood/double_edge_east.png
     North: /Textures/_starcup/Tiles/Interior/brick_wood/double_edge_north.png
     West: /Textures/_starcup/Tiles/Interior/brick_wood/double_edge_west.png
-  # end starcup
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
