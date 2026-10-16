@@ -101,6 +101,7 @@
   itemDrop: FloorTileItemStarcupCarpetFancyViolet
 
 - type: tile
+  parent: FloorStarcupCarpetBase
   id: FloorStarcupCarpetMemphis
   name: memphis carpet
   sprite: /Textures/_starcup/Tiles/Interior/arcade_carpet.rsi/arcade.png
@@ -114,6 +115,7 @@
   itemDrop: FloorTileItemStarcupCarpetMemphis
 
 - type: tile
+  parent: FloorStarcupCarpetBase
   id: FloorStarcupCarpetGingham
   name: gingham carpet
   sprite: /Textures/_starcup/Tiles/Interior/gingham_carpet/base.png
@@ -136,6 +138,7 @@
   itemDrop: FloorTileItemStarcupCarpetGingham
 
 - type: tile
+  parent: FloorStarcupCarpetBase
   id: FloorStarcupCarpetShagWhite
   name: white shag carpet
   sprite: /Textures/_starcup/Tiles/Interior/white_shag_carpet/base.png

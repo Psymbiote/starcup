@@ -51,10 +51,10 @@
   # begin starcup
   edgeSpritePriority: 3
   edgeSprites:
-    South: /Textures/_starcup/Tiles/Planet/desert.rsi/double_edge_south.png
-    East: /Textures/_starcup/Tiles/Planet/desert.rsi/double_edge_east.png
-    North: /Textures/_starcup/Tiles/Planet/desert.rsi/double_edge_north.png
-    West: /Textures/_starcup/Tiles/Planet/desert.rsi/double_edge_west.png
+    South: /Textures/_starcup/Tiles/Planet/low_desert.rsi/double_edge_south.png
+    East: /Textures/_starcup/Tiles/Planet/low_desert.rsi/double_edge_east.png
+    North: /Textures/_starcup/Tiles/Planet/low_desert.rsi/double_edge_north.png
+    West: /Textures/_starcup/Tiles/Planet/low_desert.rsi/double_edge_west.png
   # end starcup
 
 # Grass
