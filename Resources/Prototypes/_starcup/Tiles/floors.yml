@@ -61,7 +61,7 @@
 
 - type: tile
   id: FloorTileInvisible
-  name: invisible floor
+  name: invisible floor # walkable outer space
   sprite: /Textures/_starcup/Tiles/Misc/void.rsi/empty.png
   baseTurf: Space
   isSubfloor: false
@@ -69,9 +69,11 @@
   isSpace: false
   heatCapacity: 10000
   mass: 200
+  #footstepSounds:
+  #  path: /Audio/_starcup/silence.ogg
 
 - type: tile
   parent: FloorTileInvisible
-  id: FloorTileVoid
+  id: FloorTileVoid # pitch black nothing
   name: void
   sprite: /Textures/_starcup/Tiles/Misc/void.rsi/void.png
