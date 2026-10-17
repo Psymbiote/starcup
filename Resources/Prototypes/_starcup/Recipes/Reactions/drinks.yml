@@ -464,15 +464,15 @@
   products:
     SilentNight: 4
 
-- type: reaction
-  id: SilentNightNog
-  reactants:
-    Eggnog:
-      amount: 1
-    Nothing:
-      amount: 1
-  products:
-    SilentNight: 2
+#- type: reaction
+#  id: SilentNightNog
+#  reactants:
+#    Eggnog:
+#      amount: 1
+#    Nothing:
+#      amount: 1
+#  products:
+#    SilentNight: 2
 
 - type: reaction
   id: MimeTai
@@ -705,21 +705,21 @@
   products:
     CourtJester: 3
 
-- type: reaction
-  id: PinkSquirrel
-  requiredMixerCategories:
-  - Shake
-  reactants:
-    JuiceCherry:
-      amount: 1
-    Cream:
-      amount: 1
-    CoffeeLiqueur:
-      amount: 1
-    CocoaPowder:
-      amount: 1
-  products:
-    PinkSquirrel: 4
+#- type: reaction
+#  id: PinkSquirrel
+#  requiredMixerCategories:
+#  - Shake
+#  reactants:
+#    JuiceCherry:
+#      amount: 1
+#    Cream:
+#      amount: 1
+#    CoffeeLiqueur:
+#      amount: 1
+#    CocoaPowder:
+#      amount: 1
+#  products:
+#    PinkSquirrel: 4
 
 - type: reaction
   id: PinkSquirrelImitation
