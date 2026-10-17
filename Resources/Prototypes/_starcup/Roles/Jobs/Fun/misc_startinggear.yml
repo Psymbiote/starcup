@@ -27,8 +27,8 @@
 
 # Syndicate Footsoldier Gear
 - type: startingGear
-  id: NanotrasenFootsoldierGear
   parent: NanotrasenOperativeGearCivilian
+  id: NanotrasenFootsoldierGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitOperativeNT
     head: ClothingHeadHelmetSwatNanotrasen
@@ -67,7 +67,7 @@
   equipment:
     mask: ClothingMaskMime
 
-# InterDyne Pharmaceuticals gear
+# InterDyne Pharmaceuticals
 - type: startingGear
   id: InterdyneBiodroneGear
   equipment:

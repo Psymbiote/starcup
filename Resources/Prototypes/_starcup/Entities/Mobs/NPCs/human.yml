@@ -16,9 +16,9 @@
         task: SimpleHumanoidHostileCompound
 
 - type: entity
-  name: NanoTrasen shuttle pilot
-  id: MobNanotrasenFootsoldierPilot
   parent: MobNanotrasenFootsoldier
+  id: MobNanotrasenFootsoldierPilot
+  name: NanoTrasen shuttle pilot
 
 - type: entity
   parent: MobSyndicateFootsoldier
