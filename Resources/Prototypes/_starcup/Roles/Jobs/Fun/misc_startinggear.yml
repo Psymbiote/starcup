@@ -25,10 +25,27 @@
     back:
     - BoxSurvival
 
+# Nanotrasen Footsoldier Gear - No Headset
+- type: startingGear
+  id: NanotrasenFootsoldierGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperativeNT
+    head: ClothingHeadHelmetNanotrasen
+    mask: ClothingMaskGasNanotrasen
+    outerClothing: ClothingOuterArmorBasic
+    gloves: ClothingHandsGlovesCombat
+    back: WeaponLaserCarbine
+    shoes: ClothingShoesBootsJackFilled
+    id: NTPDA
+    pocket1: WeaponLaserSvalinn
+    pocket2: PowerCellHigh
+  inhand:
+  - TelescopicBaton
+
 # Syndicate Footsoldier Gear
 - type: startingGear
   parent: NanotrasenOperativeGearCivilian
-  id: NanotrasenFootsoldierGear
+  id: NanotrasenOperativeGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitOperativeNT
     head: ClothingHeadHelmetSwatNanotrasen

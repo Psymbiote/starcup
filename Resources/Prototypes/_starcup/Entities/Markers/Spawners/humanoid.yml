@@ -22,7 +22,11 @@
       state: equipped-HELMET
   - type: ConditionalSpawner
     prototypes:
-    - MobNanotrasenFootsoldier
+    - MobNanotrasenFootsoldierHuman
+    - MobNanotrasenFootsoldierVulpkanin
+    - MobNanotrasenFootsoldierDoptera
+    - MobNanotrasenFootsoldierSlimePerson
+    - MobNanotrasenFootsoldierUnathi
 
 - type: entity
   parent: SpawnMobNanotrasenFootSoldier
@@ -32,6 +36,8 @@
   - type: ConditionalSpawner
     prototypes:
     - MobNanotrasenFootsoldierPilot
+
+# Interdyne Pharmaceuticals
 
 - type: entity
   parent: MarkerBaseStarcup
@@ -57,7 +63,9 @@
     - state: ai
   - type: ConditionalSpawner
     prototypes:
-    - MobInterdyneBiodrone
+    - MobBiodroneHuman
+    - MobBiodroneRodentia
+    - MobBiodroneSlimePerson
 
 # FPA
 - type: entity

@@ -83,6 +83,10 @@
   suffix: NanoTrasen
   description: Uniform for elite NanoTrasen operatives performing tactical operations in deep space.
   components:
+  - type: Sprite
+    sprite: _starcup/Clothing/Uniforms/Jumpsuit/nanotrasenoperative.rsi
+  - type: Clothing
+    sprite: _starcup/Clothing/Uniforms/Jumpsuit/nanotrasenoperative.rsi
   - type: ExaminableClothing
     examineText: clothing-nanotrasen-operative-jumpsuit
 
