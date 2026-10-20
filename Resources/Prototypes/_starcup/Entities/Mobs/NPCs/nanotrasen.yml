@@ -1,0 +1,336 @@
+## Five Points Armory
+- type: entity
+  parent: MobHumanoidNPCHostile
+  id: MobFPAHenchmanBase
+  name: FPA enforcer
+  suffix: Telebaton, hostile
+  description: A low-rate NanoTrasen toadie. Probably wouldn't be missed in this sector.
+  abstract: true
+  components:
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: Loadout
+    prototypes:
+    - FPAHenchmanGearMelee
+
+- type: entity
+  parent: MobFPAHenchmanBase
+  id: MobFPAHenchmanRanged
+  suffix: Pistol, hostile
+  abstract: true
+  components:
+  - type: Loadout
+    prototypes:
+    - FPAHenchmanGearRanged
+
+- type: entity
+  parent: MobHumanoidNPCHostile
+  id: MobFPATrooperBase
+  name: FPA trooper
+  suffix: Carabinier, hostile
+  description: Five Points Armory's main investment and infrastructure reclamation solution.
+  abstract: true
+  components:
+    - type: NpcFactionMember
+      factions:
+        - Syndicate
+    - type: Loadout
+      prototypes:
+        - FPATrooperCarabinierGear
+
+- type: entity
+  parent: MobFPATrooperBase
+  id: MobFPAShotgunnerBase
+  suffix: Shotgunner, hostile
+  abstract: true
+  components:
+  - type: Loadout
+    prototypes:
+    - FPATrooperShotgunnerGear
+
+- type: entity
+  parent: MobFPATrooperBase
+  id: MobFPAShieldbearerBase
+  suffix: Shieldbearer, hostile
+  abstract: true
+  components:
+  - type: Loadout
+    prototypes:
+    - FPATrooperShieldbearerGear
+
+- type: entity
+  parent: MobFPATrooperBase
+  id: MobFPAPilotBase
+  name: FPA shuttle pilot
+  description: Swaggering daredevils whose main cargo is oppression in stylish blue.
+  abstract: true
+  components:
+  - type: Loadout
+    prototypes:
+    - FPAPilotGear
+
+- type: entity
+  parent: MobFPATrooperBase
+  id: MobFPACaptainBase
+  name: FPA captain
+  description: The captain of a Five Points Armory vessel. A real big shot, or so they think.
+  abstract: true
+  components:
+  - type: Loadout
+    prototypes:
+    - FPACaptainGear
+
+# Henchmen
+# Melee
+- type: entity
+  parent:
+  - MobFPAHenchmanBase
+  - MobHuman
+  id: MobFPAHenchmanHuman
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAHenchmanBase
+  - MobVulpkanin
+  id: MobFPAHenchmanVulpkanin
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAHenchmanBase
+  - MobMoth
+  id: MobFPAHenchmanDoptera
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAHenchmanBase
+  - MobSlimePerson
+  id: MobFPAHenchmanSlimePerson
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAHenchmanBase
+  - MobReptilian
+  id: MobFPAHenchmanUnathi
+  categories: [ HideSpawnMenu ]
+
+# Ranged
+- type: entity
+  parent:
+  - MobFPAHenchmanRanged
+  - MobHuman
+  id: MobFPAHenchmanRangedHuman
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAHenchmanRanged
+  - MobVulpkanin
+  id: MobFPAHenchmanRangedVulpkanin
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAHenchmanRanged
+  - MobMoth
+  id: MobFPAHenchmanRangedDoptera
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAHenchmanRanged
+  - MobSlimePerson
+  id: MobFPAHenchmanRangedSlimePerson
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAHenchmanRanged
+  - MobReptilian
+  id: MobFPAHenchmanRangedUnathi
+  categories: [ HideSpawnMenu ]
+
+# Troopers
+# Carabiniers
+- type: entity
+  parent:
+  - MobFPATrooperBase
+  - MobHuman
+  id: MobFPACarabinierHuman
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPATrooperBase
+  - MobVulpkanin
+  id: MobFPACarabinierVulpkanin
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPATrooperBase
+  - MobMoth
+  id: MobFPACarabinierDoptera
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPATrooperBase
+  - MobSlimePerson
+  id: MobFPACarabinierSlimePerson
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPATrooperBase
+  - MobReptilian
+  id: MobFPACarabinierUnathi
+  categories: [ HideSpawnMenu ]
+
+# Shotgunners
+- type: entity
+  parent:
+  - MobFPAShotgunnerBase
+  - MobHuman
+  id: MobFPAShotgunnerHuman
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAShotgunnerBase
+  - MobVulpkanin
+  id: MobFPAShotgunnerVulpkanin
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAShotgunnerBase
+  - MobMoth
+  id: MobFPAShotgunnerDoptera
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAShotgunnerBase
+  - MobSlimePerson
+  id: MobFPAShotgunnerSlimePerson
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAShotgunnerBase
+  - MobReptilian
+  id: MobFPAShotgunnerUnathi
+  categories: [ HideSpawnMenu ]
+
+# Shieldbearers
+- type: entity
+  parent:
+  - MobFPAShieldbearerBase
+  - MobHuman
+  id: MobFPAShieldbearerHuman
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAShieldbearerBase
+  - MobVulpkanin
+  id: MobFPAShieldbearerVulpkanin
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAShieldbearerBase
+  - MobMoth
+  id: MobFPAShieldbearerDoptera
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAShieldbearerBase
+  - MobSlimePerson
+  id: MobFPAShieldbearerSlimePerson
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAShieldbearerBase
+  - MobReptilian
+  id: MobFPAShieldbearerUnathi
+  categories: [ HideSpawnMenu ]
+
+# Pilots
+- type: entity
+  parent:
+  - MobFPAPilotBase
+  - MobHuman
+  id: MobFPAPilotHuman
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAPilotBase
+  - MobVulpkanin
+  id: MobFPAPilotVulpkanin
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAPilotBase
+  - MobMoth
+  id: MobFPAPilotDoptera
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAPilotBase
+  - MobSlimePerson
+  id: MobFPAPilotSlimePerson
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPAPilotBase
+  - MobReptilian
+  id: MobFPAPilotUnathi
+  categories: [ HideSpawnMenu ]
+
+# Captains
+- type: entity
+  parent:
+  - MobFPACaptainBase
+  - MobHuman
+  id: MobFPACaptainHuman
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPACaptainBase
+  - MobVulpkanin
+  id: MobFPACaptainVulpkanin
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPACaptainBase
+  - MobMoth
+  id: MobFPACaptainDoptera
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPACaptainBase
+  - MobSlimePerson
+  id: MobFPACaptainSlimePerson
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent:
+  - MobFPACaptainBase
+  - MobReptilian
+  id: MobFPACaptainUnathi
+  categories: [ HideSpawnMenu ]

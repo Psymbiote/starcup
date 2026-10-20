@@ -1,0 +1,70 @@
+- type: entity
+  parent: WeaponLaserSvalinn
+  id: WeaponLaserSvalinnVintage
+  name: vintage svalinn laser pistol
+  description: A respectable laser pistol untouched by cost-cutting measures.
+  components:
+  - type: Sprite
+    sprite: _starcup/Objects/Weapons/Guns/Battery/vintage_svalinn.rsi
+  - type: Item
+    sprite: _starcup/Objects/Weapons/Guns/Battery/vintage_svalinn.rsi
+  - type: BatteryAmmoProvider
+    proto: RedLaser
+    fireCost: 62.5
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: Magazine
+        startingItem: PowerCellHigh
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        whitelist:
+          tags:
+          - PowerCell
+          - PowerCellSmall
+
+- type: entity
+  name: laser SMG
+  parent: [BaseWeaponBattery, BaseSecurityContraband, BaseExaminableClothing]
+  id: WeaponLaserSMG
+  description: Prototype handheld suppression gun that fires an array of inaccurate laser beams.
+  components:
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,2,1
+  - type: Tag
+    tags:
+    - Sidearm
+    - LaserWeapon
+  - type: Sprite
+    sprite: _starcup/Objects/Weapons/Guns/Battery/laser_smg.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-0
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Gun
+    minAngle: 21
+    maxAngle: 32
+    selectedMode: FullAuto
+    fireRate: 4.5
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/_starcup/Weapons/Guns/Gunshots/laserblast.ogg
+      params:
+        variation: 0.125
+  - type: BatteryAmmoProvider
+    proto: RedLightLaser
+    fireCost: 25
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: Appearance
+  - type: ExaminableClothing
+    examineText: clothing-laser-smg
+

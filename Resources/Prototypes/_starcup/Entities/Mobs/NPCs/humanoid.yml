@@ -10,19 +10,23 @@
       task: SimpleHumanoidIdleCompound
 
 - type: entity
+  parent: MobHumanoidNPCBase
   id: MobHumanoidNPCHostile
   abstract: true
   components:
-  - type: InputMover
-  - type: MobMover
   - type: HTN
     rootTask:
       task: SimpleHumanoidHostileCompound
 
+- type: entity
+  id: MobHumanoidNPCRandomized # unfortunately only works for humans
+  abstract: true
+  components:
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+
 ## Syndicate
-
-
-## Interdyne Pharmaceuticals
+# Interdyne Pharmaceuticals
 
 - type: entity
   parent: MobHumanoidNPCHostile
@@ -46,120 +50,18 @@
   - MobBiodroneBase
   - MobHuman
   id: MobBiodroneHuman
+  suffix: Human, hostile
 
 - type: entity
   parent:
   - MobBiodroneBase
   - MobRodentia
   id: MobBiodroneRodentia
+  suffix: Rodentia, hostile
 
 - type: entity
   parent:
   - MobBiodroneBase
   - MobSlimePerson
   id: MobBiodroneSlimePerson
-
-## Nanotrasen
-
-- type: entity
-  parent: MobHumanoidNPCHostile
-  id: MobNanotrasenFootsoldierBase
-  name: NanoTrasen footsoldier
-  components:
-    - type: NpcFactionMember
-      factions:
-        - Syndicate
-    - type: Loadout
-      prototypes:
-        - NanotrasenFootsoldierGear
-
-- type: entity
-  parent: MobNanotrasenFootsoldierBase
-  id: MobNanotrasenShuttlePilotBase
-  name: NanoTrasen shuttle pilot
-  components:
-  - type: Loadout
-    prototypes:
-    - NanotrasenFootsoldierGearRuin
-
-- type: entity
-  parent:
-  - MobNanotrasenFootsoldierBase
-  - MobHuman
-  id: MobNanotrasenFootsoldierHuman
-
-- type: entity
-  parent:
-  - MobNanotrasenFootsoldierBase
-  - MobVulpkanin
-  id: MobNanotrasenFootsoldierVulpkanin
-
-- type: entity
-  parent:
-  - MobNanotrasenFootsoldierBase
-  - MobMoth
-  id: MobNanotrasenFootsoldierDoptera
-
-- type: entity
-  parent:
-  - MobNanotrasenFootsoldierBase
-  - MobSlimePerson
-  id: MobNanotrasenFootsoldierSlimePerson
-
-- type: entity
-  parent:
-  - MobNanotrasenFootsoldierBase
-  - MobReptilian
-  id: MobNanotrasenFootsoldierUnathi
-
-- type: entity
-  parent:
-  - MobNanotrasenShuttlePilotBase
-  - MobHuman
-  id: MobNanotrasenShuttlePilotHuman
-
-- type: entity
-  parent:
-  - MobNanotrasenShuttlePilotBase
-  - MobVulpkanin
-  id: MobNanotrasenShuttlePilotVulpkanin
-
-- type: entity
-  parent:
-  - MobNanotrasenShuttlePilotBase
-  - MobMoth
-  id: MobNanotrasenShuttlePilotDoptera
-
-- type: entity
-  parent:
-  - MobNanotrasenShuttlePilotBase
-  - MobSlimePerson
-  id: MobNanotrasenShuttlePilotSlimePerson
-
-- type: entity
-  parent:
-  - MobNanotrasenShuttlePilotBase
-  - MobReptilian
-  id: MobNanotrasenShuttlePilotUnathi
-
-## Five Points Armory
-
-- type: entity
-  parent: MobSyndicateFootsoldier
-  id: MobFPAHenchman
-  name: FPA henchman
-  description: A low-rate NanoTrasen toadie. Probably wouldn't be missed in this sector.
-  components:
-  - type: Loadout
-    prototypes:
-    - FPAHenchmanGear
-
-- type: entity
-  parent: MobSyndicateFootsoldier
-  id: MobFPACaptain
-  name: FPA Ster-Captain # I think the 'e', as in 'aster', gives the title a stronger sound. Halfway between 'star' and 'stern'.
-  description: The captain of a Five Points Armory vessel. A real big shot, or so they think.
-  components:
-  - type: Loadout
-    prototypes:
-    - FPACaptainGear
+  suffix: Slime, hostile

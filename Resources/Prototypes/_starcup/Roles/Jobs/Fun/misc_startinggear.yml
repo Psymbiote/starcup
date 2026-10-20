@@ -25,27 +25,10 @@
     back:
     - BoxSurvival
 
-# Nanotrasen Footsoldier Gear - No Headset
-- type: startingGear
-  id: NanotrasenFootsoldierGear
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitOperativeNT
-    head: ClothingHeadHelmetNanotrasen
-    mask: ClothingMaskGasNanotrasen
-    outerClothing: ClothingOuterArmorBasic
-    gloves: ClothingHandsGlovesCombat
-    back: WeaponLaserCarbine
-    shoes: ClothingShoesBootsJackFilled
-    id: NTPDA
-    pocket1: WeaponLaserSvalinn
-    pocket2: PowerCellHigh
-  inhand:
-  - TelescopicBaton
-
 # Syndicate Footsoldier Gear
 - type: startingGear
   parent: NanotrasenOperativeGearCivilian
-  id: NanotrasenOperativeGear
+  id: NanotrasenFootsoldierGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitOperativeNT
     head: ClothingHeadHelmetSwatNanotrasen
@@ -84,7 +67,8 @@
   equipment:
     mask: ClothingMaskMime
 
-# InterDyne Pharmaceuticals
+
+# Interdyne Pharmaceuticals
 - type: startingGear
   id: InterdyneBiodroneGear
   equipment:
@@ -99,7 +83,7 @@
 
 # Five Points Armory gear
 - type: startingGear
-  id: FPAHenchmanGear
+  id: FPAHenchmanGearBase
   equipment:
     jumpsuit: ClothingUniformJumpsuitNanotrasen
     head: ClothingHeadHatBluesoft
@@ -108,9 +92,80 @@
     gloves: ClothingHandsGlovesFingerless
     id: NTPDA
     ears: ClothingHeadsetAltNanotrasen
-    shoes: ClothingShoesBootsNTFilled
+
+- type: startingGear
+  parent: FPAHenchmanGearBase
+  id: FPAHenchmanGearMelee
+  equipment:
     pocket1: WeaponLaserSvalinn
     pocket2: PowerCellHigh
+  inhand:
+  - TelescopicBaton
+
+- type: startingGear
+  parent: FPAHenchmanGearBase
+  id: FPAHenchmanGearRanged
+  equipment:
+    pocket1: TelescopicBaton
+    pocket2: PowerCellHigh
+  inhand:
+  - WeaponLaserSvalinn
+
+- type: startingGear
+  id: FPATrooperGearBase
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperativeNT
+    head: ClothingHeadHelmetRaidNanotrasen
+    eyes: ClothingEyesHudNanotrasen
+    mask: ClothingMaskGasNanotrasen
+    outerClothing: ClothingOuterArmorRaidNT
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackNanotrasen
+    shoes: ClothingShoesBootsCombatFilled
+    id: NTPDA
+    belt: ClothingBeltMilitaryWebbing
+  storage:
+    back:
+    - BoxSurvivalNanotrasen
+    belt:
+    - Truncheon
+    - WeaponLaserSvalinnVintage
+
+- type: startingGear
+  parent: FPATrooperGearBase
+  id: FPACarabinierGear
+  inhand:
+  - WeaponLaserCarbine
+
+- type: startingGear
+  parent: FPATrooperGearBase
+  id: FPAShotgunnerGear
+  inhand:
+  - WeaponEnergyShotgun
+
+- type: startingGear
+  parent: FPATrooperGearBase
+  id: FPAShieldbearerGear
+  inhand:
+  - WeaponLaserSMG
+  - RiotBulletShield
+
+- type: startingGear
+  id: FPAPilotGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperativeNT
+    head: ClothingHeadHelmetSwat
+    mask: ClothingMaskGasNanotrasen
+    outerClothing: ClothingOuterArmorBasic
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackSatchelBlue
+    shoes: ClothingShoesBootsJack
+    id: NTPDA
+  storage:
+    back:
+    - BoxSurvivalNanotrasen
+    belt:
+    - WeaponLaserSvalinnVintage
   inhand:
   - TelescopicBaton
 
@@ -119,12 +174,11 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitCaptain
     head: ClothingHeadHatCapcap
-    outerClothing: ClothingCorpoJacketFPA
+    outerClothing: ClothingOuterArmorCaptainCarapace
     id: NTPDA
     ears: ClothingHeadsetAltNanotrasen
     belt: ClothingBeltSheath
     shoes: ClothingShoesBootsNTFilled
-    back: WeaponEnergyShotgun
-    pocket1: PowerCellHigh
   inhand:
   - CaptainSabre
+  - WeaponEnergyMagnum
