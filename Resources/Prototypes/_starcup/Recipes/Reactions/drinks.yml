@@ -493,15 +493,3 @@
       amount: 1
   products:
     MimeTai: 6
-
-- type: reaction
-  id: BluescreenCuracao
-  requiredMixerCategories:
-  - Shake
-  reactants:
-    Fersilicite:
-      amount: 1
-    BlueCuracao:
-      amount: 2
-  products:
-    BluescreenCuracao: 3
