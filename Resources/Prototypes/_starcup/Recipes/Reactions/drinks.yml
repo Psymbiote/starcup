@@ -524,36 +524,4 @@
   products:
     CocoGeisha: 5
 
-- type: reaction
-  id: Dragonslayer
-  reactants:
-    Ichor:
-      amount: 1
-    Pyrazine:
-      amount: 1
-    Hotsauce:
-      amount: 1
-  products:
-    Dragonslayer: 3
 
-- type: reaction
-  id: DragonNaysayer
-  reactants:
-    Dragonslayer:
-      amount: 1
-    Nothing:
-      amount: 1
-  products:
-    DragonNaysayer: 2
-
-- type: reaction
-  id: Hivemind
-  reactants:
-    Honey:
-      amount: 1
-    MindbreakerToxin:
-      amount: 1
-    ChangelingSting:
-      amount: 1
-  products:
-    Hivemind: 3
