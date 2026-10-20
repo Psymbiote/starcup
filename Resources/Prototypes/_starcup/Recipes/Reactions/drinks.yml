@@ -469,6 +469,20 @@
     MimeTai: 6
 
 - type: reaction
+  id: SiliconMorningCoffee
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    Milk:
+      amount: 1
+    Coffee:
+      amount: 1
+    WeldingFuel:
+      amount: 1
+  products:
+    SiliconMorningCoffee: 3
+
+- type: reaction
   id: BluescreenCuracao
   requiredMixerCategories:
   - Shake
@@ -575,20 +589,6 @@
       amount: 1
   products:
     SilentSister: 3
-
-- type: reaction
-  id: SiliconMorningCoffee
-  requiredMixerCategories:
-  - Shake
-  reactants:
-    Milk:
-      amount: 1
-    Coffee:
-      amount: 1
-    WeldingFuel:
-      amount: 1
-  products:
-    SiliconMorningCoffee: 3
 
 - type: reaction
   id: Starcup
@@ -735,3 +735,29 @@
       amount: 1
   products:
     BlackAndWhite: 2
+
+- type: reaction
+  id: SilentNight
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    Egg:
+      amount: 1
+    Milk:
+      amount: 1
+    Rum:
+      amount: 1
+    Nothing:
+      amount: 1
+  products:
+    SilentNight: 4
+
+#- type: reaction
+#  id: SilentNightNog
+#  reactants:
+#    Eggnog:
+#      amount: 1
+#    Nothing:
+#      amount: 1
+#  products:
+#    SilentNight: 2
