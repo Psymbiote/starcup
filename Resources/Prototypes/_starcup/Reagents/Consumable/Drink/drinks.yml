@@ -98,6 +98,21 @@
   metamorphicChangeColor: false
 
 - type: reagent
+  id: CourtJester
+  name: reagent-name-court-jester
+  parent: BaseDrink
+  desc: reagent-desc-court-jester
+  physicalDesc: reagent-physical-desc-starry
+  flavor: courtjester
+  color: "#efb6c0"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/court_jester.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+
+- type: reagent
   id: Dragonslayer
   name: reagent-name-dragonslayer
   parent: BaseDrink
@@ -193,21 +208,6 @@
   metamorphicChangeColor: false
 
 - type: reagent
-  id: Sugarslime
-  name: reagent-name-sugarslime
-  parent: BaseDrink
-  desc: reagent-desc-sugarslime
-  physicalDesc: reagent-physical-desc-bubbly
-  flavor: sugarslime
-  color: "#8ae6fa"
-  metamorphicSprite:
-    sprite: _starcup/Objects/Consumable/Drinks/sugarslime.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
-
-- type: reagent
   id: QuietConvert
   name: reagent-name-quiet-convert
   parent: BaseDrink
@@ -259,6 +259,21 @@
   metamorphicChangeColor: false
 
 - type: reagent
+  id: Sugarslime
+  name: reagent-name-sugarslime
+  parent: BaseDrink
+  desc: reagent-desc-sugarslime
+  physicalDesc: reagent-physical-desc-bubbly
+  flavor: sugarslime
+  color: "#8ae6fa"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/sugarslime.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+
+- type: reagent
   id: SweetUnion
   name: reagent-name-sweet-union
   parent: BaseDrink
@@ -285,20 +300,5 @@
     sprite: _starcup/Objects/Consumable/Drinks/y2koffee.rsi
     state: icon_empty
   metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
-
-- type: reagent
-  id: CourtJester
-  name: reagent-name-court-jester
-  parent: BaseDrink
-  desc: reagent-desc-court-jester
-  physicalDesc: reagent-physical-desc-starry
-  flavor: courtjester
-  color: "#efb6c0"
-  metamorphicSprite:
-    sprite: _starcup/Objects/Consumable/Drinks/court_jester.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false

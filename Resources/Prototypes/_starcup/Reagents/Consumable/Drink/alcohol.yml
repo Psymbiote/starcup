@@ -625,52 +625,6 @@
   metamorphicChangeColor: false
 
 - type: reagent
-  id: SilentNight
-  name: reagent-name-silent-night
-  parent: BaseDrink
-  desc: reagent-desc-silent-night
-  physicalDesc: reagent-physical-desc-creamy
-  flavor: silentnight
-  color: "#e3d2b6"
-  metamorphicSprite:
-    sprite: _starcup/Objects/Consumable/Drinks/silent_night.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
-  metabolisms:
-    Digestion:
-      metabolites:
-        Ethanol: 0.25
-      effects:
-      - !type:GenericStatusEffect
-        key: Muted
-        component: Muted
-
-- type: reagent
-  id: MimeTai
-  name: reagent-name-mime-tai
-  parent: BaseDrink
-  desc: reagent-desc-mime-tai
-  physicalDesc: reagent-physical-desc-creamy
-  flavor: mimetai
-  color: "#ecba7a"
-  metamorphicSprite:
-    sprite: _starcup/Objects/Consumable/Drinks/mime_tai.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 4
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: false
-  metabolisms:
-    Digestion:
-      metabolites:
-        Ethanol: 0.3
-      effects:
-      - !type:GenericStatusEffect
-        key: Muted
-        component: Muted
-
-- type: reagent
   id: BlackAndWhite
   name: reagent-name-bnw
   parent: BaseAlcohol
@@ -686,6 +640,27 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   fizziness: 0.6
+
+- type: reagent
+  id: BlueSkiesAhead
+  name: reagent-name-blue-skies-ahead
+  parent: BaseDrink
+  desc: reagent-desc-blue-skies-ahead
+  physicalDesc: reagent-physical-desc-crisp
+  flavor: blueskiesahead
+  color: "#00b6a4"
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 1.5
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/sakeglass_purple.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 1
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
 
 - type: reagent
   id: BluescreenCuracao
@@ -726,17 +701,40 @@
         Ethanol: 0.2
 
 - type: reagent
-  id: Starcup
-  name: reagent-name-starcup
+  id: MimeTai
+  name: reagent-name-mime-tai
   parent: BaseDrink
-  desc: reagent-desc-starcup
-  physicalDesc: reagent-physical-desc-twinkling
-  flavor: starcup
-  color: "#2c455a"
+  desc: reagent-desc-mime-tai
+  physicalDesc: reagent-physical-desc-creamy
+  flavor: mimetai
+  color: "#ecba7a"
   metamorphicSprite:
-    sprite: _starcup/Objects/Consumable/Drinks/starcup_white.rsi
+    sprite: _starcup/Objects/Consumable/Drinks/mime_tai.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 3
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Digestion:
+      metabolites:
+        Ethanol: 0.3
+      effects:
+      - !type:GenericStatusEffect
+        key: Muted
+        component: Muted
+
+- type: reagent
+  id: MKCDrink
+  name: reagent-name-mkc
+  parent: BaseDrink
+  desc: reagent-desc-mkc
+  physicalDesc: reagent-physical-desc-thick
+  flavor: mkcflavor
+  color: "#8e675c"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/MKC_drink.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
 
@@ -760,27 +758,6 @@
   metamorphicChangeColor: true
 
 - type: reagent
-  id: BlueSkiesAhead
-  name: reagent-name-blue-skies-ahead
-  parent: BaseDrink
-  desc: reagent-desc-blue-skies-ahead
-  physicalDesc: reagent-physical-desc-crisp
-  flavor: blueskiesahead
-  color: "#00b6a4"
-  metabolisms:
-    Digestion:
-      effects:
-      - !type:Satiate
-        satiationType: Thirst
-        factor: 1.5
-  metamorphicSprite:
-    sprite: _starcup/Objects/Consumable/Drinks/sakeglass_purple.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: 1
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: true
-
-- type: reagent
   id: PinkSquirrel
   name: reagent-name-pink-squirrel
   parent: BaseDrink
@@ -796,16 +773,39 @@
   metamorphicChangeColor: false
 
 - type: reagent
-  id: MKCDrink
-  name: reagent-name-mkc
+  id: SilentNight
+  name: reagent-name-silent-night
   parent: BaseDrink
-  desc: reagent-desc-mkc
-  physicalDesc: reagent-physical-desc-thick
-  flavor: mkcflavor
-  color: "#8e675c"
+  desc: reagent-desc-silent-night
+  physicalDesc: reagent-physical-desc-creamy
+  flavor: silentnight
+  color: "#e3d2b6"
   metamorphicSprite:
-    sprite: _starcup/Objects/Consumable/Drinks/MKC_drink.rsi
+    sprite: _starcup/Objects/Consumable/Drinks/silent_night.rsi
     state: icon_empty
-  metamorphicMaxFillLevels: 6
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Digestion:
+      metabolites:
+        Ethanol: 0.25
+      effects:
+      - !type:GenericStatusEffect
+        key: Muted
+        component: Muted
+
+- type: reagent
+  id: Starcup
+  name: reagent-name-starcup
+  parent: BaseDrink
+  desc: reagent-desc-starcup
+  physicalDesc: reagent-physical-desc-twinkling
+  flavor: starcup
+  color: "#2c455a"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/starcup_white.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false

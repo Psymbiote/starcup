@@ -448,14 +448,25 @@
   products:
     Snakebite: 2
 
+#------------NEW------------------
 - type: reaction
-  id: MimeTai
-  requiredMixerCategories:
-  - Stir
+  id: BlackAndWhite
   reactants:
-    Rum:
+    Ale:
       amount: 1
-    JuiceOrange:
+    Nothing:
+      amount: 1
+  products:
+    BlackAndWhite: 2
+
+- type: reaction
+  id: BlueSkiesAhead
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    Sake:
+      amount: 1
+    Rum:
       amount: 1
     BlueCuracao:
       amount: 1
@@ -463,24 +474,8 @@
       amount: 1
     Ice:
       amount: 1
-    Nothing:
-      amount: 1
   products:
-    MimeTai: 6
-
-- type: reaction
-  id: SiliconMorningCoffee
-  requiredMixerCategories:
-  - Shake
-  reactants:
-    Milk:
-      amount: 1
-    Coffee:
-      amount: 1
-    WeldingFuel:
-      amount: 1
-  products:
-    SiliconMorningCoffee: 3
+    BlueSkiesAhead: 5
 
 - type: reaction
   id: BluescreenCuracao
@@ -511,6 +506,20 @@
       amount: 1
   products:
     CocoGeisha: 5
+
+- type: reaction
+  id: CourtJester
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    Laughter:
+      amount: 1
+    Cream:
+      amount: 1
+    RootBeer:
+      amount: 1
+  products:
+    CourtJester: 3
 
 - type: reaction
   id: Dragonslayer
@@ -557,6 +566,87 @@
     Hivemime: 2
 
 - type: reaction
+  id: MimeTai
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    Rum:
+      amount: 1
+    JuiceOrange:
+      amount: 1
+    BlueCuracao:
+      amount: 1
+    JuiceLime:
+      amount: 1
+    Nothing:
+      amount: 1
+  products:
+    MimeTai: 6
+
+- type: reaction
+  id: MKCDrink
+  reactants:
+    Moonshine:
+      amount: 1
+    Ketchunaise:
+      amount: 1
+    Coffee:
+      amount: 1
+    WeldingFuel:
+      amount: 1
+      catalyst: true
+  products:
+    MKCDrink: 4
+
+- type: reaction
+  id: OriginalSin
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    Sake:
+      amount: 1
+    Honey:
+      amount: 1
+    Vodka:
+      amount: 1
+    Absinthe:
+      amount: 1
+  products:
+    OriginalSin: 4
+
+- type: reaction
+  id: PinkSquirrel
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    JuiceCherry:
+      amount: 1
+    Cream:
+      amount: 1
+    CoffeeLiqueur:
+      amount: 1
+    CocoaPowder:
+      amount: 1
+  products:
+    PinkSquirrel: 4
+
+- type: reaction
+  id: PinkSquirrelImitation
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    JuiceCherry:
+      amount: 1
+    Cream:
+      amount: 1
+    CoffeeLiqueur:
+      amount: 1
+    CocoaPowderImitation:
+      amount: 1
+  products:
+    PinkSquirrel: 4
+
+- type: reaction
   id: QuietConvert
   reactants:
     Sugarslime:
@@ -567,16 +657,14 @@
     QuietConvert: 2
 
 - type: reaction
-  id: Sugarslime
+  id: SilentNight
   reactants:
-    SodaWater:
+    Eggnog:
       amount: 1
-    Sugar:
-      amount: 1
-    Slime:
+    Nothing:
       amount: 1
   products:
-    Sugarslime: 3
+    SilentNight: 2
 
 - type: reaction
   id: SilentSister
@@ -589,6 +677,30 @@
       amount: 1
   products:
     SilentSister: 3
+
+- type: reaction
+  id: SiliconMorningCoffee
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    WeldingFuel:
+      amount: 1
+    CafeLatte:
+      amount: 1
+  products:
+    SiliconMorningCoffee: 2
+
+- type: reaction
+  id: Sugarslime
+  reactants:
+    SodaWater:
+      amount: 1
+    Sugar:
+      amount: 1
+    Slime:
+      amount: 1
+  products:
+    Sugarslime: 3
 
 - type: reaction
   id: Starcup
@@ -630,134 +742,3 @@
       amount: 1
   products:
     Y2Koffee: 2
-
-- type: reaction
-  id: OriginalSin
-  requiredMixerCategories:
-  - Stir
-  reactants:
-    Sake:
-      amount: 1
-    Honey:
-      amount: 1
-    Vodka:
-      amount: 1
-    Absinthe:
-      amount: 1
-  products:
-    OriginalSin: 4
-
-- type: reaction
-  id: BlueSkiesAhead
-  requiredMixerCategories:
-  - Shake
-  reactants:
-    Sake:
-      amount: 1
-    Rum:
-      amount: 1
-    BlueCuracao:
-      amount: 1
-    JuiceLime:
-      amount: 1
-    Ice:
-      amount: 1
-  products:
-    BlueSkiesAhead: 5
-
-- type: reaction
-  id: CourtJester
-  requiredMixerCategories:
-  - Shake
-  reactants:
-    Laughter:
-      amount: 1
-    Cream:
-      amount: 1
-    RootBeer:
-      amount: 1
-  products:
-    CourtJester: 3
-
-#- type: reaction
-#  id: PinkSquirrel
-#  requiredMixerCategories:
-#  - Shake
-#  reactants:
-#    JuiceCherry:
-#      amount: 1
-#    Cream:
-#      amount: 1
-#    CoffeeLiqueur:
-#      amount: 1
-#    CocoaPowder:
-#      amount: 1
-#  products:
-#    PinkSquirrel: 4
-
-- type: reaction
-  id: PinkSquirrelImitation
-  requiredMixerCategories:
-  - Shake
-  reactants:
-    JuiceCherry:
-      amount: 1
-    Cream:
-      amount: 1
-    CoffeeLiqueur:
-      amount: 1
-    CocoaPowderImitation:
-      amount: 1
-  products:
-    PinkSquirrel: 4
-
-- type: reaction
-  id: MKCDrink
-  reactants:
-    Moonshine:
-      amount: 1
-    Ketchunaise:
-      amount: 1
-    Coffee:
-      amount: 1
-    WeldingFuel:
-      amount: 1
-      catalyst: true
-  products:
-    MKCDrink: 4
-
-- type: reaction
-  id: BlackAndWhite
-  reactants:
-    Ale:
-      amount: 1
-    Nothing:
-      amount: 1
-  products:
-    BlackAndWhite: 2
-
-- type: reaction
-  id: SilentNight
-  requiredMixerCategories:
-  - Shake
-  reactants:
-    Egg:
-      amount: 1
-    Milk:
-      amount: 1
-    Rum:
-      amount: 1
-    Nothing:
-      amount: 1
-  products:
-    SilentNight: 4
-
-#- type: reaction
-#  id: SilentNightNog
-#  reactants:
-#    Eggnog:
-#      amount: 1
-#    Nothing:
-#      amount: 1
-#  products:
-#    SilentNight: 2
