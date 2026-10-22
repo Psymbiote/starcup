@@ -1,3 +1,5 @@
+# Glasses
+
 - type: entity
   name: old fashioned glass
   description: For stronger, meaner drinks. Holds up to 20 units.
@@ -74,6 +76,8 @@
     maxFillLevels: 1
     fillBaseName: fill-
 
+# Drinks
+
 - type: entity
   parent: DrinkGlass
   id: DrinkCherryLimeade
@@ -100,6 +104,174 @@
         Quantity: 30
   - type: Icon
     sprite: _starcup/Objects/Consumable/Drinks/evilprincess.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkCheermimeGlass
+  suffix: Cheermime
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Cheermime
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/cheermime.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkCourtJesterGlass
+  suffix: Court Jester
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: CourtJester
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/court_jester.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkDragonslayerGlass
+  suffix: Dragonslayer
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Dragonslayer
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/dragonslayer.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkDragonNaysayerGlass
+  suffix: Dragon Naysayer
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: DragonNaysayer
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/dragon_naysayer.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkHivemindGlass
+  suffix: Hivemind
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Hivemind
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/hivemind.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkHivemimeGlass
+  suffix: Hivemime
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Hivemime
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/hivemime.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkQuietConvertGlass
+  suffix: Quiet Convert
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: QuietConvert
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/quiet_convert.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkSugarslimeGlass
+  suffix: Sugarslime
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Sugarslime
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/sugarslime.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkSilentSisterGlass
+  suffix: Silent Sister
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: SilentSister
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/silent_sister.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkSiliconMorningCoffeeGlass
+  suffix: Silicon Morning Coffee
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: SiliconMorningCoffee
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/silicon_morning_coffee.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkSweetUnionGlass
+  suffix: Sweet Union
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: SweetUnion
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/sweet_union.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkY2KoffeeGlass
+  suffix: Y2Koffee
+  components:
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Y2Koffee
+        Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/y2koffee.rsi
     state: icon
 
 # Alcohol
@@ -493,175 +665,6 @@
         Quantity: 30
   - type: Icon
     sprite: _starcup/Objects/Consumable/Drinks/snakebite.rsi
-    state: icon
-
-#-----------------------NEW
-- type: entity
-  parent: DrinkGlass
-  id: DrinkCheermimeGlass
-  suffix: Cheermime
-  components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Cheermime
-        Quantity: 30
-  - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/cheermime.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
-  id: DrinkCourtJesterGlass
-  suffix: Court Jester
-  components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: CourtJester
-        Quantity: 30
-  - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/court_jester.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
-  id: DrinkDragonslayerGlass
-  suffix: Dragonslayer
-  components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Dragonslayer
-        Quantity: 30
-  - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/dragonslayer.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
-  id: DrinkDragonNaysayerGlass
-  suffix: Dragon Naysayer
-  components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: DragonNaysayer
-        Quantity: 30
-  - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/dragon_naysayer.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
-  id: DrinkHivemindGlass
-  suffix: Hivemind
-  components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Hivemind
-        Quantity: 30
-  - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/hivemind.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
-  id: DrinkHivemimeGlass
-  suffix: Hivemime
-  components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Hivemime
-        Quantity: 30
-  - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/hivemime.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
-  id: DrinkQuietConvertGlass
-  suffix: Quiet Convert
-  components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: QuietConvert
-        Quantity: 30
-  - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/quiet_convert.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
-  id: DrinkSugarslimeGlass
-  suffix: Sugarslime
-  components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Sugarslime
-        Quantity: 30
-  - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/sugarslime.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
-  id: DrinkSilentSisterGlass
-  suffix: Silent Sister
-  components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: SilentSister
-        Quantity: 30
-  - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/silent_sister.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
-  id: DrinkSiliconMorningCoffeeGlass
-  suffix: Silicon Morning Coffee
-  components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: SiliconMorningCoffee
-        Quantity: 30
-  - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/silicon_morning_coffee.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
-  id: DrinkSweetUnionGlass
-  suffix: Sweet Union
-  components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: SweetUnion
-        Quantity: 30
-  - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/sweet_union.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
-  id: DrinkY2KoffeeGlass
-  suffix: Y2Koffee
-  components:
-  - type: Solution
-    solution:
-      reagents:
-      - ReagentId: Y2Koffee
-        Quantity: 30
-  - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/y2koffee.rsi
     state: icon
 
 # Cocktails
