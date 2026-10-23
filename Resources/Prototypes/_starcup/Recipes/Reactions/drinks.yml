@@ -448,7 +448,6 @@
   products:
     Snakebite: 2
 
-#------------NEW------------------
 - type: reaction
   id: BlackAndWhite
   reactants:
