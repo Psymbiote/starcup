@@ -4540,3 +4540,11 @@
   id: 8558
   time: '2026-10-15T03:30:36.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/1022
+- author: Psymbiote
+  changes:
+  - message: The Chalician bartender's repertoire expands. Twenty-two new drinks have
+      been added from the submissions on our forums!
+    type: Add
+  id: 8559
+  time: '2026-10-23T21:18:45.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/930
