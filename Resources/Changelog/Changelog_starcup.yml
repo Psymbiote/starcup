@@ -4548,3 +4548,15 @@
   id: 8559
   time: '2026-10-23T21:18:45.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/930
+- author: KoboldCatgirl
+  changes:
+  - message: Added to Plushies loadouts sheep and space sheep.
+    type: Add
+  - message: Added to Accessibility loadouts mannitol pills, iron pills, and wheelchairs.
+    type: Add
+  - message: Added to Trinkets loadouts candy buckets, crayons, figurines, more instruments,
+      utility knives, hand labelers, and other doodads.
+    type: Add
+  id: 8560
+  time: '2026-10-24T00:13:10.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/1020
