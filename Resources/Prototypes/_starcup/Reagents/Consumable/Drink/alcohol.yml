@@ -17,7 +17,8 @@
       metabolites:
         Ethanol: 0.26
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -39,7 +40,8 @@
       metabolites:
         Ethanol: 0.2
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -61,7 +63,8 @@
       metabolites:
         Ethanol: 0.8
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
       - !type:ModifyBloodLevel
         amount: 3
@@ -96,7 +99,8 @@
       metabolites:
         Ethanol: 0.27
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -118,7 +122,8 @@
       metabolites:
         Ethanol: 0.24
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -155,7 +160,8 @@
       metabolites:
         Ethanol: 0.17
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -177,7 +183,8 @@
       metabolites:
         Ethanol: 0.18
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -199,7 +206,8 @@
       metabolites:
         Ethanol: 0.17
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -221,7 +229,8 @@
       metabolites:
         Ethanol: 0.2
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -258,7 +267,8 @@
       metabolites:
         Ethanol: 0.16
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -280,7 +290,8 @@
       metabolites:
         Ethanol: 0.26
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -302,7 +313,8 @@
       metabolites:
         Ethanol: 0.17
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -324,7 +336,8 @@
       metabolites:
         Ethanol: 0.47
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -346,7 +359,8 @@
       metabolites:
         Ethanol: 0.2
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -368,7 +382,8 @@
       metabolites:
         Ethanol: 0.25
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -390,7 +405,8 @@
       metabolites:
         Ethanol: 0.19
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -412,7 +428,8 @@
       metabolites:
         Ethanol: 0.15
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
       - !type:ModifyStatusEffect
         effectProto: StatusEffectDrowsiness
@@ -442,7 +459,8 @@
       metabolites:
         Ethanol: 0.2
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -464,9 +482,11 @@
       metabolites:
         Ethanol: 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
-      - !type:SatiateHunger
+      - !type:Satiate
+        satiationType: Hunger
         factor: 1
       - !type:PopupMessage
         conditions:
@@ -502,7 +522,8 @@
       metabolites:
         Ethanol: 0.2
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -584,7 +605,8 @@
       metabolites:
         Ethanol: 0.19
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 2
 
 - type: reagent
@@ -599,5 +621,191 @@
     sprite: _starcup/Objects/Consumable/Drinks/snakebite.rsi
     state: icon_empty
   metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+
+- type: reagent
+  id: BlackAndWhite
+  name: reagent-name-bnw
+  parent: BaseAlcohol
+  desc: reagent-desc-bnw
+  physicalDesc: reagent-physical-desc-bubbly
+  flavor: blackandwhite
+  color: "#787878"
+  recognizable: false
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/black_and_white.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  fizziness: 0.6
+
+- type: reagent
+  id: BlueSkiesAhead
+  name: reagent-name-blue-skies-ahead
+  parent: BaseDrink
+  desc: reagent-desc-blue-skies-ahead
+  physicalDesc: reagent-physical-desc-crisp
+  flavor: blueskiesahead
+  color: "#00b6a4"
+  metabolisms:
+    Digestion:
+      effects:
+      - !type:Satiate
+        satiationType: Thirst
+        factor: 1.5
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/sakeglass_purple.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 1
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+
+- type: reagent
+  id: BluescreenCuracao
+  name: reagent-name-bluescreen-curacao
+  parent: BaseAlcohol
+  desc: reagent-desc-bluescreen-curacao
+  physicalDesc: reagent-physical-desc-shiny
+  flavor: bluescreencuracao
+  color: "#0099FF"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/bluescreen_curacao.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Digestion:
+      metabolites:
+        Ethanol: 0.25
+
+- type: reagent
+  id: CocoGeisha
+  name: reagent-name-coco-geisha
+  parent: BaseAlcohol
+  desc: reagent-desc-coco-geisha
+  physicalDesc: reagent-physical-desc-shiny
+  flavor: cocogeisha
+  color: "#dbdbdb"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/coco_geisha.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Digestion:
+      metabolites:
+        Ethanol: 0.2
+
+- type: reagent
+  id: MimeTai
+  name: reagent-name-mime-tai
+  parent: BaseDrink
+  desc: reagent-desc-mime-tai
+  physicalDesc: reagent-physical-desc-creamy
+  flavor: mimetai
+  color: "#ecba7a"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/mime_tai.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Digestion:
+      metabolites:
+        Ethanol: 0.3
+      effects:
+      - !type:GenericStatusEffect
+        key: Muted
+        component: Muted
+
+- type: reagent
+  id: MKCDrink
+  name: reagent-name-mkc
+  parent: BaseDrink
+  desc: reagent-desc-mkc
+  physicalDesc: reagent-physical-desc-thick
+  flavor: mkcflavor
+  color: "#8e675c"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/MKC_drink.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+
+- type: reagent
+  id: OriginalSin
+  name: reagent-name-original-sin
+  parent: BaseDrink
+  desc: reagent-desc-original-sin
+  physicalDesc: reagent-physical-desc-crisp
+  flavor: originalsin
+  color: "#bebbb2"
+  metabolisms:
+    Digestion:
+      metabolites:
+        Ethanol: 0.25
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/sakeglass_blue.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 1
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+
+- type: reagent
+  id: PinkSquirrel
+  name: reagent-name-pink-squirrel
+  parent: BaseDrink
+  desc: reagent-desc-pink-squirrel
+  physicalDesc: reagent-physical-desc-creamy
+  flavor: pinksquirrel
+  color: "#f7bccc"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/pink_squirrel.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+
+- type: reagent
+  id: SilentNight
+  name: reagent-name-silent-night
+  parent: BaseDrink
+  desc: reagent-desc-silent-night
+  physicalDesc: reagent-physical-desc-creamy
+  flavor: silentnight
+  color: "#e3d2b6"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/silent_night.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Digestion:
+      metabolites:
+        Ethanol: 0.25
+      effects:
+      - !type:GenericStatusEffect
+        key: Muted
+        component: Muted
+
+- type: reagent
+  id: Starcup
+  name: reagent-name-starcup
+  parent: BaseDrink
+  desc: reagent-desc-starcup
+  physicalDesc: reagent-physical-desc-twinkling
+  flavor: starcup
+  color: "#2c455a"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/starcup_white.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false

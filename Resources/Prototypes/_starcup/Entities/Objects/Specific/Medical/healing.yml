@@ -8,14 +8,13 @@
   - type: Pill
     pillType: 8
   - type: Label
-    currentLabel: caramexinin 10u
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Caramexinin
-          Quantity: 10
+    localizedLabel: pill-label-caramexinin-10u
+  - type: Solution
+    solution:
+      maxVol: 20
+      reagents:
+      - ReagentId: Caramexinin
+        Quantity: 10
 
 - type: entity
   parent: PillCanister
@@ -23,7 +22,7 @@
   suffix: Caramexinin 10u, 5
   components:
   - type: Label
-    currentLabel: caramexinin 10u
+    localizedLabel: pill-label-caramexinin-10u
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
@@ -41,14 +40,13 @@
   - type: Pill
     pillType: 2
   - type: Label
-    currentLabel: ethyloxyephedrine 10u
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Ethyloxyephedrine
-          Quantity: 10
+    localizedLabel: pill-label-ethyloxyephedrine-10u
+  - type: Solution
+    solution:
+      maxVol: 20
+      reagents:
+      - ReagentId: Ethyloxyephedrine
+        Quantity: 10
 
 - type: entity
   parent: PillCanister
@@ -56,10 +54,42 @@
   suffix: Ethyloxyephedrine 10u, 5
   components:
   - type: Label
-    currentLabel: ethyloxyephedrine 10u
+    localizedLabel: pill-label-ethyloxyephedrine-10u
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
         - id: PillEthyloxyephedrine
           amount: 5
+
+- type: entity
+  parent: PillCanister
+  id: PillCanisterMannitol
+  suffix: Mannitol 10u, 5
+  components:
+  - type: Label
+    localizedLabel: pill-label-mannitol-10u
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: PillMannitol
+          amount: 5
+
+- type: entity
+  parent: Pill
+  id: PillMannitol
+  suffix: Mannitol 10u
+  components:
+  - type: Sprite
+    state: pill6
+  - type: Pill
+    pillType: 5
+  - type: Label
+    localizedLabel: pill-label-mannitol-10u
+  - type: Solution
+    solution:
+      maxVol: 20
+      reagents:
+      - ReagentId: Mannitol
+        Quantity: 10

@@ -91,10 +91,8 @@
     speechSounds: LuminousSpeechSounds
     allowedEmotes: ['CreatureLaugh', 'CreatureScream']
   - type: Vocal
-    sounds:
-      Unsexed: LuminousSpeechEmotes
-    screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteSounds: LuminousSpeechEmotes
+    emoteAction: ActionCreatureScream
     # end starcup
   - type: Emoting
   - type: BodyEmotes
@@ -206,10 +204,10 @@
     angle: 0
     animation: WeaponArcBite
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: AnomalitePyroclastic
+  - type: Injurable
+    damageContainer: Biological
   - type: Temperature
-    currentTemperature: 310.15
     specificHeat: 42
   - type: TemperatureDamage
     heatDamageThreshold: 325
@@ -267,8 +265,9 @@
     angle: 0
     animation: WeaponArcBite
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: AnomaliteGravity
+  - type: Injurable
+    damageContainer: Biological
   - type: PointLight
     radius: 2
     energy: 1
@@ -316,10 +315,10 @@
     angle: 0
     animation: WeaponArcBite
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: AnomaliteIce
+  - type: Injurable
+    damageContainer: Biological
   - type: Temperature
-    currentTemperature: 310.15
     specificHeat: 42
   - type: TemperatureDamage
     heatDamageThreshold: 325
@@ -377,8 +376,9 @@
     angle: 0
     animation: WeaponArcBite
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: AnomaliteFlesh
+  - type: Injurable
+    damageContainer: Biological
   - type: PointLight
     radius: 2
     energy: 1
@@ -427,8 +427,9 @@
     angle: 0
     animation: WeaponArcBite
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: AnomaliteRock
+  - type: Injurable
+    damageContainer: Biological
   - type: PointLight
     radius: 2
     energy: 1
@@ -479,8 +480,9 @@
     angle: 0
     animation: WeaponArcBite
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: AnomaliteLiquid
+  - type: Injurable
+    damageContainer: Biological
   - type: PointLight
     radius: 2
     energy: 1
@@ -497,10 +499,10 @@
       types:
         Radiation: 0
   # end starcup
-  - type: SolutionContainerManager
-    solutions:
-      anomaly:
-        maxVol: 1500
+  - type: Solution # starcup - remove SolutionContainerManager, add id
+    id: anomaly
+    solution:
+      maxVol: 1500
   - type: MeleeChemicalInjector
     solution: anomaly
     transferAmount: 6
@@ -542,8 +544,9 @@
     angle: 0
     animation: WeaponArcBite
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: AnomaliteBluespace
+  - type: Injurable
+    damageContainer: Biological
   - type: PointLight
     radius: 2
     energy: 1
@@ -591,8 +594,9 @@
     angle: 0
     animation: WeaponArcBite
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: AnomaliteElectricity
+  - type: Injurable
+    damageContainer: Biological
   - type: PointLight
     radius: 2
     energy: 1
@@ -640,8 +644,9 @@
     angle: 0
     animation: WeaponArcBite
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: AnomaliteFlora
+  - type: Injurable
+    damageContainer: Biological
   - type: PointLight
     radius: 2
     energy: 1
@@ -689,8 +694,9 @@
     angle: 0
     animation: WeaponArcBite
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: AnomaliteShadow
+  - type: Injurable
+    damageContainer: Biological
   - type: PointLight
     radius: 2
     energy: 1
@@ -746,8 +752,9 @@
     angle: 0
     animation: WeaponArcBite
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: AnomaliteTech
+  - type: Injurable
+    damageContainer: Biological
   - type: PointLight
     radius: 2
     energy: 1
