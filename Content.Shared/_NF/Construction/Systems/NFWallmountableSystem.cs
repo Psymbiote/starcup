@@ -25,7 +25,7 @@ public sealed partial class NFWallmountableSystem : EntitySystem
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly TagSystem _tag = default!;
 
-    private static readonly ProtoId<TagPrototype> WallTag = "Wall";
+    private static readonly ProtoId<TagPrototype> StructureTag = "Structure"; // starcup: changed from obsolete Wall tag
     private static readonly ProtoId<TagPrototype> DiagonalTag = "Diagonal";
     private const float IntersectionRange = 0.35f; // The range to look for wallmounts around the center of a wall.
 
@@ -183,7 +183,7 @@ public sealed partial class NFWallmountableSystem : EntitySystem
     private bool IsMountableWall(EntityUid target)
     {
         return TryComp<TagComponent>(target, out var tags)
-            && _tag.HasTag(tags, WallTag)
+            && _tag.HasTag(tags, StructureTag)
             && !_tag.HasTag(tags, DiagonalTag);
     }
 

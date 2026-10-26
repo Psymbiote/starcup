@@ -10,7 +10,7 @@
   - type: Item
     sprite: _NF/Objects/Decoration/posters.rsi
   - type: NFWallmountable
-    spawn: RandomPosterAny
+    spawn: RandomPosterAnyWallmountable # starcup
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -36,14 +36,13 @@
 - type: entity
   parent: NFPoster
   id: NFPosterCorporate
-  name: nanotrasen poster
-  description: A rolled up Nanotrasen-approved poster. You won't be sure what the design is until you put it up on the wall.
+  name: approved poster # starcup
+  description: A rolled up Syndicate-approved poster. You won't be sure what the design is until you put it up on the wall. # starcup: syndie swap
   components:
   - type: Sprite
-    sprite: _NF/Objects/Decoration/posters.rsi
-    state: rolled_blue
+    state: rolled_contraband # starcup
   - type: NFWallmountable
-    spawn: RandomPosterLegit
+    spawn: RandomPosterLegitSyndie # starcup
 
 - type: entity
   parent: NFPoster
@@ -52,9 +51,12 @@
   description: A rolled up contraband poster.  You won't be sure what the design is until you put it up on the wall.
   components:
   - type: Sprite
-    state: rolled_contraband
+    # begin starcup
+    sprite: _NF/Objects/Decoration/posters.rsi
+    state: rolled_blue
+    # end starcup
   - type: NFWallmountable
-    spawn: RandomPosterContraband
+    spawn: RandomPosterContrabandSyndie # starcup
 
 - type: entity
   parent: BaseItem
