@@ -14,7 +14,7 @@ namespace Content.Shared._NF.Construction.Systems;
 /// <summary>
 /// A system to spawn entities on the wall when interacting with an empty space of wall.
 /// </summary>
-public sealed partial class NFWallmountableSystem : EntitySystem
+public sealed partial class NfWallmountableSystem : EntitySystem
 {
     [Dependency] private INetManager _net = default!;
     [Dependency] private ActionBlockerSystem _actionBlocker = default!;
@@ -82,7 +82,7 @@ public sealed partial class NFWallmountableSystem : EntitySystem
         if (!IsMountableWall(args.Target.Value)
             || !TryMount(ent, args.User, args.Target.Value, checkAccess: false))
         {
-            _popup.PopupPredicted(Loc.GetString("nf-wallmountable-component-verb-cant-mount"), args.User, args.User);
+            _popup.PopupEntity(Loc.GetString("nf-wallmountable-component-verb-cant-mount"), args.User, args.User);
         }
 
         args.Handled = true;
