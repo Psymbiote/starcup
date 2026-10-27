@@ -1273,8 +1273,8 @@
     spawn: PosterLegitMapMoose
 
 - type: entity
-  parent: PosterRolledLegitMapPacked
-  id: PosterRolledLegitMap
+  parent: PosterRolledLegitMap
+  id: PosterRolledLegitMapPacked
   name: "Packed Map"
   components:
   - type: NFWallmountable
