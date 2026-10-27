@@ -76,7 +76,7 @@
     state: poster2_contraband
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapAtmosiaDeclarationIndependence
+    prototypeToSpawn: PosterRolledLegitAtmosiaDeclarationIndependence
     disassembleTime: 2
   # end starcup
 
@@ -119,7 +119,7 @@
     state: poster5_contraband
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapSyndicateRecruitment
+    prototypeToSpawn: PosterRolledLegitSyndicateRecruitment
     disassembleTime: 2
   # end starcup
 
@@ -159,7 +159,7 @@
     state: poster8_contraband
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapGreyTide
+    prototypeToSpawn: PosterRolledLegitGreyTide
     disassembleTime: 2
   # end starcup
 
@@ -314,7 +314,7 @@
     state: poster19_contraband
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapLamarr
+    prototypeToSpawn: PosterRolledLegitLamarr
     disassembleTime: 2
   # end starcup
 
@@ -831,7 +831,7 @@
       state: poster59_contraband
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
-      prototypeToSpawn: PosterRolledMapDonk
+      prototypeToSpawn: PosterRolledLegitDonk
       disassembleTime: 2
   # end starcup
 
@@ -845,7 +845,7 @@
       state: poster60_contraband
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
-      prototypeToSpawn: PosterRolledMapEnlistGorlex
+      prototypeToSpawn: PosterRolledLegitEnlistGorlex
       disassembleTime: 2
   # end starcup
 
@@ -859,7 +859,7 @@
       state: poster61_contraband
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
-      prototypeToSpawn: PosterRolledMapInterdyne
+      prototypeToSpawn: PosterRolledLegitInterdyne
       disassembleTime: 2
   # end starcup
 
@@ -873,7 +873,7 @@
       state: poster62_contraband
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
-      prototypeToSpawn: PosterRolledMapWaffleCorp
+      prototypeToSpawn: PosterRolledLegitWaffleCorp
       disassembleTime: 2
   # end starcup
 
@@ -1183,7 +1183,7 @@
     state: poster18_legit
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapSoftCapPopArt
+    prototypeToSpawn: PosterRolledLegitSoftCapPopArt
     disassembleTime: 2
   # end starcup
 
@@ -1253,7 +1253,7 @@
     state: poster23_legit
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapIonRifle
+    prototypeToSpawn: PosterRolledLegitIonRifle
     disassembleTime: 2
   # end starcup
 
@@ -1309,7 +1309,7 @@
     state: poster27_legit
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapFruitBowl
+    prototypeToSpawn: PosterRolledLegitFruitBowl
     disassembleTime: 2
   # end starcup
 
@@ -1379,7 +1379,7 @@
     state: poster32_legit
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapHighClassMartini
+    prototypeToSpawn: PosterRolledLegitHighClassMartini
     disassembleTime: 2
   # end starcup
 
@@ -1393,7 +1393,7 @@
     state: poster33_legit
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapTheOwl
+    prototypeToSpawn: PosterRolledLegitTheOwl
     disassembleTime: 2
   # end starcup
 
@@ -1421,7 +1421,7 @@
     state: poster35_legit
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapCarbonDioxide
+    prototypeToSpawn: PosterRolledLegitCarbonDioxide
     disassembleTime: 2
   # end starcup
 
@@ -1435,7 +1435,7 @@
     state: poster36_legit
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapDickGumshue
+    prototypeToSpawn: PosterRolledLegitDickGumshue
     disassembleTime: 2
   # end starcup
 
@@ -1449,7 +1449,7 @@
     state: poster37_legit
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapThereIsNoGasGiant
+    prototypeToSpawn: PosterRolledLegitThereIsNoGasGiant
     disassembleTime: 2
   # end starcup
 
@@ -1477,7 +1477,7 @@
     state: poster39_legit
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapSecWatch
+    prototypeToSpawn: PosterRolledLegitSecWatch
     disassembleTime: 2
   # end starcup
 
@@ -1505,7 +1505,7 @@
     state: poster41_legit
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapMime
+    prototypeToSpawn: PosterRolledLegitMime
     disassembleTime: 2
   # end starcup
 
@@ -1519,7 +1519,7 @@
     state: poster42_legit
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapCarpMount
+    prototypeToSpawn: PosterRolledLegitCarpMount
     disassembleTime: 2
   # end starcup
 
@@ -1533,7 +1533,7 @@
       state: poster43_legit
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
-      prototypeToSpawn: PosterRolledMapSafetyMothDelam
+      prototypeToSpawn: PosterRolledLegitSafetyMothDelam
       disassembleTime: 2
   # end starcup
 
@@ -1548,7 +1548,7 @@
       state: poster44_legit
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
-      prototypeToSpawn: PosterRolledMapSafetyMothEpi
+      prototypeToSpawn: PosterRolledLegitSafetyMothEpi
       disassembleTime: 2
   # end starcup
 
@@ -1563,7 +1563,7 @@
       state: poster45_legit
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
-      prototypeToSpawn: PosterRolledMapSafetyMothPiping
+      prototypeToSpawn: PosterRolledLegitSafetyMothPiping
       disassembleTime: 2
   # end starcup
 
@@ -1578,7 +1578,7 @@
       state: poster46_legit
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
-      prototypeToSpawn: PosterRolledMapSafetyMothMeth
+      prototypeToSpawn: PosterRolledLegitSafetyMothMeth
       disassembleTime: 2
   # end starcup
 
@@ -1593,7 +1593,7 @@
       state: poster47_legit
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
-      prototypeToSpawn: PosterRolledMapSafetyMothHardhat
+      prototypeToSpawn: PosterRolledLegitSafetyMothHardhat
       disassembleTime: 2
   # end starcup
 
@@ -1609,7 +1609,7 @@
       sprite: _starcup/Structures/Wallmounts/posters.rsi
       state: postervacation_legit
     - type: DisassembleOnAltVerb
-      prototypeToSpawn: PosterRolledMapVacation
+      prototypeToSpawn: PosterRolledLegitVacation
       disassembleTime: 2
   # end starcup
 
@@ -1623,7 +1623,7 @@
       state: poster49_legit
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
-      prototypeToSpawn: PosterRolledMapPeriodicTable
+      prototypeToSpawn: PosterRolledLegitPeriodicTable
       disassembleTime: 2
   # end starcup
 
@@ -1665,7 +1665,7 @@
     state: poster52_legit
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapSafetyMothSSD
+    prototypeToSpawn: PosterRolledLegitSafetyMothSSD
     disassembleTime: 2
   # end starcup
 
@@ -1679,7 +1679,7 @@
     state: poster53_legit
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapOppenhopper
+    prototypeToSpawn: PosterRolledLegitOppenhopper
     disassembleTime: 2
   # end starcup
 
@@ -1693,7 +1693,7 @@
     state: poster54_legit
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledMapTyrone
+    prototypeToSpawn: PosterRolledLegitTyrone
     disassembleTime: 2
   # end starcup
 
@@ -1726,7 +1726,6 @@
   # end starcup
 
 #maps
-
 - type: entity
   parent: PosterBase
   id: PosterMapBagel
