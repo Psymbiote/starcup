@@ -1735,6 +1735,11 @@
   components:
   - type: Sprite
     state: bagelmap
+  # begin starcup: unhangable posters
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PosterRolledLegitMapBagel
+    disassembleTime: 2
+  # end starcup
 
 - type: entity
   parent: PosterBase
@@ -1744,6 +1749,11 @@
   components:
   - type: Sprite
     state: deltamap
+  # begin starcup: unhangable posters
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PosterRolledLegitMapDelta
+    disassembleTime: 2
+  # end starcup
 
 - type: entity
   parent: PosterBase
@@ -1753,6 +1763,11 @@
   components:
   - type: Sprite
     state: marathonmap
+  # begin starcup: unhangable posters
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PosterRolledLegitMapMarathon
+    disassembleTime: 2
+  # end starcup
 
 - type: entity
   parent: PosterBase
@@ -1762,6 +1777,11 @@
   components:
   - type: Sprite
     state: moosemap
+  # begin starcup: unhangable posters
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PosterRolledLegitMapMoose
+    disassembleTime: 2
+  # end starcup
 
 - type: entity
   parent: PosterBase
@@ -1771,6 +1791,11 @@
   components:
   - type: Sprite
     state: packedmap
+  # begin starcup: unhangable posters
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PosterRolledLegitMapPacked
+    disassembleTime: 2
+  # end starcup
 
 - type: entity
   parent: PosterBase
@@ -1780,6 +1805,11 @@
   components:
   - type: Sprite
     state: pillarmap
+  # begin starcup: unhangable posters
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PosterRolledLegitMapPillar
+    disassembleTime: 2
+  # end starcup
 
 - type: entity
   parent: PosterBase
@@ -1789,6 +1819,11 @@
   components:
   - type: Sprite
     state: salternmap
+  # begin starcup: unhangable posters
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PosterRolledLegitMapSaltern
+    disassembleTime: 2
+  # end starcup
 
 - type: entity
   parent: PosterBase
@@ -1798,6 +1833,11 @@
   components:
   - type: Sprite
     state: splitmap
+  # begin starcup: unhangable posters
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PosterRolledLegitMapSplit
+    disassembleTime: 2
+  # end starcup
 
 - type: entity
   parent: PosterBase
@@ -1807,6 +1847,11 @@
   components:
   - type: Sprite
     state: lighthousemap
+  # begin starcup: unhangable posters
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PosterRolledLegitMapLighthouse
+    disassembleTime: 2
+  # end starcup
 
 - type: entity
   parent: PosterBase
@@ -1816,12 +1861,22 @@
   components:
   - type: Sprite
     state: waystationmap
+  # begin starcup: unhangable posters
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PosterRolledLegitMapWaystation
+    disassembleTime: 2
+  # end starcup
 
 - type: entity
   parent: PosterBase
   id: PosterMapOrigin
-  name: "origin map"
+  name: "Origin Map" # starcup: corrected capitalization
   description: "A map of Origin Station."
   components:
   - type: Sprite
     state: originmap
+  # begin starcup: unhangable posters
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PosterRolledLegitMapOrigin
+    disassembleTime: 2
+  # end starcup

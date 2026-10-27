@@ -1,6 +1,20 @@
-# Legit posters
+# Templates for parenting
 - type: entity
   parent: NFPosterRolledLegit
+  id: PosterRolledLegitSyndie
+  suffix: rolled, syndie
+
+- type: entity
+  parent: NFPosterRolledLegit
+  id: PosterRolledLegitMap
+  components:
+  - type: Sprite
+    sprite: _starcup/Structures/Wallmounts/posters.rsi
+    state: rolled_map
+
+# Legit posters
+- type: entity
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitHereForYourSafetySyndie
   name: "Here For Your Safety"
   components:
@@ -16,7 +30,7 @@
     spawn: PosterLegitSyndicateLogo
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitCleanlinessSyndie
   name: "Cleanliness"
   components:
@@ -24,7 +38,7 @@
     spawn: PosterLegitCleanlinessSyndie
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitHelpOthersSyndie
   name: "Help Others"
   components:
@@ -32,7 +46,7 @@
     spawn: PosterLegitHelpOthersSyndie
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitBuildSyndie
   name: "Build"
   components:
@@ -40,7 +54,7 @@
     spawn: PosterLegitBuildSyndie
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitBlessThisSpessSyndie
   name: "Bless This Spess"
   components:
@@ -48,7 +62,7 @@
     spawn: PosterLegitBlessThisSpessSyndie
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitScienceSyndie
   name: "Science"
   components:
@@ -56,7 +70,7 @@
     spawn: PosterLegitScienceSyndie
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitIanSyndie
   name: "Ian"
   components:
@@ -64,7 +78,7 @@
     spawn: PosterLegitIanSyndieSyndie
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitWalkSyndie
   name: "Walk"
   components:
@@ -72,7 +86,7 @@
     spawn: PosterLegitWalkSyndie
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitStateLawsSyndie
   name: "State Laws"
   components:
@@ -80,7 +94,7 @@
     spawn: PosterLegitStateLawsSyndie
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitLoveIanSyndie
   name: "Love Ian"
   components:
@@ -88,7 +102,7 @@
     spawn: PosterLegitLoveIanSyndie
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitGetYourLEGSSyndie
   name: "Get Your LEGS"
   components:
@@ -96,7 +110,7 @@
     spawn: PosterLegitGetYourLEGSSyndie
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitDoNotQuestionSyndie
   name: "Do Not Question"
   components:
@@ -104,7 +118,7 @@
     spawn: PosterLegitDoNotQuestionSyndie
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitWorkForAFutureSyndie
   name: "Work For A Future"
   components:
@@ -120,7 +134,7 @@
     spawn: PosterLegitSoftCapPopArt
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitSafetyInternalsSyndie
   name: "Safety: Internals"
   components:
@@ -128,7 +142,7 @@
     spawn: PosterLegitSafetyInternalsSyndie
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledContrabandSafetyEyeProtectionSyndie
   name: "Safety: Eye Protection"
   components:
@@ -136,7 +150,7 @@
     spawn: PosterLegitSafetyEyeProtectionSyndie
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledContrabandSafetyReportSyndie
   name: "Safety: Report"
   components:
@@ -144,7 +158,7 @@
     spawn: PosterLegitSafetyReportSyndie
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledContrabandReportCrimesSyndie
   name: "Report Crimes"
   components:
@@ -160,7 +174,7 @@
     spawn: PosterLegitIonRifle
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledContrabandFoamForceAdSyndie
   name: "Foam Force Ad"
   components:
@@ -176,7 +190,7 @@
     spawn: PosterLegitFruitBowl
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitPDAAdSyndie
   name: "PDA Ad"
   components:
@@ -192,7 +206,7 @@
     spawn: PosterLegitNanomichiAd
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegit12GaugeSyndie
   name: "12 Gauge"
   components:
@@ -216,7 +230,7 @@
     spawn: PosterLegitTheOwl
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitNoErpSyndie
   name: "No ERP"
   components:
@@ -248,7 +262,7 @@
     spawn: PosterLegitThereIsNoGasGiant
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitJustAWeekAwaySyndie
   name: "Just A Week Away..."
   components:
@@ -280,7 +294,7 @@
     spawn: PosterLegitPeriodicTable
 
 - type: entity
-  parent: NFPosterRolledLegit
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitRenaultSyndie
   name: "Renault Poster"
   components:
@@ -1224,3 +1238,92 @@
   components:
   - type: NFWallmountable
     spawn: PosterLegitBotanyFear
+
+# Maps
+- type: entity
+  parent: PosterRolledLegitMap
+  id: PosterRolledLegitMapBagel
+  name: "Bagel Map"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitMapBagel
+
+- type: entity
+  parent: PosterRolledLegitMap
+  id: PosterRolledLegitMapDelta
+  name: "Delta Map"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitMapDelta
+
+- type: entity
+  parent: PosterRolledLegitMap
+  id: PosterRolledLegitMapMarathon
+  name: "Marathon Map"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitMapMarathon
+
+- type: entity
+  parent: PosterRolledLegitMap
+  id: PosterRolledLegitMapMoose
+  name: "Moose Moose"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitMapMoose
+
+- type: entity
+  parent: PosterRolledLegitMapPacked
+  id: PosterRolledLegitMap
+  name: "Packed Map"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitMapPacked
+
+- type: entity
+  parent: PosterRolledLegitMap
+  id: PosterRolledLegitMapPillar
+  name: "Pillar Map"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitMapPillar
+
+- type: entity
+  parent: PosterRolledLegitMap
+  id: PosterRolledLegitMapSaltern
+  name: "Saltern Map"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitMapSaltern
+
+- type: entity
+  parent: PosterRolledLegitMap
+  id: PosterRolledLegitMapSplit
+  name: "Split Map"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitMapSplit
+
+- type: entity
+  parent: PosterRolledLegitMap
+  id: PosterRolledLegitMapLighthouse
+  name: "Lighthouse Map"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitMapLighthouse
+
+- type: entity
+  parent: PosterRolledLegitMap
+  id: PosterRolledLegitMapWaystation
+  name: "Waystation Map"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitMapWaystation
+
+- type: entity
+  parent: PosterRolledLegitMap
+  id: PosterRolledLegitMapOrigin
+  name: "Origin Map"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitMapOrigin

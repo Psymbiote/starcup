@@ -58,8 +58,7 @@
   components:
   # begin starcup: syndie swap
   - type: Sprite
-    sprite: _NF/Objects/Decoration/posters.rsi
-    state: rolled_blue
+    state: rolled_legit
   # end starcup
   - type: StaticPrice
     price: 750
