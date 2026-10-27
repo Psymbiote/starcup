@@ -553,14 +553,6 @@
     spawn: PosterContrabandAmbrosiaVulgaris
 
 - type: entity
-  parent: NFPosterRolledContraband
-  id: PosterRolledContraband
-  name: "Name"
-  components:
-  - type: NFWallmountable
-    spawn: PosterContraband
-
-- type: entity
   parent: NFPosterRolledContrabandDonutCorp
   id: PosterRolledContraband
   name: "Donut Corp"
@@ -642,14 +634,6 @@
 
 - type: entity
   parent: NFPosterRolledContraband
-  id: PosterRolledContraband
-  name: "Name"
-  components:
-  - type: NFWallmountable
-    spawn: PosterContraband
-
-- type: entity
-  parent: NFPosterRolledContraband
   id: PosterRolledContrabandC20r
   name: "C-20r"
   components:
@@ -727,14 +711,6 @@
   components:
   - type: NFWallmountable
     spawn: PosterContrabandRouny
-
-- type: entity
-  parent: NFPosterRolledContraband
-  id: PosterRolledContraband
-  name: "Name"
-  components:
-  - type: NFWallmountable
-    spawn: PosterContraband
 
 - type: entity
   parent: NFPosterRolledContraband
@@ -858,14 +834,6 @@
 
 - type: entity
   parent: NFPosterRolledContraband
-  id: PosterRolledContraband
-  name: "Name"
-  components:
-  - type: NFWallmountable
-    spawn: PosterContraband
-
-- type: entity
-  parent: NFPosterRolledContraband
   id: PosterRolledContrabandHighEffectEngineering
   name: "High Effect Engineering"
   components:
@@ -911,14 +879,6 @@
 #  components:
 #  - type: NFWallmountable
 #    spawn: PosterContrabandCybersun600
-
-- type: entity
-  parent: NFPosterRolledContraband
-  id: PosterRolledContraband
-  name: "Name"
-  components:
-  - type: NFWallmountable
-    spawn: PosterContraband
 
 - type: entity
   parent: NFPosterRolledContraband
@@ -991,62 +951,6 @@
   components:
   - type: NFWallmountable
     spawn: PosterContrabandHereForYourSafety
-
-- type: entity
-  parent: NFPosterRolledContraband
-  id: PosterRolledContraband
-  name: "Name"
-  components:
-  - type: NFWallmountable
-    spawn: PosterContraband
-
-- type: entity
-  parent: NFPosterRolledContraband
-  id: PosterRolledContraband
-  name: "Name"
-  components:
-  - type: NFWallmountable
-    spawn: PosterContraband
-
-- type: entity
-  parent: NFPosterRolledContraband
-  id: PosterRolledContraband
-  name: "Name"
-  components:
-  - type: NFWallmountable
-    spawn: PosterContraband
-
-- type: entity
-  parent: NFPosterRolledContraband
-  id: PosterRolledContraband
-  name: "Name"
-  components:
-  - type: NFWallmountable
-    spawn: PosterContraband
-
-- type: entity
-  parent: NFPosterRolledContraband
-  id: PosterRolledContraband
-  name: "Name"
-  components:
-  - type: NFWallmountable
-    spawn: PosterContraband
-
-- type: entity
-  parent: NFPosterRolledContraband
-  id: PosterRolledContraband
-  name: "Name"
-  components:
-  - type: NFWallmountable
-    spawn: PosterContraband
-
-- type: entity
-  parent: NFPosterRolledContraband
-  id: PosterRolledContraband
-  name: "Name"
-  components:
-  - type: NFWallmountable
-    spawn: PosterContraband
 
 - type: entity
   parent: NFPosterRolledContraband
