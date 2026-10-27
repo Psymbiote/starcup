@@ -2,11 +2,11 @@
 - type: entity
   parent: NFPosterRolledLegit
   id: PosterRolledLegitSyndie
-  suffix: rolled, syndie
+  suffix: rolled, Syndicate
 
 - type: entity
   parent: NFPosterRolledLegit
-  id: PosterRolledLegitMap
+  id: PosterRolledMap
   components:
   - type: Sprite
     sprite: _starcup/Structures/Wallmounts/posters.rsi
@@ -75,7 +75,7 @@
   name: "Ian"
   components:
   - type: NFWallmountable
-    spawn: PosterLegitIanSyndieSyndie
+    spawn: PosterLegitIanSyndie
 
 - type: entity
   parent: PosterRolledLegitSyndie
@@ -484,6 +484,14 @@
     storedRotation: -90
   - type: NFWallmountable
     spawn: PosterLegitCarpMount
+
+#- type: entity
+#  parent: NFPosterRolledLegit
+#  id: PosterRolledLegitUeNo
+#  name: "Ue No"
+#  components:
+#  - type: NFWallmountable
+#    spawn: PosterLegitUeNo
 
 # Contraband posters
 - type: entity
@@ -956,7 +964,7 @@
   name: "Here For Your Safety"
   components:
   - type: NFWallmountable
-    spawn: PosterContrabandHereForYourSafety
+    spawn: PosterLegitHereForYourSafetySyndie
 
 - type: entity
   parent: NFPosterRolledContraband
@@ -1062,14 +1070,6 @@
   components:
   - type: NFWallmountable
     spawn: PosterLegitSpaceCops
-
-- type: entity
-  parent: NFPosterRolledContraband
-  id: PosterRolledContrabandUeNo
-  name: "Ue No"
-  components:
-  - type: NFWallmountable
-    spawn: PosterLegitUeNo
 
 - type: entity
   parent: NFPosterRolledContraband
@@ -1241,89 +1241,89 @@
 
 # Maps
 - type: entity
-  parent: PosterRolledLegitMap
-  id: PosterRolledLegitMapBagel
+  parent: PosterRolledMap
+  id: PosterRolledMapBagel
   name: "Bagel Map"
   components:
   - type: NFWallmountable
-    spawn: PosterLegitMapBagel
+    spawn: PosterMapBagel
 
 - type: entity
-  parent: PosterRolledLegitMap
-  id: PosterRolledLegitMapDelta
+  parent: PosterRolledMap
+  id: PosterRolledMapDelta
   name: "Delta Map"
   components:
   - type: NFWallmountable
-    spawn: PosterLegitMapDelta
+    spawn: PosterMapDelta
 
 - type: entity
-  parent: PosterRolledLegitMap
-  id: PosterRolledLegitMapMarathon
+  parent: PosterRolledMap
+  id: PosterRolledMapMarathon
   name: "Marathon Map"
   components:
   - type: NFWallmountable
-    spawn: PosterLegitMapMarathon
+    spawn: PosterMapMarathon
 
 - type: entity
-  parent: PosterRolledLegitMap
-  id: PosterRolledLegitMapMoose
+  parent: PosterRolledMap
+  id: PosterRolledMapMoose
   name: "Moose Moose"
   components:
   - type: NFWallmountable
-    spawn: PosterLegitMapMoose
+    spawn: PosterMapMoose
 
 - type: entity
-  parent: PosterRolledLegitMap
-  id: PosterRolledLegitMapPacked
+  parent: PosterRolledMap
+  id: PosterRolledMapPacked
   name: "Packed Map"
   components:
   - type: NFWallmountable
-    spawn: PosterLegitMapPacked
+    spawn: PosterMapPacked
 
 - type: entity
-  parent: PosterRolledLegitMap
-  id: PosterRolledLegitMapPillar
+  parent: PosterRolledMap
+  id: PosterRolledMapPillar
   name: "Pillar Map"
   components:
   - type: NFWallmountable
-    spawn: PosterLegitMapPillar
+    spawn: PosterMapPillar
 
 - type: entity
-  parent: PosterRolledLegitMap
-  id: PosterRolledLegitMapSaltern
+  parent: PosterRolledMap
+  id: PosterRolledMapSaltern
   name: "Saltern Map"
   components:
   - type: NFWallmountable
-    spawn: PosterLegitMapSaltern
+    spawn: PosterMapSaltern
 
 - type: entity
-  parent: PosterRolledLegitMap
-  id: PosterRolledLegitMapSplit
+  parent: PosterRolledMap
+  id: PosterRolledMapSplit
   name: "Split Map"
   components:
   - type: NFWallmountable
-    spawn: PosterLegitMapSplit
+    spawn: PosterMapSplit
 
 - type: entity
-  parent: PosterRolledLegitMap
-  id: PosterRolledLegitMapLighthouse
+  parent: PosterRolledMap
+  id: PosterRolledMapLighthouse
   name: "Lighthouse Map"
   components:
   - type: NFWallmountable
-    spawn: PosterLegitMapLighthouse
+    spawn: PosterMapLighthouse
 
 - type: entity
-  parent: PosterRolledLegitMap
-  id: PosterRolledLegitMapWaystation
+  parent: PosterRolledMap
+  id: PosterRolledMapWaystation
   name: "Waystation Map"
   components:
   - type: NFWallmountable
-    spawn: PosterLegitMapWaystation
+    spawn: PosterMapWaystation
 
 - type: entity
-  parent: PosterRolledLegitMap
-  id: PosterRolledLegitMapOrigin
+  parent: PosterRolledMap
+  id: PosterRolledMapOrigin
   name: "Origin Map"
   components:
   - type: NFWallmountable
-    spawn: PosterLegitMapOrigin
+    spawn: PosterMapOrigin
