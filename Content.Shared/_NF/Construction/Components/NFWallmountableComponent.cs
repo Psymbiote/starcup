@@ -9,7 +9,7 @@ namespace Content.Shared._NF.Construction.Components;
 /// A component that spawns an entity (intended to be a wallmount) when interacting with a wall.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
-public sealed partial class NfWallmountableComponent : Component
+public sealed partial class NFWallmountableComponent : Component
 {
     /// <summary>
     /// The amount of time to spend in the doafter.

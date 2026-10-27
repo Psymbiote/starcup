@@ -368,14 +368,6 @@
     spawn: PosterLegitMail
 
 - type: entity
-  parent: NFPosterRolledContraband
-  id: PosterRolledContrabandHelio
-  name: "Helio Logistics ad"
-  components:
-  - type: NFWallmountable
-    spawn: PosterLegitHelio
-
-- type: entity
   parent: NFPosterRolledLegit
   id: PosterRolledLegitAtmosiaDeclarationIndependence
   name: "Treaty of Sol"
@@ -553,8 +545,8 @@
     spawn: PosterContrabandAmbrosiaVulgaris
 
 - type: entity
-  parent: NFPosterRolledContrabandDonutCorp
-  id: PosterRolledContraband
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandDonutCorp
   name: "Donut Corp"
   components:
   - type: NFWallmountable
@@ -946,7 +938,7 @@
 
 - type: entity
   parent: NFPosterRolledContraband
-  id: PosterRolledContrabandHereForYourSafety
+  id: PosterRolledContrabandHereForYourSafetySyndie
   name: "Here For Your Safety"
   components:
   - type: NFWallmountable
@@ -1120,14 +1112,6 @@
   components:
   - type: NFWallmountable
     spawn: PosterLegitReportCrimes
-
-- type: entity
-  parent: NFPosterRolledContraband
-  id: PosterRolledContrabandIonRifle
-  name: "Ion Rifle"
-  components:
-  - type: NFWallmountable
-    spawn: PosterLegitIonRifle
 
 - type: entity
   parent: NFPosterRolledContraband
