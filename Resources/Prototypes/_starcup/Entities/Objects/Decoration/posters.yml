@@ -456,12 +456,12 @@
     spawn: PosterLegitElectra
 
 - type: entity
-  parent: NFPosterRolledLegit
-  id: PosterRolledLegitMime
-  name: "Mime Postmodern"
+  parent: NFPosterRolledContraband
+  id: PosterRolledLegitIonRifle
+  name: "Ion Rifle"
   components:
   - type: NFWallmountable
-    spawn: PosterLegitMime
+    spawn: PosterLegitIonRifle
 
 - type: entity
   parent: NFPosterRolledLegit
@@ -480,6 +480,574 @@
     spawn: PosterLegitCarpMount
 
 # Contraband posters
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandFreeTonto
+  name: "Free Tonto"
+  components:
+  - type: NFWallmountable
+    spawn: PosterRolledContrabandFreeTonto
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandFunPolice
+  name: "Fun Police"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandFunPolice
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandRealExomorph
+  name: "Real! Exomorph"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandRealExomorph
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandClown
+  name: "Clown"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandClown
+
+#- type: entity
+#  parent: NFPosterRolledContraband
+#  id: PosterRolledContrabandSmoke
+#  name: "Smoke"
+#  components:
+#  - type: NFWallmountable
+#    spawn: PosterContrabandSmoke
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandMissingGloves
+  name: "Missing Gloves"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandMissingGloves
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandHackingGuide
+  name: "Hacking Guide"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandHackingGuide
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandRIPBadger
+  name: "RIP Badger"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandRIPBadger
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandAmbrosiaVulgaris
+  name: "Ambrosia Vulgaris"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandAmbrosiaVulgaris
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContraband
+  name: "Name"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContraband
+
+- type: entity
+  parent: NFPosterRolledContrabandDonutCorp
+  id: PosterRolledContraband
+  name: "Donut Corp"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandDonutCorp
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandEAT
+  name: "EAT"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandEAT
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandTools
+  name: "Tools"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandTools
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandPower
+  name: "Power"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandPower
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandSpaceCube
+  name: "Space Cube"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandSpaceCube
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandCommunistState
+  name: "Communis tState"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandCommunistState
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandBorgFancy
+  name: "Borg Fancy"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandBorgFancy
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandBorgFancyv2
+  name: "Borg Fancy v2"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandBorgFancyv2
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandKosmicheskayaStantsiya
+  name: "KC-13 Does Not Exist"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandKosmicheskayaStantsiya
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandRebelsUnite
+  name: "Rebels Unite"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandRebelsUnite
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContraband
+  name: "Name"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContraband
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandC20r
+  name: "C-20r"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandC20r
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandRevolver
+  name: "Revolver"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandRevolver
+
+#- type: entity
+#  parent: NFPosterRolledContraband
+#  id: PosterRolledContrabandSyndicatePistol
+#  name: "Syndicate Pistol"
+#  components:
+#  - type: NFWallmountable
+#    spawn: PosterContrabandSyndicatePistol
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandEnergySwords
+  name: "Energy Swords"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandEnergySwords
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandRedRum
+  name: "Red Rum"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandRedRum
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandCC64KAd
+  name: "CC 64K Ad"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandCC64KAd
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandPunchShit
+  name: "Punch Shit"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandPunchShit
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandTheGriffin
+  name: "The Griffin"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandTheGriffin
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandFreeDrone
+  name: "Free Drone"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandFreeDrone
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandRouny
+  name: "Rouny"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandRouny
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContraband
+  name: "Name"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContraband
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandRobustSoftdrinks
+  name: "Robust Softdrinks"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandRobustSoftdrinks
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandShamblersJuice
+  name: "Shambler's Juice"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandShamblersJuice
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandPwrGame
+  name: "Pwr Game"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandPwrGame
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandSunkist
+  name: "Sun-kist"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandSunkist
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandSpaceCola
+  name: "Space Cola"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandSpaceCola
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandSpaceUp
+  name: "Space-Up!"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandSpaceUp
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandKudzu
+  name: "Kudzu"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandKudzu
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandMaskedMen
+  name: "Masked Men"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandMaskedMen
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandUnreadableAnnouncement
+  name: "Unreadable Announcement"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandUnreadableAnnouncement
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandFreeSyndicateEncryptionKey
+  name: "Free Unit 2559"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandFreeSyndicateEncryptionKey
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandBountyHunters
+  name: "Bounty Hunters"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandBountyHunters
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandTheBigGasTruth
+  name: "Charon-Epsilon Lives!"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandTheBigGasTruth
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandWehWatches
+  name: "Weh Watches"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandWehWatches
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandVoteWeh
+  name: "Vote Weh"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandVoteWeh
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandBeachStarYamamoto
+  name: "Beach Star Yamamoto!"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandBeachStarYamamoto
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContraband
+  name: "Name"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContraband
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandHighEffectEngineering
+  name: "High Effect Engineering"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandHighEffectEngineering
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandNuclearDeviceInformational
+  name: "Nuclear Device Informational"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandNuclearDeviceInformational
+
+#- type: entity
+#  parent: NFPosterRolledContraband
+#  id: PosterRolledContrabandRise
+#  name: "Rise Up"
+#  components:
+#  - type: NFWallmountable
+#    spawn: PosterContrabandRise
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandRevolt
+  name: "Revolt"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandRevolt
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandMoth
+  name: "Syndie Moth - Nuclear Operation"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandMoth
+
+#- type: entity
+#  parent: NFPosterRolledContraband
+#  id: PosterRolledContrabandCybersun600
+#  name: "Cybersun: 600 Years Commemorative Poster"
+#  components:
+#  - type: NFWallmountable
+#    spawn: PosterContrabandCybersun600
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContraband
+  name: "Name"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContraband
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandDonk
+  name: "DONK CO. BRAND MICROWAVEABLE FOOD"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandDonk
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandEnlistGorlex
+  name: "Enlist"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandEnlistGorlex
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandInterdyne
+  name: "Interdyne Pharmaceutics: For the Health of Humankind"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandInterdyne
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandWaffleCorp
+  name: "Make Mine a Waffle Corp: Fine Rifles, Economic Prices"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandWaffleCorp
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandMissingSpacepen
+  name: "Missing Spacepen"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandMissingSpacepen
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandExoAcid
+  name: "Exomorph Warning: Acid Spit!"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandExoAcid
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandExoRun
+  name: "Exomorph Warning: Run Away!"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandExoRun
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandExoChomp
+  name: "Exomorph Warning: Dangerous Bites!"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandExoChomp
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandHereForYourSafety
+  name: "Here For Your Safety"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandHereForYourSafety
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContraband
+  name: "Name"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContraband
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContraband
+  name: "Name"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContraband
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContraband
+  name: "Name"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContraband
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContraband
+  name: "Name"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContraband
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContraband
+  name: "Name"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContraband
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContraband
+  name: "Name"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContraband
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContraband
+  name: "Name"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContraband
+
 - type: entity
   parent: NFPosterRolledContraband
   id: PosterRolledContrabandHelio
@@ -728,14 +1296,6 @@
   components:
   - type: NFWallmountable
     spawn: PosterLegitAnatomyPoster
-
-- type: entity
-  parent: NFPosterRolledContraband
-  id: PosterRolledContrabandMime
-  name: "Mime Postmodern"
-  components:
-  - type: NFWallmountable
-    spawn: PosterLegitMime
 
 - type: entity
   parent: NFPosterRolledContraband

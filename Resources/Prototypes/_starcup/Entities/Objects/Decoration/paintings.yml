@@ -1,0 +1,9 @@
+
+# turn into painting
+- type: entity
+  parent: NFPosterRolledLegit
+  id: PosterRolledLegitMime
+  name: "Mime Postmodern"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitMime

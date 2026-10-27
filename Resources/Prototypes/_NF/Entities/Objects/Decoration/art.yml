@@ -78,7 +78,7 @@
   parent: NFPosterRolledContraband
   id: NFPosterContraband
   name: contraband poster
-  description: A rolled up contraband poster.  You won't be sure what the design is until you put it up on the wall.
+  description: A rolled up contraband poster. You won't be sure what the design is until you put it up on the wall.
   components:
   - type: NFWallmountable
     spawn: RandomPosterContrabandSyndie # starcup
