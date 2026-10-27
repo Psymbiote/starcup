@@ -1177,7 +1177,7 @@
 
 - type: entity
   parent: NFPosterRolledContraband
-  id: PosterRolledContrabandNoErp
+  id: PosterRolledContrabandNoERP
   name: "No ERP"
   components:
   - type: NFWallmountable
