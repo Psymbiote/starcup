@@ -33,15 +33,15 @@ public sealed partial class NfWallmountableSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<NFWallmountableComponent, GetVerbsEvent<UtilityVerb>>(OnGetVerbs);
-        SubscribeLocalEvent<NFWallmountableComponent, AfterInteractEvent>(OnAfterInteract);
-        SubscribeLocalEvent<NFWallmountableComponent, NFWallmountDoAfterEvent>(OnDoAfter);
+        SubscribeLocalEvent<NfWallmountableComponent, GetVerbsEvent<UtilityVerb>>(OnGetVerbs);
+        SubscribeLocalEvent<NfWallmountableComponent, AfterInteractEvent>(OnAfterInteract);
+        SubscribeLocalEvent<NfWallmountableComponent, NfWallmountDoAfterEvent>(OnDoAfter);
     }
 
     /// <summary>
     /// GetVerbs handler - add a verb to mount the entity onto the wall.
     /// </summary>
-    private void OnGetVerbs(Entity<NFWallmountableComponent> ent, ref GetVerbsEvent<UtilityVerb> args)
+    private void OnGetVerbs(Entity<NfWallmountableComponent> ent, ref GetVerbsEvent<UtilityVerb> args)
     {
         if (!args.CanComplexInteract || !args.CanAccess || args.Using == null)
             return;
@@ -70,7 +70,7 @@ public sealed partial class NfWallmountableSystem : EntitySystem
     /// <summary>
     /// Interaction handler - try to spawn the wallmount entity if we can, notify the user via popup if we can't.
     /// </summary>
-    private void OnAfterInteract(Entity<NFWallmountableComponent> ent, ref AfterInteractEvent args)
+    private void OnAfterInteract(Entity<NfWallmountableComponent> ent, ref AfterInteractEvent args)
     {
         if (args.Handled || args.Target == null)
             return;
@@ -91,7 +91,7 @@ public sealed partial class NfWallmountableSystem : EntitySystem
     /// <summary>
     /// DoAfter handler - spawns the actual item on the wall and deletes the Wallmountable entity.
     /// </summary>
-    private void OnDoAfter(Entity<NFWallmountableComponent> ent, ref NFWallmountDoAfterEvent args)
+    private void OnDoAfter(Entity<NfWallmountableComponent> ent, ref NfWallmountDoAfterEvent args)
     {
         if (args.Cancelled || args.Target == null)
             return;
@@ -137,7 +137,7 @@ public sealed partial class NfWallmountableSystem : EntitySystem
     /// <param name="target">The wall to mount the entity on.</param>
     /// <param name="checkAccess">Whether or not to check that the user has access to the wall.</param>
     /// <returns>Whether or not a doafter was started to mount the item on the wall.</returns>
-    private bool TryMount(Entity<NFWallmountableComponent> ent, EntityUid user, EntityUid target, bool checkAccess = true)
+    private bool TryMount(Entity<NfWallmountableComponent> ent, EntityUid user, EntityUid target, bool checkAccess = true)
     {
         var time = ent.Comp.DoAfterTime;
 
@@ -153,7 +153,7 @@ public sealed partial class NfWallmountableSystem : EntitySystem
         if (!NoWallmountsAtEntity(target))
             return false;
 
-        var ev = new NFWallmountDoAfterEvent();
+        var ev = new NfWallmountDoAfterEvent();
         var doAfterArgs = new DoAfterArgs(EntityManager, user, time, ev, ent, target: target, used: ent)
         {
             BreakOnDamage = true,
