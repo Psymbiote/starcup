@@ -1,6 +1,8 @@
+# region posters base
 - type: entity
+  abstract: true
   parent: BaseItem
-  id: NFPoster
+  id: NFBasePoster
   name: poster
   description: A rolled up poster. You won't be sure what the design is until you put it up on the wall.
   components:
@@ -10,7 +12,7 @@
   - type: Item
     sprite: _NF/Objects/Decoration/posters.rsi
   - type: NFWallmountable
-    spawn: RandomPosterAnyWallmountable # starcup
+    spawn: RandomPosterAny
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -34,41 +36,64 @@
         acts: ["Destruction"]
 
 - type: entity
-  parent: NFPoster
+  abstract: true
+  parent: NFBasePoster
+  id: NFPosterRolledLegit
+  description: A rolled up Syndicate-approved poster. # starcup
+  suffix: rolled
+  components:
+  # begin starcup: syndie swap
+  - type: Sprite
+    state: rolled_contraband
+  # end starcup
+  - type: StaticPrice
+    price: 500
+
+- type: entity
+  abstract: true
+  parent: [BaseMinorContraband, NFBasePoster] # starcup
+  id: NFPosterRolledContraband
+  description: A rolled up contraband poster.
+  suffix: rolled
+  components:
+  # begin starcup: syndie swap
+  - type: Sprite
+    sprite: _NF/Objects/Decoration/posters.rsi
+    state: rolled_blue
+  # end starcup
+  - type: StaticPrice
+    price: 750
+
+# region posters random
+- type: entity
+  parent: NFPosterRolledLegit
   id: NFPosterCorporate
   name: approved poster # starcup
   description: A rolled up Syndicate-approved poster. You won't be sure what the design is until you put it up on the wall. # starcup: syndie swap
   components:
-  - type: Sprite
-    state: rolled_contraband # starcup
   - type: NFWallmountable
     spawn: RandomPosterLegitSyndie # starcup
 
 - type: entity
-  parent: NFPoster
+  parent: NFPosterRolledContraband
   id: NFPosterContraband
   name: contraband poster
   description: A rolled up contraband poster.  You won't be sure what the design is until you put it up on the wall.
   components:
-  - type: Sprite
-    # begin starcup
-    sprite: _NF/Objects/Decoration/posters.rsi
-    state: rolled_blue
-    # end starcup
   - type: NFWallmountable
     spawn: RandomPosterContrabandSyndie # starcup
 
+# region paintings base
 - type: entity
+  abstract: true
   parent: BaseItem
-  id: NFPainting
+  id: NFBasePaintingCurtained
   name: painting
-  description: A masterpiece hidden under cloth.  You aren't sure what the painting is until you put it up on the wall.
+  description: A masterpiece hidden under cloth.
   components:
   - type: Sprite
     sprite: _NF/Objects/Decoration/paintings.rsi
     state: painting
-  - type: NFWallmountable
-    spawn: RandomPainting
   - type: MultiHandedItem
   - type: Item
     size: Ginormous
@@ -116,3 +141,15 @@
       collection: MetalThud
       params:
         variation: 0.25
+  - type: StaticPrice
+    price: 1000
+
+# region random painting
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedRandom
+  name: painting
+  description: A masterpiece hidden under cloth.  You aren't sure what the painting is until you put it up on the wall.
+  components:
+  - type: NFWallmountable
+    spawn: RandomPainting
