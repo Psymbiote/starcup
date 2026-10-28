@@ -98,7 +98,6 @@
   - type: Item
     size: Ginormous
   - type: Damageable
-  - type: Injurable
     damageContainer: Inorganic
   - type: DamageExaminable
   - type: Destructible
@@ -154,3 +153,181 @@
   components:
   - type: NFWallmountable
     spawn: RandomPainting
+
+# region wizden paintings
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedMoony
+  name: Abstract No.1
+  components:
+  - type: NFWallmountable
+    spawn: PaintingMoony
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedPersistenceOfMemory
+  name: The Persistence of Memory
+  components:
+  - type: NFWallmountable
+    spawn: PaintingPersistenceOfMemory
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedTheSonOfMan
+  name: The Son Of Man
+  components:
+  - type: NFWallmountable
+    spawn: PaintingTheSonOfMan
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedTheKiss
+  name: The Kiss
+  components:
+  - type: NFWallmountable
+    spawn: PaintingTheKiss
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedTheScream
+  name: The Scream
+  components:
+  - type: NFWallmountable
+    spawn: PaintingTheScream
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedTheGreatWave
+  name: The Great Wave off Kanagawa
+  components:
+  - type: NFWallmountable
+    spawn: PaintingTheGreatWave
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedCafeTerraceAtNight
+  name: Cafe Terrace at Night
+  components:
+  - type: NFWallmountable
+    spawn: PaintingCafeTerraceAtNight
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedNightHawks
+  name: Night Hawks
+  components:
+  - type: NFWallmountable
+    spawn: PaintingNightHawks
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedSkeletonCigarette
+  name: Skull of a Skeleton with Burning Cigarette
+  components:
+  - type: NFWallmountable
+    spawn: PaintingSkeletonCigarette
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedSkeletonBoof
+  name: Skull of MLG Skeleton with Fat Boof
+  components:
+  - type: NFWallmountable
+    spawn: PaintingSkeletonBoof
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedPrayerHands
+  name: Study of the Hands of an Apostle
+  components:
+  - type: NFWallmountable
+    spawn: PaintingPrayerHands
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedOldGuitarist
+  name: The Old Guitarist
+  components:
+  - type: NFWallmountable
+    spawn: PaintingOldGuitarist
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedOlympia
+  name: Olympia
+  components:
+  - type: NFWallmountable
+    spawn: PaintingOlympia
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedSaturn
+  name: Saturn Devouring His Son
+  components:
+  - type: NFWallmountable
+    spawn: PaintingSaturn
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedSleepingGypsy
+  name: The Sleeping Gypsy
+  components:
+  - type: NFWallmountable
+    spawn: PaintingSleepingGypsy
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedRedBlueYellow
+  name: Composition with Red Blue and Yellow
+  components:
+  - type: NFWallmountable
+    spawn: PaintingRedBlueYellow
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedAmogusTriptych
+  name: Amogus Triptych (Untitled.)
+  components:
+  - type: NFWallmountable
+    spawn: PaintingAmogusTriptych
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedHelloWorld
+  name: Hello World
+  components:
+  - type: NFWallmountable
+    spawn: PaintingHelloWorld
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: NFPaintingCurtainedSadClown
+  name: Sad Clown
+  components:
+  - type: NFWallmountable
+    spawn: PaintingSadClown
+
+- type: entityTable
+  id: TablePaintingCurtainedNanotrasen
+  table: !type:GroupSelector
+    children:
+    - id: NFPaintingCurtainedMoony
+    - id: NFPaintingCurtainedPersistenceOfMemory
+    - id: NFPaintingCurtainedTheSonOfMan
+    - id: NFPaintingCurtainedTheKiss
+    - id: NFPaintingCurtainedTheScream
+    - id: NFPaintingCurtainedTheGreatWave
+    - id: NFPaintingCurtainedCafeTerraceAtNight
+    - id: NFPaintingCurtainedNightHawks
+    - id: NFPaintingCurtainedSkeletonCigarette
+    - id: NFPaintingCurtainedSkeletonBoof
+    - id: NFPaintingCurtainedPrayerHands
+    - id: NFPaintingCurtainedOldGuitarist
+    - id: NFPaintingCurtainedOlympia
+    - id: NFPaintingCurtainedSaturn
+      # - id: PaintingSleepingGypsy # starcup: removed for tone
+    - id: NFPaintingCurtainedRedBlueYellow
+    - id: NFPaintingCurtainedAmogusTriptych
+    - id: NFPaintingCurtainedHelloWorld
+    - id: NFPaintingCurtainedSadClown
+# endregion paintings

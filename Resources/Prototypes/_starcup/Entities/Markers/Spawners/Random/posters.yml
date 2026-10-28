@@ -95,7 +95,6 @@
     - id: PosterLegitOppenhopper
     - id: PosterLegitTyrone
     - id: PosterLegitMail # DeltaV
-    - id: PosterLegitHelio
     - id: PosterContrabandAtmosiaDeclarationIndependence
     - id: PosterContrabandLamarr
     - id: PosterContrabandDonk
@@ -104,9 +103,13 @@
     - id: PosterContrabandWaffleCorp
     - id: PosterContrabandGreyTide
     - id: PosterContrabandSyndicateRecruitment
-    - id: PosterLegitMime
     - id: PosterLegitHawkmoonAd
     - id: PosterLegitElectra
+    - id: PosterLegitObeySyndie
+    - id: PosterLegitLEGSSyndie
+    - id: PosterLegitReportCrimeSyndie
+    - id: PosterLegitPPENoExcuseBlue
+    - id: PosterLegitPPENoExcusePink
 
 - type: entityTable
   id: ContrabandPosterTableSyndie
@@ -204,6 +207,7 @@
     - id: PosterLegitJustAWeekAwaySyndie
     - id: PosterLegitSecWatch
     - id: PosterLegitVacation
+    - id: PosterLegitPeriodicTable
     - id: PosterLegitRenaultSyndie
     - id: PosterLegitSyndTCG
     - id: PosterLegitSafetyMothDelam
@@ -215,7 +219,6 @@
     - id: PosterLegitOppenhopper
     - id: PosterLegitTyrone
     - id: PosterLegitMail # DeltaV
-    - id: PosterLegitHelio
     - id: PosterContrabandAtmosiaDeclarationIndependence
     - id: PosterContrabandLamarr
     - id: PosterContrabandDonk
@@ -226,6 +229,11 @@
     - id: PosterContrabandSyndicateRecruitment
     - id: PosterLegitHawkmoonAd
     - id: PosterLegitElectra
+    - id: PosterLegitObeySyndie
+    - id: PosterLegitLEGSSyndie
+    - id: PosterLegitReportCrimeSyndie
+    - id: PosterLegitPPENoExcuseBlue
+    - id: PosterLegitPPENoExcusePink
     # contraband
     - id: PosterContrabandFreeTonto
     - id: PosterContrabandFunPolice
@@ -278,3 +286,4 @@
     - id: PosterLegitNanotrasenLogo
     - id: PosterLegit50thAnniversaryVintageReprint
     - id: PosterLegitNTTGC
+    - id: PosterRolledContrabandHelio

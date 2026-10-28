@@ -1505,8 +1505,8 @@
     state: poster41_legit
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledLegitMime
-    disassembleTime: 2
+    prototypeToSpawn: PaintingCurtainedLegitMime
+    disassembleTime: 3
   # end starcup
 
 - type: entity

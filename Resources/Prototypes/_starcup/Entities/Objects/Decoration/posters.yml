@@ -13,6 +13,7 @@
     state: rolled_map
 
 # Legit posters
+
 - type: entity
   parent: PosterRolledLegitSyndie
   id: PosterRolledLegitHereForYourSafetySyndie
@@ -103,6 +104,14 @@
 
 - type: entity
   parent: PosterRolledLegitSyndie
+  id: PosterRolledLegitObeySyndie
+  name: "Obey"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitObeySyndie
+
+- type: entity
+  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitGetYourLEGSSyndie
   name: "Get Your LEGS"
   components:
@@ -143,7 +152,7 @@
 
 - type: entity
   parent: PosterRolledLegitSyndie
-  id: PosterRolledContrabandSafetyEyeProtectionSyndie
+  id: PosterRolledLegitSafetyEyeProtectionSyndie
   name: "Safety: Eye Protection"
   components:
   - type: NFWallmountable
@@ -151,7 +160,7 @@
 
 - type: entity
   parent: PosterRolledLegitSyndie
-  id: PosterRolledContrabandSafetyReportSyndie
+  id: PosterRolledLegitSafetyReportSyndie
   name: "Safety: Report"
   components:
   - type: NFWallmountable
@@ -159,7 +168,15 @@
 
 - type: entity
   parent: PosterRolledLegitSyndie
-  id: PosterRolledContrabandReportCrimesSyndie
+  id: PosterRolledLegitReportCrimeSyndie
+  name: "Safety: Report"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitPosterLegitReportCrimeSyndie
+
+- type: entity
+  parent: PosterRolledLegitSyndie
+  id: PosterRolledLegitReportCrimesSyndie
   name: "Report Crimes"
   components:
   - type: NFWallmountable
@@ -175,7 +192,7 @@
 
 - type: entity
   parent: PosterRolledLegitSyndie
-  id: PosterRolledContrabandFoamForceAdSyndie
+  id: PosterRolledLegitFoamForceAdSyndie
   name: "Foam Force Ad"
   components:
   - type: NFWallmountable
@@ -231,7 +248,7 @@
 
 - type: entity
   parent: PosterRolledLegitSyndie
-  id: PosterRolledLegitNoErpSyndie
+  id: PosterRolledLegitNoERPSyndie
   name: "No ERP"
   components:
   - type: NFWallmountable
@@ -446,22 +463,6 @@
     spawn: PosterContrabandSyndicateRecruitment
 
 - type: entity
-  parent: NFPosterRolledLegit
-  id: PosterRolledLegitHawkmoonAd
-  name: "Hawkmoon Acquisitions"
-  components:
-  - type: NFWallmountable
-    spawn: PosterLegitHawkmoonAd
-
-- type: entity
-  parent: NFPosterRolledLegit
-  id: PosterRolledLegitElectra
-  name: "Electra Dynamics Energy Corporation"
-  components:
-  - type: NFWallmountable
-    spawn: PosterLegitElectra
-
-- type: entity
   parent: NFPosterRolledContraband
   id: PosterRolledLegitIonRifle
   name: "Ion Rifle"
@@ -492,6 +493,55 @@
 #  components:
 #  - type: NFWallmountable
 #    spawn: PosterLegitUeNo
+
+- type: entity
+  parent: NFPosterRolledLegit
+  id: PosterRolledLegitPPENoExcuseBlue
+  name: "No Excuse"
+  suffix: rolled, blue
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitPPENoExcuseBlue
+
+- type: entity
+  parent: PosterLegitPPENoExcuseBlue
+  id: PosterRolledLegitPPENoExcusePink
+  suffix: rolled, pink
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitPPENoExcusePink
+
+- type: entity
+  parent: NFPosterRolledLegit
+  id: PosterRolledLegitElectra
+  name: "Electra Dynamics Energy Corporation"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitElectra
+
+- type: entity
+  parent: NFPosterRolledLegit
+  id: PosterRolledLegitHawkmoonAd
+  name: "Hawkmoon Acquisitions"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitHawkmoonAd
+
+- type: entity
+  parent: NFPosterRolledLegit
+  id: PosterRolledLegitTrimaranBlueprint
+  name: "Trimaran Freighter"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitTrimaranBlueprint
+
+- type: entity
+  parent: NFPosterRolledLegit
+  id: PosterRolledLegitCybersunAd
+  name: "Cybersun Incorporated"
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitCybersunAd
 
 # Contraband posters
 - type: entity
@@ -1238,6 +1288,14 @@
   components:
   - type: NFWallmountable
     spawn: PosterLegitBotanyFear
+
+- type: entity
+  parent: NFPosterRolledContraband
+  id: PosterRolledContrabandHawkmoonAd
+  name: "Annihilation"
+  components:
+  - type: NFWallmountable
+    spawn: PosterContrabandHawkmoonAd
 
 # Maps
 - type: entity

@@ -1,3 +1,4 @@
+# All names were changed from "painting", with the exception of FramedPaintingDebug
 - type: entity
   parent: BaseSign
   id: FramedPaintingDebug
@@ -9,11 +10,14 @@
   - type: Sprite
     sprite: _starcup/Structures/Wallmounts/Framed/tgpaintings.rsi
     state: debug
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PaintingCurtainedDebug
+    disassembleTime: 3
 
 - type: entity
   parent: BaseSign
   id: FramedPaintingDesire
-  name: painting
+  name: Desire
   description: A framed painting of a still-beating heart served on a plate.
   placement:
     mode: SnapgridCenter
@@ -21,11 +25,14 @@
   - type: Sprite
     sprite: _starcup/Structures/Wallmounts/Framed/tgpaintings.rsi
     state: desire
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PaintingCurtainedDesire
+    disassembleTime: 3
 
 - type: entity
   parent: BaseSign
   id: FramedPaintingRust
-  name: painting
+  name: Rust
   description: A lovely painting.
   placement:
     mode: SnapgridCenter
@@ -33,11 +40,14 @@
   - type: Sprite
     sprite: _starcup/Structures/Wallmounts/Framed/tgpaintings.rsi
     state: rust
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PaintingCurtainedRust
+    disassembleTime: 3
 
 - type: entity
   parent: BaseSign
   id: FramedPaintingVines
-  name: painting
+  name: Vines
   description: A landscape painting of a cluster of vines strangling... something.
   placement:
     mode: SnapgridCenter
@@ -45,11 +55,14 @@
   - type: Sprite
     sprite: _starcup/Structures/Wallmounts/Framed/tgpaintings.rsi
     state: vines
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PaintingCurtainedVines
+    disassembleTime: 3
 
 - type: entity
   parent: BaseSign
   id: FramedPaintingWeeping
-  name: painting
+  name: Weeping
   description: A lovely painting.
   placement:
     mode: SnapgridCenter
@@ -57,11 +70,14 @@
   - type: Sprite
     sprite: _starcup/Structures/Wallmounts/Framed/tgpaintings.rsi
     state: weeping
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PaintingCurtainedWeeping
+    disassembleTime: 3
 
 - type: entity
   parent: BaseSign
   id: FramedPaintingFruit
-  name: painting
+  name: Fruit
   description: A crude yet appreciable painting of an orange.
   placement:
     mode: SnapgridCenter
@@ -69,11 +85,14 @@
   - type: Sprite
     sprite: _starcup/Structures/Wallmounts/Framed/tgsquares.rsi
     state: fruit
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PaintingCurtainedFruit
+    disassembleTime: 3
 
 - type: entity
   parent: BaseSign
   id: FramedPaintingRat
-  name: painting
+  name: Mouse
   description: A portrait of a mouse.
   placement:
     mode: SnapgridCenter
@@ -81,15 +100,21 @@
   - type: Sprite
     sprite: _starcup/Structures/Wallmounts/Framed/tgsquares.rsi
     state: rat
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PaintingCurtainedRat
+    disassembleTime: 3
 
 - type: entity
   parent: BaseSign
   id: FramedPaintingRatvar
-  name: painting
-  description: A portrait of Ratvar?
+  name: Ratvar
+  description: A portrait of true mathematical impossibility. # changed to fit our lore
   placement:
     mode: SnapgridCenter
   components:
   - type: Sprite
     sprite: _starcup/Structures/Wallmounts/Framed/tgsquares.rsi
     state: ratvar
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: PaintingCurtainedRatvar
+    disassembleTime: 3
