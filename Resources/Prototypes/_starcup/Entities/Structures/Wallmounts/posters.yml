@@ -323,7 +323,7 @@
     sprite: _starcup/Structures/Wallmounts/posters_rebrand.rsi
     state: poster22_legit
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: PosterRolledLegitReportCrimeSyndie
+    prototypeToSpawn: PosterRolledLegitReportCrimesSyndie
     disassembleTime: 2
 
 - type: entity

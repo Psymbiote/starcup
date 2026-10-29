@@ -21,6 +21,7 @@
   - type: Item
     size: Large
   - type: Damageable
+  - type: Injurable
     damageContainer: Inorganic
   - type: DamageExaminable
   - type: Destructible

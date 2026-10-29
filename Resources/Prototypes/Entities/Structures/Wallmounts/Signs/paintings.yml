@@ -146,7 +146,7 @@
     state: painting10
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintinCurtainedSkeletonBoof
+    prototypeToSpawn: NFPaintingCurtainedSkeletonBoof
   # end starcup
 
 - type: entity
