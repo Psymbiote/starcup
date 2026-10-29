@@ -11,7 +11,6 @@
     state: calicat
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedCalicoCat
-    disassembleTime: 3
 
 - type: entity
   parent: PaintingBase
@@ -26,7 +25,6 @@
     state: dragonroost
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedDragonRoost
-    disassembleTime: 3
 
 - type: entity
   parent: PaintingBase
@@ -41,7 +39,6 @@
     state: rainlizard1
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedRainLizard1
-    disassembleTime: 3
 
 - type: entity
   parent: PaintingBase
@@ -56,7 +53,6 @@
     state: rainlizard2
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedRainLizard2
-    disassembleTime: 3
 
 - type: entity
   parent: PaintingBase
@@ -71,7 +67,6 @@
     state: rearingunicorn
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedRearingUnicorn
-    disassembleTime: 3
 
 - type: entity
   parent: PaintingBase
@@ -86,7 +81,6 @@
     state: revolution
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedLadyOfRevolution
-    disassembleTime: 3
 
 - type: entity
   parent: PaintingBase
@@ -101,7 +95,6 @@
     state: doompillar
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedPillarOfDoom
-    disassembleTime: 3
 
 # tgpaintings
 # All names were changed from "painting", with the exception of FramedPaintingDebug
@@ -118,7 +111,6 @@
     state: debug
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedDebug
-    disassembleTime: 3
 
 - type: entity
   parent: PaintingBase
@@ -133,7 +125,6 @@
     state: desire
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedDesire
-    disassembleTime: 3
 
 - type: entity
   parent: PaintingBase
@@ -148,7 +139,6 @@
     state: rust
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedRust
-    disassembleTime: 3
 
 - type: entity
   parent: PaintingBase
@@ -163,7 +153,6 @@
     state: vines
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedVines
-    disassembleTime: 3
 
 - type: entity
   parent: PaintingBase
@@ -178,7 +167,6 @@
     state: weeping
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedWeeping
-    disassembleTime: 3
 
 - type: entity
   parent: PaintingBase
@@ -193,7 +181,6 @@
     state: fruit
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedFruit
-    disassembleTime: 3
 
 - type: entity
   parent: PaintingBase
@@ -208,7 +195,6 @@
     state: rat
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedRat
-    disassembleTime: 3
 
 - type: entity
   parent: PaintingBase
@@ -223,4 +209,3 @@
     state: ratvar
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedRatvar
-    disassembleTime: 3

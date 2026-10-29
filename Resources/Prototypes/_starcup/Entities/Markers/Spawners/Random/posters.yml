@@ -107,7 +107,7 @@
     - id: PosterLegitElectra
     - id: PosterLegitObeySyndie
     - id: PosterLegitLEGSSyndie
-    - id: PosterLegitReportCrimeSyndie
+    - id: PosterLegitReportCrimesSyndie
     - id: PosterLegitPPENoExcuseBlue
     - id: PosterLegitPPENoExcusePink
 
@@ -231,7 +231,7 @@
     - id: PosterLegitElectra
     - id: PosterLegitObeySyndie
     - id: PosterLegitLEGSSyndie
-    - id: PosterLegitReportCrimeSyndie
+    - id: PosterLegitReportCrimesSyndie
     - id: PosterLegitPPENoExcuseBlue
     - id: PosterLegitPPENoExcusePink
     # contraband

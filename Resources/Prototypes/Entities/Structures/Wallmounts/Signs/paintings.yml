@@ -1,15 +1,10 @@
 - type: entity
-  parent: BaseSign
+  parent: BaseSignPullDown # starcup: unhangable posters
   id: PaintingBase
   abstract: true
   components:
   - type: Sprite
     sprite: Structures/Wallmounts/paintings.rsi
-  # begin starcup: unhangable posters
-  - type: DisassembleOnAltVerb
-    verbText: "disassemble-system-verb-pull-down"
-    disassembleTime: 3
-  # end starcup
 
 - type: entity
   parent: PaintingBase

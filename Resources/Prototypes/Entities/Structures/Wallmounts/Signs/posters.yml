@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: BaseSign
+  parent: BaseSignPullDown # starcup: unhangable posters
   id: PosterBase
   components:
   - type: Sprite
@@ -27,12 +27,12 @@
     node: start
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    verbText: "disassemble-system-verb-pull-down"
-    disassembleTime: 2
+    soundFinished:
+      path: /Audio/Effects/poster_broken.ogg
   # end starcup
 
 - type: entity
-  parent: BaseSign
+  parent: BaseSignPullDown # starcup: unhangable posters
   id: PosterBroken
   name: broken poster
   description: "You can't make out anything from the poster's original print. It's ruined."
@@ -57,8 +57,8 @@
     node: tornPoster
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    verbText: "disassemble-system-verb-pull-down"
-    disassembleTime: 2
+    soundFinished:
+      path: /Audio/Effects/poster_broken.ogg
   # end starcup
 
 # Contraband
@@ -768,7 +768,6 @@
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
       prototypeToSpawn: PosterRolledContrabandMoth
-      disassembleTime: 2
   # end starcup
 
 # begin starcup: removed for tone
@@ -793,7 +792,6 @@
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
       prototypeToSpawn: PosterRolledLegitDonk
-      disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -807,7 +805,6 @@
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
       prototypeToSpawn: PosterRolledLegitEnlistGorlex
-      disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -821,7 +818,6 @@
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
       prototypeToSpawn: PosterRolledLegitInterdyne
-      disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -835,7 +831,6 @@
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
       prototypeToSpawn: PosterRolledLegitWaffleCorp
-      disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -849,7 +844,6 @@
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
       prototypeToSpawn: PosterRolledContrabandMissingSpacepen
-      disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1452,7 +1446,6 @@
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
       prototypeToSpawn: PosterRolledLegitSafetyMothDelam
-      disassembleTime: 2
   # end starcup
 
 
@@ -1467,7 +1460,6 @@
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
       prototypeToSpawn: PosterRolledLegitSafetyMothEpi
-      disassembleTime: 2
   # end starcup
 
 
@@ -1482,7 +1474,6 @@
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
       prototypeToSpawn: PosterRolledLegitSafetyMothPiping
-      disassembleTime: 2
   # end starcup
 
 
@@ -1497,7 +1488,6 @@
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
       prototypeToSpawn: PosterRolledLegitSafetyMothMeth
-      disassembleTime: 2
   # end starcup
 
 
@@ -1512,7 +1502,6 @@
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
       prototypeToSpawn: PosterRolledLegitSafetyMothHardhat
-      disassembleTime: 2
   # end starcup
 
 
@@ -1528,7 +1517,6 @@
       state: postervacation_legit
     - type: DisassembleOnAltVerb
       prototypeToSpawn: PosterRolledLegitVacation
-      disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1542,7 +1530,6 @@
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
       prototypeToSpawn: PosterRolledLegitPeriodicTable
-      disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1556,7 +1543,6 @@
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
       prototypeToSpawn: PosterRolledContrabandRenault
-      disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1570,7 +1556,6 @@
   # begin starcup: unhangable posters
     - type: DisassembleOnAltVerb
       prototypeToSpawn: PosterRolledContrabandNTTGC
-      disassembleTime: 2
   # end starcup
 
 - type: entity

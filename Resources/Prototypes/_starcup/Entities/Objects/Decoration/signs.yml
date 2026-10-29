@@ -1,6 +1,15 @@
 # Template for parenting purposes
 - type: entity
   abstract: true
+  parent: BaseSign
+  id: BaseSignPullDown
+  components:
+  - type: DisassembleOnAltVerb
+    verbText: "disassemble-system-verb-pull-down"
+    disassembleTime: 2
+
+- type: entity
+  abstract: true
   parent: BaseItem
   id: BaseSignCarried
   name: sign
@@ -32,7 +41,6 @@
         sound:
           collection: WoodDestroy
   - type: MeleeWeapon
-    attackRate: 0.5
     soundHit:
       collection: MetalThud
     damage:
@@ -49,19 +57,22 @@
   - type: DamageOnLand
     damage:
       types:
-        Blunt: 20
+        Blunt: 8
   - type: EmitSoundOnLand
     sound:
       collection: MetalThud
       params:
         variation: 0.25
   - type: StaticPrice
-    price: 1000
+    price: 150
+  - type: DisassembleOnAltVerb
+    verbText: "disassemble-system-verb-pull-down"
+    disassembleTime: 2
 
 - type: entity
-  parent: NFBasePaintingCurtained
-  id: PaintingCurtainedLegitMimeTest
-  name: Mime Postmodern
+  parent: BaseSignCarried
+  id: SignCarriedAi
+  name: AI sign
   components:
   - type: NFWallmountable
-    spawn: PosterLegitMime
+    spawn: SignAi

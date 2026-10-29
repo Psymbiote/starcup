@@ -168,14 +168,6 @@
 
 - type: entity
   parent: PosterRolledLegitSyndie
-  id: PosterRolledLegitReportCrimeSyndie
-  name: "Safety: Report"
-  components:
-  - type: NFWallmountable
-    spawn: PosterLegitPosterLegitReportCrimeSyndie
-
-- type: entity
-  parent: PosterRolledLegitSyndie
   id: PosterRolledLegitReportCrimesSyndie
   name: "Report Crimes"
   components:

@@ -10,7 +10,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedRedTide
-    disassembleTime: 3
   # end starcup
 
 - type: entity
@@ -25,5 +24,4 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedHammer
-    disassembleTime: 3
   # end starcup

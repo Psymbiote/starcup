@@ -2,6 +2,7 @@ using Content.Shared.DoAfter;
 using Content.Shared.Engineering.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Verbs;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Network;
 
 namespace Content.Shared.Engineering.Systems;
@@ -11,6 +12,7 @@ public sealed partial class DisassembleOnAltVerbSystem : EntitySystem
     [Dependency] private SharedDoAfterSystem _doAfter = default!;
     [Dependency] private SharedHandsSystem _handsSystem = default!;
     [Dependency] private INetManager _net = default!;
+    [Dependency] private SharedAudioSystem _audio = default!; // starcup audio stuff
 
     public override void Initialize()
     {
@@ -53,10 +55,8 @@ public sealed partial class DisassembleOnAltVerbSystem : EntitySystem
             {
                 StartDisassembly(entity, user);
             },
-            // begin starcup: add customizable verb text
-            //Text = Loc.GetString("disassemble-system-verb-disassemble"),
+            //Text = Loc.GetString("disassemble-system-verb-disassemble"), // starcup: customize verb text in component
             Text = Loc.GetString(entity.Comp.VerbText),
-            // end starcup
             Priority = 2
 
         };
@@ -65,8 +65,11 @@ public sealed partial class DisassembleOnAltVerbSystem : EntitySystem
 
     private void OnDisassembleDoAfter(Entity<DisassembleOnAltVerbComponent> entity, ref DisassembleDoAfterEvent args)
     {
-        if (!_net.IsServer || args.Cancelled) // This is odd but it works :)
+        //if (!_net.IsServer || args.Cancelled) // This is odd but it works :) // starcup: let predicted sound work
+        if (args.Cancelled)
             return;
+
+        _audio.PlayPredicted(entity.Comp.SoundFinished, entity, args.User, audioParams: null); // starcup audio stuff
 
         if (TrySpawnNextTo(entity.Comp.PrototypeToSpawn, entity.Owner, out var spawnedEnt))
             _handsSystem.TryPickup(args.User, spawnedEnt.Value);
