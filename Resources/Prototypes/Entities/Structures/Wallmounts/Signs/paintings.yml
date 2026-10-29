@@ -10,7 +10,7 @@
     verbText: "disassemble-system-verb-pull-down"
     disassembleTime: 3
   # end starcup
-  - 
+
 - type: entity
   parent: PaintingBase
   id: PaintingEmpty
