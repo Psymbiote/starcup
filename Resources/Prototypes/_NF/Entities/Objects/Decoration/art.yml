@@ -41,7 +41,7 @@
   parent: NFBasePoster
   id: NFPosterRolledLegit
   description: A rolled up Syndicate-approved poster. # starcup
-  suffix: rolled
+  suffix: Rolled # starcup: we capitalize suffixes
   components:
   # begin starcup: syndie swap
   - type: Sprite
@@ -55,7 +55,7 @@
   parent: [BaseMinorContraband, NFBasePoster] # starcup
   id: NFPosterRolledContraband
   description: A rolled up contraband poster.
-  suffix: rolled
+  suffix: Rolled # starcup: we capitalize suffixes
   components:
   # begin starcup: syndie swap
   - type: Sprite
@@ -149,6 +149,7 @@
   parent: NFBasePaintingCurtained
   id: NFPaintingCurtainedRandom
   name: painting
+  suffix: Curtained # starcup
   description: A masterpiece hidden under cloth.  You aren't sure what the painting is until you put it up on the wall.
   components:
   - type: NFWallmountable

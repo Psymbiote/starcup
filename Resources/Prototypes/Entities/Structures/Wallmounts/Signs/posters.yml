@@ -25,6 +25,11 @@
   - type: Construction
     graph: PosterGraph
     node: start
+  # begin starcup: unhangable posters
+  - type: DisassembleOnAltVerb
+    verbText: "disassemble-system-verb-pull-down"
+    disassembleTime: 2
+  # end starcup
 
 - type: entity
   parent: BaseSign
@@ -50,6 +55,11 @@
   - type: Construction
     graph: PosterGraph
     node: tornPoster
+  # begin starcup: unhangable posters
+  - type: DisassembleOnAltVerb
+    verbText: "disassemble-system-verb-pull-down"
+    disassembleTime: 2
+  # end starcup
 
 # Contraband
 - type: entity
@@ -63,7 +73,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandFreeTonto
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -77,7 +86,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitAtmosiaDeclarationIndependence
-    disassembleTime: 2
   # end starcup
 
 
@@ -92,7 +100,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandFunPolice
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -106,7 +113,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandRealExomorph
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -120,7 +126,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitSyndicateRecruitment
-    disassembleTime: 2
   # end starcup
 
 
@@ -135,7 +140,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandClown
-    disassembleTime: 2
   # end starcup
 
 # begin starcup: removed for tone
@@ -160,7 +164,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitGreyTide
-    disassembleTime: 2
   # end starcup
 
 
@@ -175,7 +178,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandMissingGloves
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -189,7 +191,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandHackingGuide
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -203,7 +204,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandRIPBadger
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -217,7 +217,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandAmbrosiaVulgaris
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -231,7 +230,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandDonutCorp
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -245,7 +243,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandEAT
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -259,7 +256,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandTools
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -273,7 +269,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandPower
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -287,7 +282,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandSpaceCube
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -301,7 +295,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandCommunistState
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -315,7 +308,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitLamarr
-    disassembleTime: 2
   # end starcup
 
 
@@ -330,7 +322,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandBorgFancy
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -344,7 +335,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandBorgFancyv2
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -358,7 +348,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandKosmicheskayaStantsiya
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -372,7 +361,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandRebelsUnite
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -386,7 +374,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandC20r
-    disassembleTime: 2
   # end starcup
 
 # begin starcup: removed for tone
@@ -411,7 +398,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandRevolver
-    disassembleTime: 2
   # end starcup
 
 # begin starcup: removed for tone
@@ -445,7 +431,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandEnergySwords
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -459,7 +444,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandRedRum
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -473,7 +457,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandCC64KAd
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -487,7 +470,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandPunchShit
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -501,7 +483,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandTheGriffin
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -515,7 +496,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandFreeDrone
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -529,7 +509,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandRouny
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -543,7 +522,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandRobustSoftdrinks
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -557,7 +535,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandShamblersJuice
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -571,7 +548,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandPwrGame
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -585,7 +561,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandSunkist
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -599,7 +574,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandSpaceCola
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -613,7 +587,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandSpaceUp
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -627,7 +600,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandKudzu
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -641,7 +613,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandMaskedMen
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -655,7 +626,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandUnreadableAnnouncement
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -669,7 +639,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandFreeSyndicateEncryptionKey
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -683,7 +652,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandBountyHunters
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -697,7 +665,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandTheBigGasTruth
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -711,7 +678,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandWehWatches
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -725,7 +691,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandVoteWeh
-    disassembleTime: 2
   # end starcup
 
 # These 3 originally from VEEGEE
@@ -740,7 +705,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandBeachStarYamamoto
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -754,7 +718,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandHighEffectEngineering
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -768,7 +731,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandNuclearDeviceInformational
-    disassembleTime: 2
   # end starcup
 
 # begin starcup: removed for tone
@@ -793,7 +755,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandRevolt
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -902,7 +863,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandExoAcid
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -916,7 +876,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandExoRun
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -930,7 +889,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandExoChomp
-    disassembleTime: 2
   # end starcup
 
 # Legit
@@ -945,7 +903,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandHereForYourSafety
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -959,7 +916,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandNanotrasenLogo
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -973,7 +929,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandCleanliness
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -987,7 +942,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandHelpOthers
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1001,7 +955,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandBuild
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1015,7 +968,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandBlessThisSpess
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1029,7 +981,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandScience
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1043,7 +994,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandIan
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1057,7 +1007,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandObey
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1071,7 +1020,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandWalk
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1085,7 +1033,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandStateLaws
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1099,7 +1046,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandLoveIan
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1113,7 +1059,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandSpaceCops
-    disassembleTime: 2
   # end starcup
 
 #- type: entity
@@ -1142,7 +1087,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandGetYourLEGS
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1156,7 +1100,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandDoNotQuestion
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1170,7 +1113,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandWorkForAFuture
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1184,7 +1126,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitSoftCapPopArt
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1198,7 +1139,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandSafetyInternals
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1212,7 +1152,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandSafetyEyeProtection
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1226,7 +1165,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandSafetyReport
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1240,7 +1178,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandReportCrimes
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1254,7 +1191,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitIonRifle
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1268,7 +1204,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandFoamForceAd
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1282,7 +1217,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandCohibaRobustoAd
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1296,7 +1230,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContraband50thAnniversaryVintageReprint
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1310,7 +1243,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitFruitBowl
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1324,7 +1256,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandPDAAd
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1338,7 +1269,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandEnlist
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1352,7 +1282,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandNanomichiAd
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1366,7 +1295,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContraband12Gauge
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1380,7 +1308,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitHighClassMartini
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1394,7 +1321,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitTheOwl
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1408,7 +1334,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandNoERP
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1422,7 +1347,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitCarbonDioxide
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1436,7 +1360,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitDickGumshue
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1450,7 +1373,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitThereIsNoGasGiant
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1464,7 +1386,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandJustAWeekAway
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1478,7 +1399,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitSecWatch
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1492,7 +1412,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandAnatomyPoster
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1520,7 +1439,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitCarpMount
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1666,7 +1584,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitSafetyMothSSD
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1680,7 +1597,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitOppenhopper
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1694,7 +1610,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledLegitTyrone
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1708,7 +1623,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandHelio
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1722,7 +1636,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledContrabandBotanyFear
-    disassembleTime: 2
   # end starcup
 
 #maps
@@ -1737,7 +1650,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledMapBagel
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1751,7 +1663,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledMapDelta
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1765,7 +1676,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledMapMarathon
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1779,7 +1689,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledMapMoose
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1793,7 +1702,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledMapPacked
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1807,7 +1715,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledMapPillar
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1821,7 +1728,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledMapSaltern
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1835,7 +1741,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledMapSplit
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1849,7 +1754,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledMapLighthouse
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1863,7 +1767,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledMapWaystation
-    disassembleTime: 2
   # end starcup
 
 - type: entity
@@ -1877,5 +1780,4 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PosterRolledMapOrigin
-    disassembleTime: 2
   # end starcup

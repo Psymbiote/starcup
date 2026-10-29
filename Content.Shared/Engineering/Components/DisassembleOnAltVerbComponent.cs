@@ -22,6 +22,12 @@ public sealed partial class DisassembleOnAltVerbComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public TimeSpan DisassembleTime = TimeSpan.FromSeconds(0);
+
+    ///
+    ///     starcup: Alternate verb text for things that wouldn't be 'disassembled' but taken down or something else.
+    ///
+    [DataField, AutoNetworkedField]
+    public string VerbText = "disassemble-system-verb-disassemble";
 }
 
 [Serializable, NetSerializable]

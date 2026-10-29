@@ -2,7 +2,7 @@
 - type: entity
   parent: NFPosterRolledLegit
   id: PosterRolledLegitSyndie
-  suffix: rolled, Syndicate
+  suffix: Rolled, Syndicate
 
 - type: entity
   parent: NFPosterRolledLegit
@@ -498,7 +498,7 @@
   parent: NFPosterRolledLegit
   id: PosterRolledLegitPPENoExcuseBlue
   name: "No Excuse"
-  suffix: rolled, blue
+  suffix: Rolled, blue
   components:
   - type: NFWallmountable
     spawn: PosterLegitPPENoExcuseBlue
@@ -506,7 +506,7 @@
 - type: entity
   parent: PosterLegitPPENoExcuseBlue
   id: PosterRolledLegitPPENoExcusePink
-  suffix: rolled, pink
+  suffix: Rolled, pink
   components:
   - type: NFWallmountable
     spawn: PosterLegitPPENoExcusePink
@@ -550,7 +550,7 @@
   name: "Free Tonto"
   components:
   - type: NFWallmountable
-    spawn: PosterRolledContrabandFreeTonto
+    spawn: PosterContrabandFreeTonto
 
 - type: entity
   parent: NFPosterRolledContraband

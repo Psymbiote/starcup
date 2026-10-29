@@ -5,7 +5,12 @@
   components:
   - type: Sprite
     sprite: Structures/Wallmounts/paintings.rsi
-
+  # begin starcup: unhangable posters
+  - type: DisassembleOnAltVerb
+    verbText: "disassemble-system-verb-pull-down"
+    disassembleTime: 3
+  # end starcup
+  - 
 - type: entity
   parent: PaintingBase
   id: PaintingEmpty
@@ -17,7 +22,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: PaintingCurtainedEmpty
-    disassembleTime: 3
   # end starcup
 
 - type: entity
@@ -31,7 +35,6 @@
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
     prototypeToSpawn: NFPaintingCurtainedMoony
-    disassembleTime: 3
   # end starcup
 
 - type: entity
@@ -44,8 +47,7 @@
     state: painting2
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingPersistenceOfMemory
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedPersistenceOfMemory
   # end starcup
 
 - type: entity
@@ -58,8 +60,7 @@
     state: painting3
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingTheSonOfMan
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedTheSonOfMan
   # end starcup
 
 - type: entity
@@ -72,8 +73,7 @@
     state: painting4
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingTheKiss
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedTheKiss
   # end starcup
 
 - type: entity
@@ -86,8 +86,7 @@
     state: painting5
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingTheScream
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedTheScream
   # end starcup
 
 - type: entity
@@ -100,8 +99,7 @@
     state: painting6
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingTheGreatWave
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedTheGreatWave
   # end starcup
 
 - type: entity
@@ -114,8 +112,7 @@
     state: painting7
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingCafeTerraceAtNight
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedCafeTerraceAtNight
   # end starcup
 
 - type: entity
@@ -128,8 +125,7 @@
     state: painting8
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingNightHawks
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedNightHawks
   # end starcup
 
 - type: entity
@@ -142,8 +138,7 @@
     state: painting9
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingSkeletonCigarette
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedSkeletonCigarette
   # end starcup
 
 - type: entity
@@ -156,8 +151,7 @@
     state: painting10
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingSkeletonBoof
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintinCurtainedSkeletonBoof
   # end starcup
 
 - type: entity
@@ -170,8 +164,7 @@
     state: painting11
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingPrayerHands
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedPrayerHands
   # end starcup
 
 - type: entity
@@ -184,8 +177,7 @@
     state: painting12
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingOldGuitarist
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedOldGuitarist
   # end starcup
 
 - type: entity
@@ -198,8 +190,7 @@
     state: painting13
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingOlympia
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedOlympia
   # end starcup
 
 - type: entity
@@ -212,8 +203,7 @@
     state: painting14
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingSaturn
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedSaturn
   # end starcup
 
 - type: entity
@@ -226,8 +216,7 @@
     state: painting15
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingSleepingGypsy
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedSleepingGypsy
   # end starcup
 
 - type: entity
@@ -240,8 +229,7 @@
     state: painting16
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingRedBlueYellow
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedRedBlueYellow
   # end starcup
 
 - type: entity
@@ -254,8 +242,7 @@
     state: painting17
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingAmogusTriptych
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedAmogusTriptych
   # end starcup
 
 - type: entity
@@ -268,8 +255,7 @@
     state: painting18
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingHelloWorld
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedHelloWorld
   # end starcup
 
 - type: entity
@@ -282,6 +268,5 @@
     state: painting19
   # begin starcup: unhangable posters
   - type: DisassembleOnAltVerb
-    prototypeToSpawn: NFPaintingSadClown
-    disassembleTime: 3
+    prototypeToSpawn: NFPaintingCurtainedSadClown
   # end starcup

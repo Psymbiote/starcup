@@ -53,8 +53,12 @@ public sealed partial class DisassembleOnAltVerbSystem : EntitySystem
             {
                 StartDisassembly(entity, user);
             },
-            Text = Loc.GetString("disassemble-system-verb-disassemble"),
+            // begin starcup: add customizable verb text
+            //Text = Loc.GetString("disassemble-system-verb-disassemble"),
+            Text = Loc.GetString(entity.Comp.VerbText),
+            // end starcup
             Priority = 2
+
         };
         args.Verbs.Add(verb);
     }

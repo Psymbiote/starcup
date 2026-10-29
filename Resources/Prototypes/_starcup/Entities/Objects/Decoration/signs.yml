@@ -1,0 +1,67 @@
+# Template for parenting purposes
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: BaseSignCarried
+  name: sign
+  description: You should hang this up somewhere.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Decoration/paintings.rsi
+    state: painting
+  - type: Item
+    size: Large
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: DamageExaminable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+  - type: MeleeWeapon
+    attackRate: 0.5
+    soundHit:
+      collection: MetalThud
+    damage:
+      types:
+        Blunt: 10
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 4
+  - type: DamageOnHit
+    damage:
+      types:
+        Blunt: 4
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 20
+  - type: EmitSoundOnLand
+    sound:
+      collection: MetalThud
+      params:
+        variation: 0.25
+  - type: StaticPrice
+    price: 1000
+
+- type: entity
+  parent: NFBasePaintingCurtained
+  id: PaintingCurtainedLegitMimeTest
+  name: Mime Postmodern
+  components:
+  - type: NFWallmountable
+    spawn: PosterLegitMime

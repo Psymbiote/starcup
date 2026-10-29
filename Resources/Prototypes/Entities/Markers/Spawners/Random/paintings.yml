@@ -39,6 +39,14 @@
         - id: FramedPaintingWeeping
         - id: FramedPaintingFruit
         - id: FramedPaintingRat
+        - id: PaintingCalicoCat
+        - id: PaintingDragonRoost
+        - id: PaintingRainLizard1
+        - id: PaintingRainLizard2
+        - id: PaintingLadyOfRevolution
+        - id: PaintingPillarOfDoom
+        # starlight paintings
+        - id: PaintingRedTide
         # end starcup
       - !type:GroupSelector
         weight: 1
@@ -51,4 +59,6 @@
         # begin starcup: new paintings
         - id: FramedPaintingDebug
         - id: FramedPaintingRatvar
+        - id: PaintingHammer
+        - id: PaintingRearingUnicorn
         # end starcup
