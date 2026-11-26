@@ -37,7 +37,7 @@
         - Syndicate
     - type: Loadout
       prototypes:
-        - FPATrooperCarabinierGear
+        - FPACarabinierGear
 
 - type: entity
   parent: MobFPATrooperBase
@@ -47,7 +47,7 @@
   components:
   - type: Loadout
     prototypes:
-    - FPATrooperShotgunnerGear
+    - FPAShotgunnerGear
 
 - type: entity
   parent: MobFPATrooperBase
@@ -57,7 +57,7 @@
   components:
   - type: Loadout
     prototypes:
-    - FPATrooperShieldbearerGear
+    - FPAShieldbearerGear
 
 - type: entity
   parent: MobFPATrooperBase

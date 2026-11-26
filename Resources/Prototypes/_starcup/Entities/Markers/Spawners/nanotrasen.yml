@@ -26,7 +26,7 @@
   parent: MarkerBaseStarcup
   id: SpawnMobFPAHenchman
   name: FPA enforcer spawner
-  suffix: Melee, hostile
+  suffix: Melee, Hostile
   components:
   - type: Sprite
     layers:
@@ -36,7 +36,7 @@
       state: full
     - sprite: Clothing/Shoes/Boots/combatboots.rsi
       state: equipped-FEET
-    - sprite: Clothing/Uniforms/Jumpsuit/nanotrasen.rsi
+    - sprite: Clothing/Uniforms/Jumpsuits/Command/nanotrasen.rsi
       state: equipped-INNERCLOTHING
     - sprite: _DEN/Clothing/OuterClothing/WinterCoats/corpo_jacket_five_points_armory.rsi
       state: equipped-OUTERCLOTHING
@@ -63,7 +63,7 @@
   parent: MarkerBaseStarcup
   id: SpawnMobFPAHenchmanRanged
   name: FPA enforcer spawner
-  suffix: Melee, hostile
+  suffix: Ranged, Hostile
   components:
   - type: Sprite
     layers:
@@ -73,7 +73,7 @@
       state: full
     - sprite: Clothing/Shoes/Boots/combatboots.rsi
       state: equipped-FEET
-    - sprite: Clothing/Uniforms/Jumpsuit/nanotrasen.rsi
+    - sprite: Clothing/Uniforms/Jumpsuits/Command/nanotrasen.rsi
       state: equipped-INNERCLOTHING
     - sprite: _DEN/Clothing/OuterClothing/WinterCoats/corpo_jacket_five_points_armory.rsi
       state: equipped-OUTERCLOTHING
@@ -100,7 +100,7 @@
   parent: MarkerBaseStarcup
   id: SpawnMobFPACarabinier
   name: FPA trooper spawner
-  suffix: Carabinier, hostile
+  suffix: Carabinier, Hostile
   components:
   - type: Sprite
     layers:
@@ -134,7 +134,7 @@
   parent: MarkerBaseStarcup
   id: SpawnMobFPAShotgunner
   name: FPA trooper spawner
-  suffix: Shotgunner, hostile
+  suffix: Shotgunner, Hostile
   components:
   - type: Sprite
     layers:
@@ -168,7 +168,7 @@
   parent: MarkerBaseStarcup
   id: SpawnMobFPAShieldbearer
   name: FPA trooper spawner
-  suffix: Shieldbearer, hostile
+  suffix: Shieldbearer, Hostile
   components:
   - type: Sprite
     layers:
@@ -220,7 +220,7 @@
       state: equipped-HAND
     - sprite: _starcup/Clothing/Mask/gasnanotrasen.rsi
       state: equipped-MASK
-    - sprite: _starcup/Clothing/Head/Helmets/swat_nanotrasen.rsi
+    - sprite: Clothing/Head/Helmets/swat.rsi
       state: equipped-HELMET
     - sprite: _DEN/Objects/Weapons/Melee/telebaton.rsi
       state: inhand-right-baton
@@ -245,7 +245,7 @@
       state: full
     - sprite: Clothing/Shoes/Boots/jackboots.rsi
       state: equipped-FEET
-    - sprite: Clothing/Uniforms/Jumpsuit/captain.rsi
+    - sprite: Clothing/Uniforms/Jumpsuits/Command/captain.rsi
       state: equipped-INNERCLOTHING
     - sprite: Clothing/OuterClothing/Armor/captain_carapace.rsi
       state: equipped-OUTERCLOTHING

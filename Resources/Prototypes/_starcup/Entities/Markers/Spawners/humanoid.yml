@@ -13,7 +13,7 @@
       state: full
     - sprite: Clothing/Shoes/Boots/combatboots.rsi
       state: equipped-FEET
-    - sprite: Clothing/Uniforms/Jumpsuit/genetics.rsi
+    - sprite: Clothing/Uniforms/Jumpsuits/Medical/genetics.rsi
       state: equipped-INNERCLOTHING
     - sprite: _starcup/Clothing/OuterClothing/Coats/high-collar_coat.rsi
       state: equipped-OUTERCLOTHING
